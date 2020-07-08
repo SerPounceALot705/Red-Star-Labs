@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'TTFirsNeue-DemiBold';
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/TTFirsNeue-DemiBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'TTFirsNeue-Medium';
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/TTFirsNeue-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'TTFirsNeue-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/TTFirsNeue-Regular.woff2") format("woff2");
+}

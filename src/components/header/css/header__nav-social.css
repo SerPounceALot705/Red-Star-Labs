@@ -1,0 +1,39 @@
+.header__nav-social {
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    width: 162px;
+    height: 13px;
+    margin-top: 77px;
+}
+
+.header__nav-social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .header__nav-social {
+        width: 145px;
+        margin-top: 65px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .header__nav-social {
+        width: 125px;
+        margin-top: 65px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .header__nav-social {
+        width: 100px;
+        margin-top: 55px;
+    }
+}
+
+
+

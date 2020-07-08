@@ -1,0 +1,25 @@
+.header__basket {
+    width: 26px;
+    height: 24px;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .header__basket {
+        width: 23px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .header__basket {
+        width: 20px;
+        height: 18px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .header__basket {
+        width: 20px;
+        height: 18px;
+    }
+}

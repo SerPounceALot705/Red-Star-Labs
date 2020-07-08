@@ -1,0 +1,27 @@
+.footer__container {
+    display: flex;
+    justify-content: stretch;
+    width: 80%;
+}
+
+
+
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .footer__container {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .footer__container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .footer__container {
+        width: 95%;
+    }
+}

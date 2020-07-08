@@ -1,0 +1,34 @@
+.footer__logo {
+    width: 217px;
+    height: 102px;
+    margin-top: 39px;
+}
+
+@media screen and (max-width: 1660px) and (min-width: 1441px) {
+    .footer__logo {
+        width: 165px;
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .footer__logo {
+        width: 145px;
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .footer__logo {
+        width: 125px;
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .footer__logo {
+        width: 100px;
+        height: 55px;
+        margin-left: 25px;
+    }
+}

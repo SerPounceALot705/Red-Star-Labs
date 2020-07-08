@@ -1,0 +1,25 @@
+.header__nav-items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .header__nav-items {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .header__nav-items {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .header__nav-items {
+        justify-content: space-around;
+    }
+}

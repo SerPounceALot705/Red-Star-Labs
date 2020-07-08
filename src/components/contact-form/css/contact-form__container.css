@@ -1,0 +1,31 @@
+.contact-form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 139px;
+}
+
+@media screen and (max-width: 1630px) and (min-width: 1440px) {
+    .contact-form__container {
+        margin-top: 75px;
+    }
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .contact-form__container {
+        margin-top: 45px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .contact-form__container {
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .contact-form__container {
+        margin-top: 25px;
+    }
+}

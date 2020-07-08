@@ -1,0 +1,50 @@
+.contact-foto {
+    max-width: 937px;
+    height: 702px;
+    margin-top: 33px;
+    margin-right: 100px;
+    position: relative;
+    left: -48px;
+    object-fit: contain;
+    width: 937px;
+    height: 702px;
+}
+
+
+
+
+@media screen and (max-width: 1630px) and (min-width: 1440px) {
+    .contact-foto {
+        width: 800px;
+        height: 600px;
+        left: -90px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .contact-foto {
+        width: 700px;
+        height: 525px;
+        left: -55px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .contact-foto {
+        width: 600px;
+        height: 451px;
+        left: -55px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .contact-foto {
+        width: 455px;
+        height: 342px;
+        left: -50px;
+        margin-right: 0;
+    }
+}

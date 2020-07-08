@@ -1,0 +1,28 @@
+.basket {
+    position: absolute;
+    top: 67px;
+    right: -95px;
+}
+
+
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .basket {
+        top: 62px;
+        right: -85px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .basket {
+        top: 62px;
+        right: -65px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .basket {
+        top: 52px;
+        right: -55px;
+    }
+}

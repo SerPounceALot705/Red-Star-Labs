@@ -1,0 +1,47 @@
+.contact-form__button {
+    width: 189px;
+    height: 44px;
+    background-color: #b30000;
+    color: #ddd8d8;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.46px;
+    border: none;
+}
+
+.contact-form__button:active,
+:focus {
+    outline: none;
+}
+
+.contact-form__button:hover {
+    cursor: pointer;
+    background-color: #d12b2b;
+    transition: all .1s linear;
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .contact-form__button {
+        width: 189px;
+        height: 44px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .contact-form__button {
+        width: 165px;
+        height: 42px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .contact-form__button {
+        width: 135px;
+        height: 38px;
+        font-size: 15px;
+    }
+}

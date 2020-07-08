@@ -1,0 +1,48 @@
+.header__language-container {
+    display: inline-block;
+    margin-top: 73px;
+}
+
+.header__language-container p {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+    color: #282828;
+    font-family: "TTFirsNeue-DemiBold";
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .header__language-container p {
+        font-size: 12px;
+        
+    }
+    .header__language-container {
+        margin-top: 65px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .header__language-container p {
+        font-size: 10px;
+        
+    }
+    .header__language-container {
+        margin-top: 65px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .header__language-container p {
+        font-size: 8px;
+        
+    }
+
+    .header__language-container {
+        margin-top: 55px;
+    }
+}

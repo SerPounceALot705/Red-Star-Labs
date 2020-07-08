@@ -1,0 +1,30 @@
+.header__nav-links {
+    margin-top: 77px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 13px;
+}
+
+.header__nav-links li {
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .header__nav-links {
+        margin-top: 65px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .header__nav-links {
+        margin-top: 65px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .header__nav-links {
+        margin-top: 55px;
+    }
+}

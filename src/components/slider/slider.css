@@ -1,0 +1,29 @@
+.awssld {
+    --slider-height-percentage: 48.5%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.awssld__content {
+    background: none;
+}
+
+.awssld__bullets {
+    position: absolute;
+    bottom: 6%;
+    right: 40%;
+}
+
+.awssld__bullets button {
+    width: 6px;
+    height: 6px;
+}
+
+.awssld__wrapper {
+    max-height: 930px;
+}
+
+.slider__foto {
+    object-fit: cover;
+    width: 100%;  
+}

@@ -1,0 +1,38 @@
+.footer {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 304px;
+    margin: 0 auto;
+    margin-left: 177px;
+}
+
+
+@media screen and (max-width: 1660px) and (min-width: 1441px) {
+    .footer {
+        height: 250px;
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .footer {
+        margin-left: 65px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .footer {
+        margin-left: 60px;
+        height: 225px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .footer {
+        margin-left: 25px;
+        height: 160px;
+    }
+}
