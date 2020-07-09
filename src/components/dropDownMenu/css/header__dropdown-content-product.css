@@ -1,0 +1,9 @@
+.header__dropdown-content-product {
+    height: 301px;
+    display: inline-block;
+}
+
+.header__dropdown-content-product ul {
+    padding-left: 20px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}

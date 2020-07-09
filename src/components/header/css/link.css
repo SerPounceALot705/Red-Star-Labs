@@ -11,6 +11,7 @@
 
 .link:hover {
     color: #ad1410;
+    cursor: pointer;
 }
 
 

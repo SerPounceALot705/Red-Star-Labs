@@ -1,0 +1,31 @@
+.header__dropdown-content {
+    display: flex;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 1253px;
+    max-height: 560px;
+    width: 100%;
+    padding: 12px 16px;
+    z-index: 99;
+    top: 75px;
+    left: -250%;
+    padding-top: 20px;
+    padding-left: 43px;
+}
+
+.header__dropdown-content::after {
+    content: '';
+    position: absolute;
+    left: 19%;
+    bottom: 99%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 24px 48px 24px;
+    border-color: transparent transparent rgba(255, 255, 255, 0.9) transparent;
+}
+
+.header__dropdown-content ul {
+    margin-top: 8px;
+    padding: 0;
+}

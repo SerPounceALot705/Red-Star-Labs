@@ -1,0 +1,12 @@
+.header__dropdown-content-title-link {
+    display: block;
+    color: #000000;
+    font-family: "TTFirsNeue-DemiBold";
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.header__dropdown-content-title-link:hover {
+    text-decoration: underline;
+}

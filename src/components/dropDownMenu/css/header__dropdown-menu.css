@@ -1,0 +1,8 @@
+.header__dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.header__dropdown-menu:hover .header__dropdown-content {
+    display: flex;
+}
