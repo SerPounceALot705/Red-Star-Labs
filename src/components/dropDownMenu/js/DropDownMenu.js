@@ -19,7 +19,7 @@ class DropDownMenu extends Component {
     render() {
         return (
             <div className="header__dropdown-menu">
-                <samp className="link">{this.props.linkName}</samp>
+                <span className="link">{this.props.linkName}</span>
                 <div className="header__dropdown-content">
                     <div className="header__dropdown-content-categories">
                         <h2 className="header__dropdown-content-title">Категории</h2>
@@ -35,7 +35,7 @@ class DropDownMenu extends Component {
                             </li>
                             <li><LinkUrl url={"/"} name={"Витамины и минералы"} className={"header__dropdown-content-title-link"} /></li>
                             <li><LinkUrl url={"/"} name={"Аминакислоты и ВСАА"} className={"header__dropdown-content-title-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Специаьные препараты"} className={"header__dropdown-content-title-link"} /></li>
+                            <li><LinkUrl url={"/"} name={"Специальные препараты"} className={"header__dropdown-content-title-link"} /></li>
                             <li><LinkUrl url={"/"} name={"Батончики"} className={"header__dropdown-content-title-link"} /></li>
                             <li><LinkUrl url={"/"} name={"Предтренировачные комплексы"} className={"header__dropdown-content-title-link"} /></li>
                             <li><LinkUrl url={"/"} name={"Препараты для связок и сустовов"} className={"header__dropdown-content-title-link"} /></li>

@@ -12,6 +12,10 @@
     color: #ffffff;
 }
 
+.header-theme-white nav ul li .header__dropdown-menu span {
+    color: #ffffff;
+}
+
 .header-theme-white .header__language-container p {
     color: #ffffff;
 }

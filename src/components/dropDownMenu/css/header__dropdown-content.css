@@ -29,3 +29,15 @@
     margin-top: 8px;
     padding: 0;
 }
+
+.header__dropdown-content div .header__dropdown-content-catalog-link {
+    color: #626262 !important;
+}
+
+.header__dropdown-content div .header__dropdown-content-catalog-link:hover {
+    color: #494949 !important;
+}
+
+.header__dropdown-content a {
+    color: #000000 !important;
+}
