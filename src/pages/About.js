@@ -6,7 +6,6 @@ import Footer from "../components/footer/js/footer.js";
 import Image from "../components/image/image.js";
 
 import "../components/main-about.css";
-import "../components/about.css";
 import "../components/about-brand/css/about-brand.css";
 import "../components/about-brand/css/about__menu-item.css";
 import "../components/about-brand/css/about__container.css";
@@ -37,8 +36,8 @@ class About extends Component {
                     <Header isDark={false} />
                     <section className="about-brand">
                         <nav className="about__menu">
-                            <Link to="/" className="about__menu-item">{"Главная страница /"}</Link>
-                            <Link to="/About" className="about__menu-item about__menu-item_active">{" о бренде"}</Link>
+                            <Link to="/" className="about__menu-item">{"Главная страница > "}</Link>
+                            <Link to="/About" className="about__menu-item about__menu-item_active">{"о бренде"}</Link>
                         </nav>
                         <div className="about__container">
                             <Image

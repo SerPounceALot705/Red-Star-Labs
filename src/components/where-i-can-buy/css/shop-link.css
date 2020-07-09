@@ -1,0 +1,11 @@
+.shop-link {
+    position: absolute;
+    left: 43%;
+    bottom: 37px;
+    width: 107px;
+    height: 18px;
+    color: #ac140f;
+    font-family: "TTFirsNeue-DemiBold";
+    font-size: 17px;
+    text-decoration: underline;
+}

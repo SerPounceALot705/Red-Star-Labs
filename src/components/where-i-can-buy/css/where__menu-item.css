@@ -1,0 +1,14 @@
+.where__menu-item {
+    color: #202020;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.72px;
+    font-family: "TTFirsNeue-Regular";
+    font-weight: 400;
+    letter-spacing: 0.38px;
+    text-decoration: none;
+}
+
+.where__menu-item_active {
+    font-family: "TTFirsNeue-DemiBold";
+}

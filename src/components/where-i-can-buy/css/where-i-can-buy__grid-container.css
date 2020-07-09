@@ -1,0 +1,9 @@
+.where-i-can-buy__grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 32px;
+    grid-column-gap: 32px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,28 @@
+.react-tabs__tab {
+    width: 248px;
+    height: 26px;
+    color: #131414;
+    font-family: "TTFirsNeue-DemiBold";
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-style: none;
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+.react-tabs__tab:first-child {
+    margin-right: 16px;
+}
+
+.react-tabs__tab--selected  {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.react-tabs__tab-list {
+    padding: 0;
+    margin: 0;
+}
+
+

@@ -38,7 +38,7 @@ class Header extends Component {
                     links={[
                         { url: "#", name: "продукция", isDrop: true},
                         { url: "About", name: "о бренде" },
-                        { url: "#", name: "где купить?" },
+                        { url: "WhereICanBuy", name: "где купить?" },
                         { url: "#", name: "оптовым клиентам" },
                         { url: "#", name: "контакты" },
                     ]}
