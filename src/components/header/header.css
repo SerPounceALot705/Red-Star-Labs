@@ -7,3 +7,11 @@
     max-width: 1920px;
     position: relative;
 }
+
+.header-theme-white nav ul li a {
+    color: #ffffff;
+}
+
+.header-theme-white .header__language-container p {
+    color: #ffffff;
+}

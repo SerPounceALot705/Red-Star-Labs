@@ -1,0 +1,11 @@
+.our-mission {
+    background-image: url("../../../images/red-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 110px 35px 113px;
+}

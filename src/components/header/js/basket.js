@@ -7,13 +7,23 @@ import "../css/header__basket.css";
 class Basket extends Component {
     constructor(props) {
         super(props)
+        this.basketUrl = require("../../../images/basket.png").default;
+        this.isDark = this.props.isDark;
     }
+
+    componentWillMount() {
+        if (this.isDark == false) {
+            this.basketUrl = require("../../../images/white-basket.png").default;
+            
+        }    
+    }
+
 
     render() {
         return (
             <div className="basket">
                 <Image
-                    src={require("../../../images/basket.png").default}
+                    src={this.basketUrl}
                     alt={"Basket"}
                     className={"header__basket"}                   
                 />

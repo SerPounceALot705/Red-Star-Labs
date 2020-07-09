@@ -15,16 +15,20 @@ class Header extends Component {
         super(props)
 
         this.LogoUrl = require("../../images/logo.png").default;
+        this.headerClass = "header";
         this.isDark = this.props.isDark;
     }
 
     componentWillMount() {
-        if (this.isDark == false) this.LogoUrl = require("../../images/white-logo.png").default;
+        if (this.isDark == false) {
+            this.LogoUrl = require("../../images/white-logo.png").default;
+            this.headerClass = "header header-theme-white";
+        }
     }
 
     render() {
         return (
-            <section className="header">
+            <section className={this.headerClass}>
                 <Image
                     src={this.LogoUrl}
                     alt={"logo"}
@@ -47,7 +51,7 @@ class Header extends Component {
                     ]}
                 />
                 <Language />
-                <Basket />
+                <Basket  isDark={this.isDark}/>
                 
             </section>
         );

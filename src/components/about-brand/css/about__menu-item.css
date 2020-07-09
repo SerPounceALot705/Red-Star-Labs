@@ -1,0 +1,11 @@
+.about__menu-item {
+    font-family: "TTFirsNeue-Medium";
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #1a1b22;
+}
+
+.about__menu-item_active {
+    font-family: "TTFirsNeue-DemiBold";
+}

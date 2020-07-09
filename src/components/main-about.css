@@ -1,0 +1,8 @@
+.main-about {
+    background-image: url("../images/about-brand.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 1080px;
+    position: relative;
+}

@@ -21,39 +21,40 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <section className="main">
-                    <Header isDark={true}/>
-                    
-                    <AwesomeSlider>
-                        <div>
-                            <Image
-                                src={require("../images/slider.png").default}
-                                alt={"slider__foto"}
-                                className={"slider__foto"}
-                               
-                            />
-                        </div>
-                        <div>
-                            <Image
-                                src={require("../images/slider.png").default}
-                                alt={"slider__foto"}
-                                className={"slider__foto"}
-                              
-                            />
-                        </div>
-                        <div>
-                            <Image
-                                src={require("../images/slider.png").default}
-                                alt={"slider__foto"}
-                                className={"slider__foto"}
-                            />
-                        </div>
-                    </AwesomeSlider>
-                
+                <section>
+                    <div className="main">
+                        <Header isDark={true} />
+
+                        <AwesomeSlider>
+                            <div>
+                                <Image
+                                    src={require("../images/slider.png").default}
+                                    alt={"slider__foto"}
+                                    className={"slider__foto"}
+
+                                />
+                            </div>
+                            <div>
+                                <Image
+                                    src={require("../images/slider.png").default}
+                                    alt={"slider__foto"}
+                                    className={"slider__foto"}
+
+                                />
+                            </div>
+                            <div>
+                                <Image
+                                    src={require("../images/slider.png").default}
+                                    alt={"slider__foto"}
+                                    className={"slider__foto"}
+                                />
+                            </div>
+                        </AwesomeSlider>
+                    </div>
                     <ContactForm />
-                <footer className="main">
-                    <Footer />
-                </footer>
+                    <footer className="main">
+                        <Footer />
+                    </footer>
                 </section>
             </div>
         )
