@@ -13,6 +13,7 @@ import "../components/header/css/basket.css";
 import "../vendor/fonts.css";
 import "../components/slider/slider.css"
 
+
 class Home extends Component {
     constructor(props) {
         super(props)

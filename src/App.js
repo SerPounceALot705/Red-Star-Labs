@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./pages/About.js";
 import Home from "./pages/Home.js";
 import WhereICanBuy from "./pages/WhereICanBuy.js";
+import WholesaleCustomers from "./pages/WholesaleCustomers.js";
 
 class App extends Component {
 
@@ -19,6 +20,9 @@ class App extends Component {
                     </Route>
                     <Route path="/WhereICanBuy">
                         <WhereICanBuy/>
+                    </Route>
+                    <Route path="/WholesaleCustomers">
+                        <WholesaleCustomers/>
                     </Route>
                 </Switch>
             </Router>

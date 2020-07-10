@@ -1,0 +1,11 @@
+.for-wholesale-customers-form {
+    width: 701px;
+    height: 586px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../../../images/back-cust-form.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 52px;
+}

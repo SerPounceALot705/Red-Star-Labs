@@ -1,0 +1,89 @@
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Header from "../components/header/header.js";
+import Footer from "../components/footer/js/footer.js";
+import Image from "../components/image/image.js";
+
+import "../components/contact-form/css/star.css";
+import "../components/wholesaleCustomers/css/wholesale-customers__main.css";
+import "../components/wholesaleCustomers/css/for-wholesale-customers.css";
+import "../components/wholesaleCustomers/css/for-wholesale-customers-form.css";
+import "../components/wholesaleCustomers/css/for-wholesale-customers-form.css";
+import "../components/wholesaleCustomers/css/for-wholesale-customers-form__title.css";
+import "../components/wholesaleCustomers/css/for-wholesale-customers-form__subtitle.css";
+import "../components/wholesaleCustomers/css/for-wholesale-customers-form__text.css";
+import "../components/wholesaleCustomers/css/for-wholesale-customers-form__input-container.css";
+import "../components/wholesaleCustomers/css/for-wholesale-customers-form__input.css";
+
+
+class WholesaleCustomers extends Component {
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+        return (
+            <section className="wholesale-customers">
+                <div className="wholesale-customers__main">
+                    <Header />
+                    <div className="for-wholesale-customers">
+                        <div className="for-wholesale-customers-form">
+                            <h2 className="for-wholesale-customers-form__title">Приглашаем к партнерству оптовых дистрибьюторов</h2>
+                            <h3 className="for-wholesale-customers-form__subtitle">Оставьте заявку, заполните поля ниже</h3>
+                            <p className="for-wholesale-customers-form__text">
+                                <span className="star">* </span>
+                            - поля, обязательнные для заполнения
+                            </p>
+                            <form className="for-wholesale-customers-form__input-container">
+                                <input className="for-wholesale-customers-form__input" placeholder="* Имя" type="text" minLength="2" maxLength="30" required></input>
+                                <input className="for-wholesale-customers-form__input" placeholder="* Email" type="email" minLength="2" maxLength="30" required></input>
+                                <input className="for-wholesale-customers-form__input" placeholder="* +7" type="telephone" required></input>
+                                <input className="for-wholesale-customers-form__input" placeholder="Сообщение" type="text" minLength="2" maxLength="30" required></input>
+                                <button className="for-wholesale-customers-form__button" type="submit" name="submit">Отправить</button>
+                            </form>
+                        </div>
+                        <div className="for-wholesale-customers-advantages">
+                            <h2 className="for-wholesale-customers-advantages__title">Наши преимущества</h2>
+                            <div className="for-wholesale-customers-advantages__container">
+                                <Image
+                                    src={require("../images/advantages.png").default}
+                                    alt={"advantages__foto"}
+                                    className={"advantages__foto"}
+                                />
+                                <div className="for-wholesale-customers-advantages__text-container">
+                                    <p className="for-wholesale-customers-advantages__text">Более 10 лет на рынке</p>
+                                    <p className="for-wholesale-customers-advantages__text">Индивидуальный подход к каждому клиенту</p>
+                                    <p className="for-wholesale-customers-advantages__text">Наличие товара на складе в России</p>
+                                    <p className="for-wholesale-customers-advantages__text">Высокая частота повторных покупок</p>
+                                </div>
+                            </div>
+                            <div className="for-wholesale-customers-advantages__buttons-container">
+                                <div className="for-wholesale-customers-advantages__button-container">
+                                    <Image
+                                        src={require("../images/icon1.png").default}
+                                        alt={"buttons__foto-01"}
+                                        className={"buttons__foto-01"}
+                                    />
+                                    <button className="for-wholesale-customers-advantages__button" type="submit" name="submit">Запросить прайс</button>
+                                </div>
+                                <div className="for-wholesale-customers-advantages__button-container">
+                                    <Image
+                                        src={require("../images/icon2.png").default}
+                                        alt={"buttons__foto-02"}
+                                        className={"buttons__foto-02"}
+                                    />
+                                    <button className="for-wholesale-customers-advantages__button" type="submit" name="submit">Скачать каталог</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer className="main">
+                    <Footer />
+                </footer>
+            </section>
+        )
+    }
+}
+
+export default WholesaleCustomers;

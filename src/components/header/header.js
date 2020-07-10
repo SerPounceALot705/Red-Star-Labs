@@ -39,7 +39,7 @@ class Header extends Component {
                         { url: "#", name: "продукция", isDrop: true},
                         { url: "About", name: "о бренде" },
                         { url: "WhereICanBuy", name: "где купить?" },
-                        { url: "#", name: "оптовым клиентам" },
+                        { url: "WholesaleCustomers", name: "оптовым клиентам" },
                         { url: "#", name: "контакты" },
                     ]}
                 />

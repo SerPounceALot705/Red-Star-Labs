@@ -1,0 +1,14 @@
+.for-wholesale-customers-form__input {
+    border-style: none;
+    width: 515px;
+    height: 41px;
+    margin-bottom: 24px;
+    padding-left: 12px;
+    background-color: rgba(195, 195, 195, 0.6);
+    color: black;
+    border-bottom: #8E8E8E 2px solid;
+}
+
+.for-wholesale-customers-form__input:nth-child(3) {
+    width: 297px;
+}

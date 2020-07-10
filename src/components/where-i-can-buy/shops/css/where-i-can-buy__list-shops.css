@@ -1,0 +1,22 @@
+.where-i-can-buy__list-shops {
+    max-width: 635px;
+    height: 483px;
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    margin-right: 25px;
+}
+
+.where-i-can-buy__list-shops::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: #ac140f;
+    border-radius: 5px;
+}
+
+.where-i-can-buy__list-shops::-webkit-scrollbar {
+    width: 2px;
+    background-color: #848484;
+}
+
+
+  

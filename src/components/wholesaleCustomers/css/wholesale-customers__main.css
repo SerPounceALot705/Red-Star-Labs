@@ -1,0 +1,7 @@
+.wholesale-customers__main {
+    background-image: url('../../../images/back-customers.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}

@@ -1,0 +1,9 @@
+.for-wholesale-customers {
+    max-width: 1920px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 64px;
+    margin-bottom: 37px;
+}
