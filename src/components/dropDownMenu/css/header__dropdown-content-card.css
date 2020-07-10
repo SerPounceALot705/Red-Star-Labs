@@ -1,0 +1,29 @@
+.header__dropdown-content-card {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 25px;
+   width: 250px;
+   margin-left: 25px;
+   padding-right: 25px;
+}
+
+.header__dropdown-content-card:first-child {
+   border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header__dropdown-content-card:hover {
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+   text-decoration: underline;
+}
+
+.header__dropdown-content-card .header__dropdown-content-card-brand p {
+   width: 72px;
+   height: 26px;
+   color: #202020;
+   font-family: "TTFirsNeue-Medium";
+   font-size: 9px;
+   font-weight: 400;
+   line-height: 9.38px;
+}

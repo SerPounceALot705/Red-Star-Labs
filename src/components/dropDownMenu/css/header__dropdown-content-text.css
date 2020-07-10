@@ -1,0 +1,9 @@
+.header__dropdown-content-text {
+    width: 72px;
+    height: 26px;
+    color: #202020;
+    font-family: "TTFirsNeue-Medium";
+    font-size: 9px;
+    margin-top: 10px;
+    display: block;
+}
