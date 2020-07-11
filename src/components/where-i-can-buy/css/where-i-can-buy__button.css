@@ -9,8 +9,7 @@
     background-color: rgba(255, 255, 255, 0.3);
     border-style: none;
     text-align: center;
-    padding: 15px 0 0 0;
-}
+    padding: 15px 0 0 0;}
 
 .react-tabs__tab:first-child {
     margin-right: 16px;
