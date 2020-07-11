@@ -7,6 +7,9 @@ import WhereICanBuy from "./pages/WhereICanBuy.js";
 import WholesaleCustomers from "./pages/WholesaleCustomers.js";
 
 class App extends Component {
+    constructor(props) {
+        super(props)        
+    }
 
     render() {
         return (

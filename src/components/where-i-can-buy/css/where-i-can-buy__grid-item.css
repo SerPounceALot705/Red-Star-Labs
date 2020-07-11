@@ -8,3 +8,8 @@
     position: relative;
     cursor: pointer;
 }
+
+.where-i-can-buy__grid-item:hover {
+    transition: all ease-in-out 0.2s;
+    background-color: rgba(255, 255, 255, 0.7);
+}
