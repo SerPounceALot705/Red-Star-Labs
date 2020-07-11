@@ -1,0 +1,5 @@
+.contacts-form__select-main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}

@@ -40,7 +40,7 @@ class Header extends Component {
                         { url: "About", name: "о бренде" },
                         { url: "WhereICanBuy", name: "где купить?" },
                         { url: "WholesaleCustomers", name: "оптовым клиентам" },
-                        { url: "#", name: "контакты" },
+                        { url: "Contacts", name: "контакты" },
                     ]}
                 />
                 <Nav className="header__nav-social"

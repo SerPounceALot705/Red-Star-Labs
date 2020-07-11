@@ -1,0 +1,4 @@
+.contacts-form__select-container {
+    display: flex;
+    flex-direction: column;
+}

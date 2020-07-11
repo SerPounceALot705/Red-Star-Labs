@@ -1,0 +1,15 @@
+.contact-form__option {
+    color: #505050;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 17px;
+    font-weight: 400;
+}
+
+select {
+    color: #505050;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 17px;
+    font-weight: 400;
+    background-color: #ffffff;
+    border: 1px solid black;
+}

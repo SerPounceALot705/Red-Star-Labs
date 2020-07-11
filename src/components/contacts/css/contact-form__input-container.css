@@ -1,0 +1,5 @@
+.contact-form__input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}

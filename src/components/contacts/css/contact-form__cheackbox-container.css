@@ -1,0 +1,5 @@
+.contact-form__cheackbox-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+}

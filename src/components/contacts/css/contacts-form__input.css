@@ -1,0 +1,11 @@
+.contacts-form__input {
+    height: 66px;
+    width: 285px;
+    margin-bottom: 27px;
+    border: none;
+    padding-left: 10px;
+}
+
+.contacts-form__input:nth-child(3) {
+    width: 197px;
+}

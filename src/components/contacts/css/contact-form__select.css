@@ -1,0 +1,10 @@
+.contact-form__select {
+    height: 65px;
+    width: 560px;
+    color: #505050;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 17px;
+    border: none;
+    border-bottom: rgba(0, 0, 0, 0.4) 1px solid;
+    padding-left: 10px;
+}

@@ -1,0 +1,11 @@
+.contacts-form__select-input {
+    height: 186px;
+    margin-bottom: 28px;
+    border: none;
+    color: #505050;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 15px;
+    resize: none;
+}

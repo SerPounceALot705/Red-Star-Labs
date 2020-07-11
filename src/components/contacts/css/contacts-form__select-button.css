@@ -1,0 +1,23 @@
+.contacts-form__select-button {
+    width: 184px;
+    height: 50px;
+    background-color: #ac140f;
+    color: #ffffff;
+    font-family: "TTFirsNeue-DemiBold";
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    margin-right: 65px;
+}
+
+.contacts-form__select-button:active
+:focus {
+    outline: none;
+}
+
+.contacts-form__select-button:hover {
+    cursor: pointer;
+    background-color: #d12b2b;
+    transition: all .1s linear;
+}

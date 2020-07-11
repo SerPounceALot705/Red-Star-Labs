@@ -1,0 +1,6 @@
+.contacts-form__container {
+    height: 431px;
+    background-color: rgba(212, 212, 212, 0.6);
+    display: flex;
+    flex-direction: row;
+}

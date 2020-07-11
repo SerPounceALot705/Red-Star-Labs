@@ -5,6 +5,7 @@ import About from "./pages/About.js";
 import Home from "./pages/Home.js";
 import WhereICanBuy from "./pages/WhereICanBuy.js";
 import WholesaleCustomers from "./pages/WholesaleCustomers.js";
+import Contacts from "./pages/Contacts.js";
 
 class App extends Component {
     constructor(props) {
@@ -26,6 +27,9 @@ class App extends Component {
                     </Route>
                     <Route path="/WholesaleCustomers">
                         <WholesaleCustomers/>
+                    </Route>
+                    <Route path="/Contacts">
+                        <Contacts/>
                     </Route>
                 </Switch>
             </Router>
