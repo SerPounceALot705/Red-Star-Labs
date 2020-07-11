@@ -1,0 +1,10 @@
+.for-wholesale-customers-advantages__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 35px;
+}
+
+.for-wholesale-customers-advantages__container:nth-child(4) {
+    margin-bottom: 40px;
+}

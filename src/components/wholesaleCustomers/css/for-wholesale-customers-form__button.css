@@ -1,0 +1,21 @@
+.for-wholesale-customers-form__button {
+    width: 249px;
+    height: 44px;
+    background-color: #b30000;
+    color: #ddd8d8;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 20px;
+    letter-spacing: 0.46px;
+    border: none;
+}
+
+.for-wholesale-customers-form__button:active
+:focus {
+    outline: none;
+}
+
+.for-wholesale-customers-form__button:hover {
+    cursor: pointer;
+    background-color: #d12b2b;
+    transition: all .1s linear;
+}
