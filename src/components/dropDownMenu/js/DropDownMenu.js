@@ -64,81 +64,89 @@ class DropDownMenu extends Component {
                     <div className="header__dropdown-content-product">
                         <h2 className="header__dropdown-content-title">Линейки</h2>
                         <div className="header__dropdown-content-product-card">
-                            <LineCard content={
-                                {
-                                    link: {
-                                        text: "Для насыщения организма витаминами",
-                                        url: "About"
-                                    },
-                                    logo: {
-                                        url: require("../../../images/logobasic.png").default,
-                                        alt: "logobasic"
-                                    },
-                                    product: {
-                                        url: require("../../../images/whey.png").default,
-                                        alt: "whey"
+                            <LineCard
+                                className={"header__dropdown-content-card"}
+                                content={
+                                    {
+                                        link: {
+                                            text: "Для насыщения организма витаминами",
+                                            url: "About"
+                                        },
+                                        logo: {
+                                            url: require("../../../images/logobasic.png").default,
+                                            alt: "logobasic"
+                                        },
+                                        product: {
+                                            url: require("../../../images/whey.png").default,
+                                            alt: "whey"
+                                        }
                                     }
-                                }
-                            } />
-                            <LineCard content={
-                                {
-                                    link: {
-                                        text: "Для насыщения организма витаминами",
-                                        url: "About"
-                                    },
-                                    logo: {
-                                        url: require("../../../images/logoEssential.png").default,
-                                        alt: "logobasic"
-                                    },
-                                    product: {
-                                        url: require("../../../images/Essentialbank.png").default,
-                                        alt: "whey"
+                                } />
+                            <LineCard
+                                className={"header__dropdown-content-card"}
+                                content={
+                                    {
+                                        link: {
+                                            text: "Для насыщения организма витаминами",
+                                            url: "About"
+                                        },
+                                        logo: {
+                                            url: require("../../../images/logoEssential.png").default,
+                                            alt: "logobasic"
+                                        },
+                                        product: {
+                                            url: require("../../../images/Essentialbank.png").default,
+                                            alt: "whey"
+                                        }
                                     }
-                                }
-                            } />
+                                } />
                         </div>
                         <div className="header__dropdown-content-product-card">
-                            <LineCard content={
-                                {
-                                    link: {
-                                        text: "Для насыщения организма витаминами",
-                                        url: "About"
-                                    },
-                                    logo: {
-                                        url: require("../../../images/logoEssential.png").default,
-                                        alt: "logobasic"
-                                    },
-                                    product: {
-                                        url: require("../../../images/premiumwhey.png").default,
-                                        alt: "whey"
+                            <LineCard
+                                className={"header__dropdown-content-card"}
+                                content={
+                                    {
+                                        link: {
+                                            text: "Для насыщения организма витаминами",
+                                            url: "About"
+                                        },
+                                        logo: {
+                                            url: require("../../../images/logoEssential.png").default,
+                                            alt: "logobasic"
+                                        },
+                                        product: {
+                                            url: require("../../../images/premiumwhey.png").default,
+                                            alt: "whey"
+                                        }
                                     }
-                                }
-                            } />
-                            <LineCard content={
-                                {
-                                    link: {
-                                        text: "Для насыщения организма витаминами",
-                                        url: "About"
-                                    },
-                                    logo: {
-                                        url: require("../../../images/logoSuperior.png").default,
-                                        alt: "logobasic"
-                                    },
-                                    product: {
-                                        url: require("../../../images/beowulfbank.png").default,
-                                        alt: "whey"
+                                } />
+                            <LineCard
+                                className={"header__dropdown-content-card"}
+                                content={
+                                    {
+                                        link: {
+                                            text: "Для насыщения организма витаминами",
+                                            url: "About"
+                                        },
+                                        logo: {
+                                            url: require("../../../images/logoSuperior.png").default,
+                                            alt: "logobasic"
+                                        },
+                                        product: {
+                                            url: require("../../../images/beowulfbank.png").default,
+                                            alt: "whey"
+                                        }
                                     }
-                                }
-                            } />
+                                } />
                         </div>
                     </div>
                     <div className="header__dropdown-image">
-                       <Image
+                        <Image
                             src={require("../../../images/promo.png").default}
                             alt={"promo"}
                             width={900}
                             height={132}
-                       />
+                        />
                     </div>
                 </div>
             </div>

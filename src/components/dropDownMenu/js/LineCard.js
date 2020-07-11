@@ -9,13 +9,11 @@ import "../css/header__dropdown-content-card-brand.css";
 class LineCard extends Component {
     constructor(props) {
         super(props)
-
-        console.log(this.props.content)
     }
 
     render() {
         return (
-            <div className="header__dropdown-content-card">
+            <div className={this.props.className}>
                 <div className="header__dropdown-content-card-brand">
                     <Image
                         src={this.props.content.logo.url}

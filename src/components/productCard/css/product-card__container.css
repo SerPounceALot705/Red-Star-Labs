@@ -1,0 +1,14 @@
+.product-card__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all ease-in-out 0.2s;
+}
+
+.product-card__container-card:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.product-card__container-card:hover .product-card__card{
+    opacity: 1;
+}

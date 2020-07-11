@@ -11,6 +11,7 @@
     left: -250%;
     padding-top: 20px;
     padding-left: 43px;
+    text-decoration: none;
 }
 
 .header__dropdown-content::after {

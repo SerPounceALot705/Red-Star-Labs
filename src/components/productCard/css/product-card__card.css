@@ -1,0 +1,15 @@
+.product-card__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 40%;
+    padding-right: 25px;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.product-card__card a {
+    text-decoration: none;
+}

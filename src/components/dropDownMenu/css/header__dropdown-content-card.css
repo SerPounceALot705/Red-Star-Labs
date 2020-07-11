@@ -6,6 +6,7 @@
    width: 250px;
    margin-left: 25px;
    padding-right: 25px;
+   text-decoration: none;
 }
 
 .header__dropdown-content-card:first-child {
