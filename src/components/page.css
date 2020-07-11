@@ -5,6 +5,19 @@
     height: auto;
 }
 
+body {
+    background-image: url("../images/background.png");
+    background-repeat: repeat-y;
+}
+
+.footer {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
 h3 {
     margin: 0;
     padding: 0;

@@ -1,11 +1,14 @@
 .footer {
-    max-width: 1920px;
     width: 100%;
     display: flex;
     flex-direction: column;
     height: 304px;
     margin: 0 auto;
-    margin-left: 177px;
+
+    background-image: url("../../../images/background.png");
+    background-size: cover;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
