@@ -42,22 +42,22 @@ class DropDownMenu extends Component {
                             <li><LinkUrl url={"/"} name={"Карнитин"} className={"header__dropdown-content-title-link"} /></li>
                             <li><LinkUrl url={"/"} name={"Специальные препараты"} className={"header__dropdown-content-title-link"} /></li>
                             <li><LinkUrl url={"/"} name={"Батончики"} className={"header__dropdown-content-title-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Предтренировачные комплексы"} className={"header__dropdown-content-title-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Препараты для связок и сустовов"} className={"header__dropdown-content-title-link"} /></li>
+                            <li><LinkUrl url={"/"} name={"Предтренировочные комплексы"} className={"header__dropdown-content-title-link"} /></li>
+                            <li><LinkUrl url={"/"} name={"Препараты для связок и суставов"} className={"header__dropdown-content-title-link"} /></li>
                         </ul>
-                        <LinkUrl url={"/"} name={"Весь каталог"} className={"header__dropdown-content-catalog-link"} />
+                        <LinkUrl url={"/Catalog"} name={"Весь каталог"} className={"header__dropdown-content-catalog-link"} />
                     </div>
                     <div className="header__dropdown-content-product">
                         <h2 className="header__dropdown-content-title">Продукты по ценам</h2>
                         <div className="header__dropdown-ul">
                             <ul>
                                 <li><LinkUrl url={"/"} name={"Витамины и минералы"} className={"header__dropdown-content-title-link"} /></li>
-                                <li><LinkUrl url={"/"} name={"Аминакислоты и ВСАА"} className={"header__dropdown-content-title-link"} /></li>
+                                <li><LinkUrl url={"/"} name={"Аминокислоты и ВСАА"} className={"header__dropdown-content-title-link"} /></li>
                                 <li><LinkUrl url={"/"} name={"Карнитин"} className={"header__dropdown-content-title-link"} /></li>
                                 <li><LinkUrl url={"/"} name={"Специальные препараты"} className={"header__dropdown-content-title-link"} /></li>
                                 <li><LinkUrl url={"/"} name={"Батончики"} className={"header__dropdown-content-title-link"} /></li>
-                                <li><LinkUrl url={"/"} name={"Предтренировачные комплексы"} className={"header__dropdown-content-title-link"} /></li>
-                                <li><LinkUrl url={"/"} name={"Препараты для связок и сустовов"} className={"header__dropdown-content-title-link"} /></li>
+                                <li><LinkUrl url={"/"} name={"Предтренировочные комплексы"} className={"header__dropdown-content-title-link"} /></li>
+                                <li><LinkUrl url={"/"} name={"Препараты для связок и суставов"} className={"header__dropdown-content-title-link"} /></li>
                             </ul>
                         </div>
                     </div>

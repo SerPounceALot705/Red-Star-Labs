@@ -177,7 +177,7 @@ class WhereICanBuy extends Component {
                         </TabPanel>
                     </Tabs>
                 </section>
-                <Footer />
+                <section className="main"><Footer /></section>
             </div>
         )
     }

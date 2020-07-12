@@ -1,0 +1,11 @@
+.banner-photo__text {
+    color: #f0f0f0;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.7px;
+}
+
+.banner-photo__text span {
+    font-weight: 700;
+}   

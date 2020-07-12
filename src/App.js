@@ -6,6 +6,7 @@ import Home from "./pages/Home.js";
 import WhereICanBuy from "./pages/WhereICanBuy.js";
 import WholesaleCustomers from "./pages/WholesaleCustomers.js";
 import Contacts from "./pages/Contacts.js";
+import Catalog from "./pages/Catalog.js";
 import Card from "./pages/Card.js";
 
 class App extends Component {
@@ -31,6 +32,9 @@ class App extends Component {
                     </Route>
                     <Route path="/Contacts">
                         <Contacts/>
+                    </Route>
+                    <Route path="/Catalog">
+                        <Catalog/>
                     </Route>
                     <Route path="/Card">
                         <Card/>
