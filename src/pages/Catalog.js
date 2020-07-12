@@ -33,6 +33,7 @@ class Catalog extends Component {
                                     className={"logo-basic__photo"}
                                 />
                             </div>
+
                         </div>
                         <nav className="catalog__menu">
                             <Link to="/" className="catalog__menu-item">{"Главная страница > "}</Link>
@@ -54,11 +55,11 @@ class Catalog extends Component {
                                 </div>
                                 <div className="product-line__small-description">
                                     <p>
-                                        <span>Superior</span>
+                                        <span>Superior  </span>
                                     Line
                                 </p>
                                     <p>
-                                        <span>25</span>
+                                        <span>25  </span>
                                     продуктов в линейке
                                 </p>
                                 </div>
@@ -66,7 +67,8 @@ class Catalog extends Component {
                                     <p>Sports nutrition Red Star Labs corresponds to the high standards,
                                     but it's main distinctive feature s the astonishing power of products.</p>
                                 </div>
-                                <div className="product-line__spec-container">
+                                <div className="product-line__spec-main-container">
+
                                     <div className="product-line__spec">
                                         <Image
                                             src={require("../images/ico-spec.png").default}
@@ -75,29 +77,29 @@ class Catalog extends Component {
                                         />
                                         <p className="spec__desc">При интенсивном стиле тренеровок</p>
                                     </div>
-                                </div>
-                                <div className="product-line__spec">
+                                    <div className="product-line__spec">
                                     <Image
                                         src={require("../images/ico-spec2.png").default}
                                         alt={"icon-spec__photo"}
                                         className={"icon-spec__photo"}
                                     />
                                     <p className="spec__desc">Повышенный витаминный комплекс</p>
-                                </div>
-                                <div className="product-line__spec">
-                                    <Image
-                                        src={require("../images/ico-spec3.png").default}
-                                        alt={"icon-spec__photo"}
-                                        className={"icon-spec__photo"}
-                                    />
-                                    <p className="spec__desc">Для достижения быстрых резуальтатов</p>
+                                    </div>
+                                    <div className="product-line__spec">
+                                        <Image
+                                            src={require("../images/ico-spec3.png").default}
+                                            alt={"icon-spec__photo"}
+                                            className={"icon-spec__photo"}
+                                        />
+                                        <p className="spec__desc">Для достижения быстрых резуальтатов</p>
+                                    </div>
                                 </div>
                                 <div className="analytics__container">
                                     <ul>
-                                        <li>Содержание действующих вешеств</li>
-                                        <li>Витаминный комплекс</li>
-                                        <li>Содержания углеводов</li>
-                                        <li>Содержания углеводов</li>
+                                        <li className="analytics-item">Содержание действующих вешеств</li>
+                                        <li className="analytics-item">Витаминный комплекс</li>
+                                        <li className="analytics-item">Содержания углеводов</li>
+                                        <li className="analytics-item">Сахар</li>
                                     </ul>
                                 </div>
                             </div>

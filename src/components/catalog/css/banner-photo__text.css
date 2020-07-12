@@ -4,8 +4,10 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 26.7px;
+    width: 216px;
+    height: 43px;
 }
 
 .banner-photo__text span {
     font-weight: 700;
-}   
+}
