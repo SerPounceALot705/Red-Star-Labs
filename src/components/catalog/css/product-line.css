@@ -3,4 +3,5 @@
     flex-direction: row;
     justify-content: space-between;
     position: relative;
+    margin-bottom: 75px;
 }

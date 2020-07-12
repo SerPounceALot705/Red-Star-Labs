@@ -1,0 +1,16 @@
+.product-line__filters-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.product-line__filters-container p {
+    color: #000000;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 26.72px;
+    margin-right: 10px;
+}

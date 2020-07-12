@@ -1,0 +1,9 @@
+.product-line__catalog {
+    max-width: 1920px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}

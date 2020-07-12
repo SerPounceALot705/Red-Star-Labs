@@ -1,0 +1,9 @@
+.gallery-item__photo {
+    margin-right: 45px;
+    width: 493px;
+    height: 287px;
+}
+
+.gallery-item__photo:nth-child() {
+    margin-right: 0;
+}

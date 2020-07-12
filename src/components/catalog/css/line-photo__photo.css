@@ -1,4 +1,9 @@
 .line-photo__photo {
     position: absolute;
-    left: 35%;
+    left: 33%;
+    max-width: 1121px;
+    height: 628px;
+    z-index: 1;
+    margin-left: 35px;
+    top: -6%;
 }

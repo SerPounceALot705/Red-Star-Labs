@@ -1,0 +1,7 @@
+.catalog__gallery {
+    background-color: #ffffff;
+    padding-top: 58px;
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,23 @@
+.number-page {
+    width: 31px;
+    height: 29px;
+    color: #4a4a4a;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 17px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background-color: rgba(235, 236, 235, 0.5);
+    text-align: center;
+    margin-right: 9px;
+    line-height: 31.72px;
+    cursor: pointer;
+    
+}
+
+.number-page:nth-child(4) {
+    margin-right: 0;
+}
+
+.number-page:focus {
+    color: #a61313;
+}

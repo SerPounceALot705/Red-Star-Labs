@@ -1,0 +1,8 @@
+.product-line__cards {
+    border-top: rgba(0, 0, 0, 0.4) 1px solid;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 35px;
+    margin-bottom: 75px;
+}

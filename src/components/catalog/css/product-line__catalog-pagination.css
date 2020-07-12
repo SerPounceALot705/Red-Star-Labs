@@ -1,0 +1,7 @@
+.product-line__catalog-pagination {
+    display: flex;
+    justify-content: flex-end;
+    width: 150px;
+    margin-right: 0;
+    margin-left: auto;
+}

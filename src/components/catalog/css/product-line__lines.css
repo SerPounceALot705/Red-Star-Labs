@@ -1,0 +1,8 @@
+.product-line__lines {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-line__lines a {
+    margin-bottom: 15px;
+}

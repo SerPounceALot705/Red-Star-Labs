@@ -1,7 +1,4 @@
 .product-line__button {
-    position: absolute;
-    bottom: -20%;
-    left: 9%;
     display: flex;
     align-items: center;
     flex-direction: column;
