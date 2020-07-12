@@ -70,7 +70,7 @@ class DropDownMenu extends Component {
                                     {
                                         link: {
                                             text: "Для насыщения организма витаминами",
-                                            url: "About"
+                                            url: "Card"
                                         },
                                         logo: {
                                             url: require("../../../images/logobasic.png").default,
@@ -88,7 +88,7 @@ class DropDownMenu extends Component {
                                     {
                                         link: {
                                             text: "Для насыщения организма витаминами",
-                                            url: "About"
+                                            url: "Card"
                                         },
                                         logo: {
                                             url: require("../../../images/logoEssential.png").default,
@@ -108,7 +108,7 @@ class DropDownMenu extends Component {
                                     {
                                         link: {
                                             text: "Для насыщения организма витаминами",
-                                            url: "About"
+                                            url: "Card"
                                         },
                                         logo: {
                                             url: require("../../../images/logoEssential.png").default,
@@ -126,7 +126,7 @@ class DropDownMenu extends Component {
                                     {
                                         link: {
                                             text: "Для насыщения организма витаминами",
-                                            url: "About"
+                                            url: "Card"
                                         },
                                         logo: {
                                             url: require("../../../images/logoSuperior.png").default,

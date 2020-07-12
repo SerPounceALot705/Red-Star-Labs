@@ -1,0 +1,6 @@
+.product-card__description {
+    display: flex;
+    justify-content: center;
+    max-width: 1116px;
+    margin: 0 auto;
+}
