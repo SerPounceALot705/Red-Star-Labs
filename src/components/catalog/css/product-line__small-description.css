@@ -1,0 +1,19 @@
+.product-line__small-description p {
+    width: 128px;
+    color: #202020;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 23.72px;
+}
+
+.product-line__small-description p span {
+    font-weight: 700;
+}
+
+.product-line__small-description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,6 @@
+.product-line__spec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

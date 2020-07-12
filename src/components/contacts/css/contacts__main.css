@@ -1,6 +1,5 @@
 .contacts__main {
     background-image: url("../../../images/back-contacts.png");
     background-repeat: no-repeat;
-    background-size: cover;
     overflow: hidden;
 }

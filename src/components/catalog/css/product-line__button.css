@@ -1,0 +1,18 @@
+.product-line__button {
+    position: absolute;
+    bottom: -20%;
+    left: 9%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.product-line__button p {
+    color: #4a4a4a;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
