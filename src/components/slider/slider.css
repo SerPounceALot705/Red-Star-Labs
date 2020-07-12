@@ -27,3 +27,7 @@
     object-fit: cover;
     width: 100%;  
 }
+
+.awssld__timer {
+    opacity: 0;
+}

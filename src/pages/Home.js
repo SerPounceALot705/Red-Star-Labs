@@ -4,6 +4,7 @@ import Basket from "../components/header/js/basket.js";
 import ContactForm from "../components/contact-form/js/contact-form.js";
 import Footer from "../components/footer/js/footer.js";
 import AwesomeSlider from 'react-awesome-slider';
+import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import Image from "../components/image/image.js";
 import ProductCard from "../components/productCard/ProductCard.js";
 
@@ -17,15 +18,21 @@ import "../components/slider/slider.css"
 class Home extends Component {
     constructor(props) {
         super(props)
+
     }
 
     render() {
+        const AutoplaySlider = withAutoplay(AwesomeSlider);
+
         return (
             <div>
                 <section>
                     <div className="main">
                         <Header isDark={true} />
-                        <AwesomeSlider>
+                        <AutoplaySlider
+                            play={true}    
+                            interval={9000}
+                        >
                             <div>
                                 <Image
                                     src={require("../images/slider.png").default}
@@ -47,7 +54,7 @@ class Home extends Component {
                                     className={"slider__foto"}
                                 />
                             </div>
-                        </AwesomeSlider>
+                        </AutoplaySlider>
                     </div>
                     <div className="about-description">
                         <div className="about-description__top-container">

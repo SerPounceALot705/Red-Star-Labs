@@ -1,3 +1,5 @@
 .analytics__container {
     /*width: 100%;*/
+
+    transition: ease-in-out all 0.5s;
 }
