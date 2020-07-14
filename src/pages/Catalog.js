@@ -17,17 +17,40 @@ class Catalog extends Component {
             value: { min: 2, max: 10 },
             isLineContainer: false,
             isPhotoContainer: true,
-            selectBrand: {}
+            selectBrand: {},
+            brandButton: {
+                basic: require("../images/basic-line.png").default,
+                ess: require("../images/ess-lin.png").default,
+                super: require("../images/super-line.png").default,
+                beo: require("../images/beo-line.png").default
+            }
         };
 
         this.handlerTop = this.handlerTop.bind(this);
     }
 
-    handlerTop(value) {
+    handlerTop(e, value) {
+
+        const defaultBrand = {
+            basic: require("../images/basic-line.png").default,
+            ess: require("../images/ess-lin.png").default,
+            super: require("../images/super-line.png").default,
+            beo: require("../images/beo-line.png").default
+        }
+
+        switch(value.brand)
+        {
+            case "basic": defaultBrand.basic = require("../images/logobasic.png").default; break;
+            case "ess": defaultBrand.ess = require("../images/logoEssential.png").default; break;
+            case "super": defaultBrand.super = require("../images/super-line.png").default; break;
+            case "beo": defaultBrand.beo = require("../images/logoBeo.png").default; break;
+        }
+
         this.setState({
             isLineContainer: true,
             isPhotoContainer: false,
-            selectBrand: value
+            selectBrand: value,
+            brandButton: defaultBrand
         })
     }
 
@@ -83,7 +106,7 @@ class Catalog extends Component {
                             </ul>
                             <ul className="product-line__lines">
                                 <LinkUrl url={"/"} name={"Линейки"} className={"product-line__dropdown-title-link"} />
-                                <div onClick={() => this.handlerTop(
+                                <div onClick={(e) => this.handlerTop(e,
                                     {
                                         items: [
                                             { value: "95%", text: "Cодержание действующих веществ" },
@@ -91,16 +114,17 @@ class Catalog extends Component {
                                             { value: "70%", text: "Содержания углеводов" },
                                             { value: "20%", text: "Сахар" }
                                         ],
-                                        url: require("../images/line-logo.png").default
+                                        url: require("../images/line-logo.png").default,
+                                        brand: "basic"
                                     }
                                 )}>
                                     <Image
-                                        src={require("../images/basic-line.png").default}
+                                        src={this.state.brandButton.basic}
                                         alt={"basic-line"}
                                         className={"line__photo"}
                                     />
                                 </div>
-                                <div onClick={() => this.handlerTop(
+                                <div onClick={(e) => this.handlerTop(e,
                                     {
                                         items: [
                                             { value: "80%", text: "Cодержание действующих веществ" },
@@ -108,16 +132,17 @@ class Catalog extends Component {
                                             { value: "70%", text: "Содержания углеводов" },
                                             { value: "25%", text: "Сахар" }
                                         ],
-                                        url: require("../images/line-logo.png").default
+                                        url: require("../images/line-logo.png").default,
+                                        brand: "ess"
                                     }
                                 )}>
                                     <Image
-                                        src={require("../images/ess-lin.png").default}
+                                        src={this.state.brandButton.ess}
                                         alt={"ess-line"}
                                         className={"line__photo"}
                                     />
                                 </div>
-                                <div onClick={() => this.handlerTop(
+                                <div onClick={(e) => this.handlerTop(e,
                                     {
                                         items: [
                                             { value: "85%", text: "Cодержание действующих веществ" },
@@ -125,16 +150,17 @@ class Catalog extends Component {
                                             { value: "50%", text: "Содержания углеводов" },
                                             { value: "15%", text: "Сахар" }
                                         ],
-                                        url: require("../images/line-logo.png").default
+                                        url: require("../images/line-logo.png").default,
+                                        brand: "super"
                                     }
                                 )}>
                                     <Image
-                                        src={require("../images/super-line.png").default}
+                                        src={this.state.brandButton.super}
                                         alt={"superior-line"}
                                         className={"line__photo"}
                                     />
                                 </div>
-                                <div onClick={() => this.handlerTop(
+                                <div onClick={(e) => this.handlerTop(e,
                                     {
                                         items: [
                                             { value: "65%", text: "Cодержание действующих веществ" },
@@ -142,11 +168,12 @@ class Catalog extends Component {
                                             { value: "60%", text: "Содержания углеводов" },
                                             { value: "40%", text: "Сахар" }
                                         ],
-                                        url: require("../images/line-logo.png").default
+                                        url: require("../images/line-logo.png").default,
+                                        brand: "beo"
                                     }
                                 )}>
                                     <Image
-                                        src={require("../images/beo-line.png").default}
+                                        src={this.state.brandButton.beo}
                                         alt={"beo-line"}
                                         className={"line__photo"}
                                     />

@@ -47,8 +47,8 @@ class LineContainer extends Component {
                             />
                         </div>
                         <div className="product-line__small-description">
-                            <p><span>Superior</span>Line</p>
-                            <p><span>25</span>продуктов в линейке</p>
+                            <p><span>Superior </span>Line</p>
+                            <p><span>25 </span>продуктов в линейке</p>
                         </div>
                         <div className="product-line__description">
                             <p>Sports nutrition Red Star Labs corresponds to the high standards,
