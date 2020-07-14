@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import InputRange from 'react-input-range';
-
-
 import Header from "../components/header/header";
 import Footer from "../components/footer/js/footer";
 import Image from "../components/image/image.js";
 import LinkUrl from "../components/header/js/linkUrl.js";
+import LineContainer from "../components/lineContainer/LineContainer.js";
 
 import "../components/catalog/css/imports.css";
-
 
 class Catalog extends Component {
     constructor(props) {
@@ -17,113 +15,52 @@ class Catalog extends Component {
 
         this.state = {
             value: { min: 2, max: 10 },
+            isLineContainer: false,
+            isPhotoContainer: true,
+            selectBrand: {}
         };
+
+        this.handlerTop = this.handlerTop.bind(this);
+    }
+
+    handlerTop(value) {
+        this.setState({
+            isLineContainer: true,
+            isPhotoContainer: false,
+            selectBrand: value
+        })
     }
 
     render() {
+
+        function PhotoContainer() {
+            return (<div className="catalog__photo-container">
+                <Image
+                    src={require("../images/banner.png").default}
+                    alt={"banner__photo"}
+                    className={"banner__photo"}
+                />
+                <div className="banner-photo__container-info">
+                    <p className="banner-photo__text"><span>50%</span> на все товары линейки</p>
+                    <Image
+                        src={require("../images/logobasic.png").default}
+                        alt={"logo-basic__photo"}
+                        className={"logo-basic__photo"}
+                    />
+                </div>
+            </div>);
+        };
+
         return (
             <div className="catalog-main">
                 <Header />
                 <section className="catalog">
-                    <div className="catalog__photo-container">
-                        <Image
-                            src={require("../images/banner.png").default}
-                            alt={"banner__photo"}
-                            className={"banner__photo"}
-                        />
-                        <div className="banner-photo__container-info">
-                            <p className="banner-photo__text"><span>50%</span> на все товары линейки</p>
-                            <Image
-                                src={require("../images/logobasic.png").default}
-                                alt={"logo-basic__photo"}
-                                className={"logo-basic__photo"}
-                            />
-                        </div>
-                    </div>
-                    <section className="catalog__line-product">
-                        <Image
-                            src={require("../images/line-photo.png").default}
-                            alt={"line-photo__photo"}
-                            className={"line-photo__photo"}
-                        />
-                        <nav className="catalog__menu">
-                            <Link to="/" className="catalog__menu-item">{"Главная страница > "}</Link>
-                            <Link to="/" className="caralog__menu-item catalog__menu-item_active">{"Каталог продукции"}</Link>
-                        </nav>
-                        <section className="product-line">
-                            <div className="product-line__container">
-                                <div className="product-line-photo__container">
-                                    <Image
-                                        src={require("../images/line-logo.png").default}
-                                        alt={"line-logo__foto"}
-                                        className={"line-logo__photo"}
-                                    />
-                                    <Image
-                                        src={require("../images/pattern.png").default}
-                                        alt={"pattern__photo"}
-                                        className={"pattern__photo"}
-                                    />
-                                </div>
-                                <div className="product-line__small-description">
-                                    <p>
-                                        <span>Superior  </span>
-                                    Line
-                                </p>
-                                    <p>
-                                        <span>25  </span>
-                                    продуктов в линейке
-                                </p>
-                                </div>
-                                <div className="product-line__description">
-                                    <p>Sports nutrition Red Star Labs corresponds to the high standards,
-                                    but it's main distinctive feature s the astonishing power of products.</p>
-                                </div>
-                                <div className="product-line__spec-main-container">
+                    <nav className="catalog__menu">
+                        <Link to="/" className="catalog__menu-item">{"Главная страница > "}</Link>
+                        <Link to="/" className="caralog__menu-item catalog__menu-item_active">{"Каталог продукции"}</Link>
+                    </nav>
+                    {this.state.isLineContainer ? <LineContainer value={this.state.selectBrand} /> : <PhotoContainer />}
 
-                                    <div className="product-line__spec">
-                                        <Image
-                                            src={require("../images/ico-spec.png").default}
-                                            alt={"icon-spec__photo"}
-                                            className={"icon-spec__photo"}
-                                        />
-                                        <p className="spec__desc">При интенсивном стиле тренеровок</p>
-                                    </div>
-                                    <div className="product-line__spec">
-                                        <Image
-                                            src={require("../images/ico-spec2.png").default}
-                                            alt={"icon-spec__photo"}
-                                            className={"icon-spec__photo"}
-                                        />
-                                        <p className="spec__desc">Повышенный витаминный комплекс</p>
-                                    </div>
-                                    <div className="product-line__spec">
-                                        <Image
-                                            src={require("../images/ico-spec3.png").default}
-                                            alt={"icon-spec__photo"}
-                                            className={"icon-spec__photo"}
-                                        />
-                                        <p className="spec__desc">Для достижения быстрых резуальтатов</p>
-                                    </div>
-                                </div>
-                                <div className="analytics__container">
-                                    <ul>
-                                        <li className="analytics-item">Содержание действующих веществ</li>
-                                        <li className="analytics-item">Витаминный комплекс</li>
-                                        <li className="analytics-item">Содержания углеводов</li>
-                                        <li className="analytics-item">Сахар</li>
-                                    </ul>
-                                </div>
-                                <div className="product-line__button">
-                                    <p>Все характеристики</p>
-                                    <Image
-                                        src={require("../images/arrow.png").default}
-                                        alt={"arrow"}
-                                        className={"arrow__photo"}
-                                    />
-                                </div>
-                            </div>
-                        </section>
-                    </section>
                     <section className="product-line__catalog">
                         <div className="product-line-categories__container">
                             <ul className="product-line__categories">
@@ -146,26 +83,74 @@ class Catalog extends Component {
                             </ul>
                             <ul className="product-line__lines">
                                 <LinkUrl url={"/"} name={"Линейки"} className={"product-line__dropdown-title-link"} />
-                                <Image
-                                    src={require("../images/basic-line.png").default}
-                                    alt={"basic-line"}
-                                    className={"line__photo"}
-                                />
-                                <Image
-                                    src={require("../images/ess-lin.png").default}
-                                    alt={"ess-line"}
-                                    className={"line__photo"}
-                                />
-                                <Image
-                                    src={require("../images/super-line.png").default}
-                                    alt={"superior-line"}
-                                    className={"line__photo"}
-                                />
-                                <Image
-                                    src={require("../images/beo-line.png").default}
-                                    alt={"beo-line"}
-                                    className={"line__photo"}
-                                />
+                                <div onClick={() => this.handlerTop(
+                                    {
+                                        items: [
+                                            { value: "95%", text: "Cодержание действующих веществ" },
+                                            { value: "65%", text: "Витаминный комплекс" },
+                                            { value: "70%", text: "Содержания углеводов" },
+                                            { value: "20%", text: "Сахар" }
+                                        ],
+                                        url: require("../images/line-logo.png").default
+                                    }
+                                )}>
+                                    <Image
+                                        src={require("../images/basic-line.png").default}
+                                        alt={"basic-line"}
+                                        className={"line__photo"}
+                                    />
+                                </div>
+                                <div onClick={() => this.handlerTop(
+                                    {
+                                        items: [
+                                            { value: "80%", text: "Cодержание действующих веществ" },
+                                            { value: "40%", text: "Витаминный комплекс" },
+                                            { value: "70%", text: "Содержания углеводов" },
+                                            { value: "25%", text: "Сахар" }
+                                        ],
+                                        url: require("../images/line-logo.png").default
+                                    }
+                                )}>
+                                    <Image
+                                        src={require("../images/ess-lin.png").default}
+                                        alt={"ess-line"}
+                                        className={"line__photo"}
+                                    />
+                                </div>
+                                <div onClick={() => this.handlerTop(
+                                    {
+                                        items: [
+                                            { value: "85%", text: "Cодержание действующих веществ" },
+                                            { value: "65%", text: "Витаминный комплекс" },
+                                            { value: "50%", text: "Содержания углеводов" },
+                                            { value: "15%", text: "Сахар" }
+                                        ],
+                                        url: require("../images/line-logo.png").default
+                                    }
+                                )}>
+                                    <Image
+                                        src={require("../images/super-line.png").default}
+                                        alt={"superior-line"}
+                                        className={"line__photo"}
+                                    />
+                                </div>
+                                <div onClick={() => this.handlerTop(
+                                    {
+                                        items: [
+                                            { value: "65%", text: "Cодержание действующих веществ" },
+                                            { value: "70%", text: "Витаминный комплекс" },
+                                            { value: "60%", text: "Содержания углеводов" },
+                                            { value: "40%", text: "Сахар" }
+                                        ],
+                                        url: require("../images/line-logo.png").default
+                                    }
+                                )}>
+                                    <Image
+                                        src={require("../images/beo-line.png").default}
+                                        alt={"beo-line"}
+                                        className={"line__photo"}
+                                    />
+                                </div>
                             </ul>
                             <ul className="product-line__targets">
                                 <li>

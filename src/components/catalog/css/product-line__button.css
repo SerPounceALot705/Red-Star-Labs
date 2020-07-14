@@ -3,6 +3,19 @@
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    width: 142px;
+    margin-left: 17%;
+    margin-bottom: 80px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-line__button:hover {
+    cursor: pointer;
+}
+
+.product-line__button:hover p {
+    text-decoration: underline;
 }
 
 .product-line__button p {

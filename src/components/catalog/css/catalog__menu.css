@@ -1,4 +1,6 @@
 .catalog__menu {
+    width: 80%;
+    margin: auto;
     margin-bottom: 52px;
     margin-top: 35px;
 }

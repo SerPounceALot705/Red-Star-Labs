@@ -3,7 +3,6 @@ import React, { Component } from "react";
 class AnalyticsItem extends Component {
     constructor(props) {
         super(props)
-        console.log(this.props.items, "AnalyticsItem");
     }
 
     render() {
