@@ -16,4 +16,4 @@ class AnalyticsItem extends Component {
     }
 }
 
-export default AnalyticsItem
+export default AnalyticsItem;

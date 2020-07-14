@@ -1,0 +1,14 @@
+.calc__button {
+    height: 50px;
+    opacity: 0.34;
+    border: none;
+    width: 25px;
+    color: #202020;
+    font-family: "TTFirsNeue-DemiBold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18.72px;
+    letter-spacing: 0.5px;
+    margin-bottom: 61px;
+    font-weight: bold;
+}

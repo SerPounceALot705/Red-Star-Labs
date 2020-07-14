@@ -4,16 +4,22 @@ import Header from "../components/header/header.js";
 import Footer from "../components/footer/js/footer.js";
 import Image from "../components/image/image.js";
 import Calculator from "../components/calculator/Calculator.js";
+import AnalyticsItem from "../components/analyticsItem/analyticsItem.js";
 
 import "../components/card.css";
 import "../components/card/css/imports.css";
 class Card extends Component {
 
+    constructor(props) {
+        super(props)
+    }
+
     render() {
         return (
             <div className="main">
-                <Header />
+
                 <section className="card">
+                    <Header />
                     <div className="card__container">
                         <nav className="contacts__menu">
                             <Link to="/" className="contacts__menu-item">{"Главная страница > "}</Link>
@@ -89,13 +95,16 @@ class Card extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <label className="label__title">Вкус:</label>
-                                <select className="card-select">
-                                    <option>апельсин, манго и маракуйя</option>
-                                </select>
-                                <div className="product-price">
-                                    <Calculator price={1000} /> &#8381;
-                                <button className="card__button">Добавить в корзину</button>
+                                <div className="label__container">
+                                    <label className="label__title">Вкус:</label>
+                                    <select className="card-select">
+                                        <option>апельсин, манго и маракуйя</option>
+                                    </select>
+                                </div>
+                                <div className="card-price__container">
+                                    <Calculator price={1000}
+                                    />
+                                    <button className="card__button">Добавить в корзину</button>
                                 </div>
                                 <div className="product-line__button">
                                     <p>Все характеристики</p>
@@ -109,30 +118,89 @@ class Card extends Component {
                             <Image
                                 src={require("../images/premiumWhey2.png").default}
                                 alt={"logoSuperior"}
+                                className={"logoSuperior"}
                             />
                         </div>
                     </div>
-                    <div>
+                </section>
+                <section className="card__detailed-description">
+                    <div className="card__detailed-desc-first-container">
+                        <h2 className="card__detailed-title">
+                            Изолят сывороточного белка
+                        </h2>
+                        <p className="card__detailed-text">Это не просто еще один вид протеинового коктейля.
+                        Из высококачественного изолята сывороточного протеина
+                        мы сделали продукт для приготовления легкого,
+                        освежающего коктейля. По вкусу он больше напоминает сок.
+                        </p>
+                        <p className="card__detailed-text">
+                            В линейке представлено 5 великолепных фруктовых
+                            вкусов, среди которых горький лимон, апельсин с манго,
+                            персиковый чай, мохито и фруктовая карамель.
+                            </p>
+                        <h2 className="card__detailed-title">Для каких целей</h2>
                         <div>
-                            <h2>Изолят сывороточного белка</h2>
-                            <p>Это не просто еще один вид протеинового коктейля.
-                            Из высококачественного изолята сывороточного протеина
-                            мы сделали продукт для приготовления легкого,
-                            освежающего коктейля. По вкусу он больше напоминает сок.
-                            </p>
-                            <p>
-                                В линейке представлено 5 великолепных фруктовых
-                                вкусов, среди которых горький лимон, апельсин с манго,
-                                персиковый чай, мохито и фруктовая карамель.
-                            </p>
-                            <h2>Для каких целей</h2>
-                            <div>
+                            <div className="product-line__spec-main-container">
 
+                                <div className="product-line__spec">
+                                    <Image
+                                        src={require("../images/ico-spec.png").default}
+                                        alt={"icon-spec__photo"}
+                                        className={"icon-spec__photo"}
+                                    />
+                                    <p className="spec__desc">При интенсивном стиле тренеровок</p>
+                                </div>
+                                <div className="product-line__spec">
+                                    <Image
+                                        src={require("../images/ico-spec2.png").default}
+                                        alt={"icon-spec__photo"}
+                                        className={"icon-spec__photo"}
+                                    />
+                                    <p className="spec__desc">Повышенный витаминный комплекс</p>
+                                </div>
+                                <div className="product-line__spec">
+                                    <Image
+                                        src={require("../images/ico-spec3.png").default}
+                                        alt={"icon-spec__photo"}
+                                        className={"icon-spec__photo"}
+                                    />
+                                    <p className="spec__desc">Для достижения быстрых резуальтатов</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div className="card__detailed-desc-second-container">
+                        <h2 className="card__detailed-title">
+                            Ключевые преимущества
+                            </h2>
+                        <p className="card__detailed-text">20 г протеина;</p>
+                        <p className="card__detailed-text">легкий и освежающий;</p>
+                        <p className="card__detailed-text">без молочного вкуса и текстуры;</p>
+                        <p className="card__detailed-text">4 г BCAA и 3 г глютамина;</p>
+                        <p className="card__detailed-text">мало сахара;</p>
+                        <p className="card__detailed-text">фруктовые вкусы.</p>
+                        <div className="card__analytics">
+                            <AnalyticsItem
+                                items={[
+                                    { value: "85%", text: "Cодержание действующих веществ" },
+                                    { value: "65%", text: "Витаминный комплекс" },
+                                    { value: "70%", text: "Содержания углеводов" },
+                                    { value: "20%", text: "Сахар" }
+                                ]}
+                            />
+                        </div>
+                        <div className="card__detailed-desc-third-container">
+                            <h2 className="card__detailed-title">Состав</h2>
+                            <table>
+                                <tbody>
+                            <tr><td></td><td>40<span>г</span></td></tr>
+                            </tbody>
+                            </table>  
+                        </div>
+                        </div>
                 </section>
-                <Footer />
+
+                    <Footer />
             </div>
         )
     }

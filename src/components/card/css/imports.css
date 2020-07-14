@@ -1,3 +1,4 @@
+@import "./card__container.css";
 @import "./card-description__main-container.css";
 @import "./card__description-title.css";
 @import "./card__subtitle.css";
@@ -15,4 +16,8 @@
 @import "./superior__photo.css";
 @import "./label__title.css";
 @import "./card-select.css";
-@import "./product-price.css";
+@import "./card__product-price.css";
+@import "./label__container.css";
+@import "./card__button.css";
+@import "./card-price__container.css";
+@import "./logoSuperior.css";

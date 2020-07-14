@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import "./calc__container.css";
+import "./calc__input.css";
+import "./calc__button.css";
+import "./../card/css/card__product-price.css";
 
 class Calculator extends Component {
     constructor(props) {
@@ -49,11 +53,11 @@ class Calculator extends Component {
 
     render() {
         return (
-            <div>
-                <span>{this.state.sum}</span>
-                <button onClick={() => this.handlerMinusSum()}>-</button>
-                <input type="number" value={this.state.count} onChange={this.handlerChangeSum} />
-                <button onClick={() => this.handlerPlusSum()}>+</button>
+            <div className="calc__container">
+                <span className="card__product-price">{this.state.sum}&#8381;</span>
+                <button className="calc__button" onClick={() => this.handlerMinusSum()}>-</button>
+                <input  className="calc__input" type="number" value={this.state.count} onChange={this.handlerChangeSum}  />
+                <button className="calc__button" onClick={() => this.handlerPlusSum()}>+</button>
             </div>
         )
     }

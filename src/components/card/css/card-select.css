@@ -1,5 +1,6 @@
 .card-select {
-    max-width: 405px;
+    width: 377px;
+    max-width: 377px;
     height: 40px;
     color: #202020;
     font-family: "TTFirsNeue-Regular";
@@ -8,4 +9,6 @@
     line-height: 28.75px;
     letter-spacing: 0.38px;
     margin-bottom: 45px;
+    background-color: rgba(197, 197, 197, 0.51);
+    border: none;
 }
