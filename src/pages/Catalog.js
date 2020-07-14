@@ -6,6 +6,7 @@ import Footer from "../components/footer/js/footer";
 import Image from "../components/image/image.js";
 import LinkUrl from "../components/header/js/linkUrl.js";
 import LineContainer from "../components/lineContainer/LineContainer.js";
+import Product from "../components/product/Product.js";
 
 import "../components/catalog/css/imports.css";
 
@@ -14,7 +15,11 @@ class Catalog extends Component {
         super(props)
 
         this.state = {
-            value: { min: 2, max: 10 },
+            range: {
+                value: {min: 1500, max: 2500},
+                min: 0,
+                max: 5000
+            },
             isLineContainer: false,
             isPhotoContainer: true,
             selectBrand: {},
@@ -23,10 +28,123 @@ class Catalog extends Component {
                 ess: require("../images/ess-lin.png").default,
                 super: require("../images/super-line.png").default,
                 beo: require("../images/beo-line.png").default
-            }
+            },
+            products: [
+                {
+                    src: require("../images/product.png").default,
+                    alt: "product",
+                    text: "Протеин Meal Whey 800г.",
+                    price: "2400 руб",
+                    url: "/Card"
+                },
+                {
+                    src: require("../images/product.png").default,
+                    alt: "product",
+                    text: "Протеин Meal Whey 800г.",
+                    price: "2400 руб",
+                    url: "/Card"
+                },
+                {
+                    src: require("../images/product.png").default,
+                    alt: "product",
+                    text: "Протеин Meal Whey 800г.",
+                    price: "2400 руб",
+                    url: "/Card"
+                },
+                {
+                    src: require("../images/product.png").default,
+                    alt: "product",
+                    text: "Протеин Meal Whey 800г.",
+                    price: "2400 руб",
+                    url: "/Card"
+                },
+                {
+                    src: require("../images/product.png").default,
+                    alt: "product",
+                    text: "Протеин Meal Whey 800г.",
+                    price: "2400 руб",
+                    url: "/Card"
+                },
+                {
+                    src: require("../images/product.png").default,
+                    alt: "product",
+                    text: "Протеин Meal Whey 800г.",
+                    price: "2400 руб",
+                    url: "/Card"
+                },
+                {
+                    src: require("../images/product.png").default,
+                    alt: "product",
+                    text: "Протеин Meal Whey 800г.",
+                    price: "2400 руб",
+                    url: "/Card"
+                },
+                {
+                    src: require("../images/product.png").default,
+                    alt: "product",
+                    text: "Протеин Meal Whey 800г.",
+                    price: "2400 руб",
+                    url: "/Card"
+                },
+                {
+                    src: require("../images/product.png").default,
+                    alt: "product",
+                    text: "Протеин Meal Whey 800г.",
+                    price: "2400 руб",
+                    url: "/Card"
+                },
+                {
+                    src: require("../images/product.png").default,
+                    alt: "product",
+                    text: "Протеин Meal Whey 800г.",
+                    price: "2400 руб",
+                    url: "/Card"
+                },
+                {
+                    src: require("../images/product.png").default,
+                    alt: "product",
+                    text: "Протеин Meal Whey 800г.",
+                    price: "2400 руб",
+                    url: "/Card"
+                },
+                {
+                    src: require("../images/product.png").default,
+                    alt: "product",
+                    text: "Протеин Meal Whey 800г.",
+                    price: "2400 руб",
+                    url: "/Card"
+                },
+                {
+                    src: require("../images/product.png").default,
+                    alt: "product",
+                    text: "Протеин Meal Whey 800г.",
+                    price: "2400 руб",
+                    url: "/Card"
+                },
+                {
+                    src: require("../images/product.png").default,
+                    alt: "product",
+                    text: "Протеин Meal Whey 800г.",
+                    price: "2400 руб",
+                    url: "/Card"
+                },
+            ]
         };
 
         this.handlerTop = this.handlerTop.bind(this);
+        this.habdlerRange = this.habdlerRange.bind(this);
+    }
+
+    habdlerRange(value) {
+        const defaultValue = {
+            value: value,
+            min: this.state.range.min,
+            max: this.state.range.max,
+        }
+
+        this.setState({
+            range: defaultValue
+        })
     }
 
     handlerTop(e, value) {
@@ -38,8 +156,7 @@ class Catalog extends Component {
             beo: require("../images/beo-line.png").default
         }
 
-        switch(value.brand)
-        {
+        switch (value.brand) {
             case "basic": defaultBrand.basic = require("../images/logobasic.png").default; break;
             case "ess": defaultBrand.ess = require("../images/logoEssential.png").default; break;
             case "super": defaultBrand.super = require("../images/super-line.png").default; break;
@@ -209,269 +326,19 @@ class Catalog extends Component {
                                     <option className="product-line__option">Вкус 3</option>
                                 </select>
                                 <p>Цена</p>
+
                                 <InputRange
-                                    maxValue={100}
-                                    minValue={0}
-                                    value={this.state.value}
-                                    onChange={value => this.setState({ value })} />
+                                    draggableTrack
+                                    maxValue={this.state.range.max}
+                                    minValue={this.state.range.min}
+                                    value={this.state.range.value}
+                                    onChange={value => this.habdlerRange(value)}
+                                    onChangeComplete={value => console.log(value)} />
                             </div>
                             <div className="product-line__cards">
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="product-line__card">
-                                    <Image
-                                        src={require("../images/product.png").default}
-                                        alt={"product"}
-                                        className={"product__photo"}
-                                    />
-                                    <p className="product-description">Протеин Meal Whey 800г.</p>
-                                    <div className="product__container">
-                                        <p className="product-price">2400 руб</p>
-                                        <Image
-                                            src={require("../images/RED-basket.png").default}
-                                            alt={"red-basket"}
-                                            className={"red-basket__photo"}
-                                        />
-                                    </div>
-                                </div>
+                                {this.state.products.map((item, index) => {
+                                    return <Product key={index} product={item} />
+                                })}
                             </div>
                             <div className="product-line__catalog-pagination">
                                 <button className="button-pagination-left"></button>
