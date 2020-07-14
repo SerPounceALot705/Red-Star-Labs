@@ -30,3 +30,12 @@
 @import "./card__detailed-text.css";
 @import "./card__analytics.css";
 @import "./card__table-text.css";
+@import "./card__table-sub.css";
+@import "./card__table-border.css";
+
+@import "./card__rewiew.css";
+@import "./card-rewiew-rating-container.css";
+@import "./card__rewiew-title.css";
+@import "./card__rewiew-form-subtitle.css";
+@import "./card__input.css";
+@import "./card__select-input.css";

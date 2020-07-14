@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import ReactStars from 'react-stars'
+
 import Header from "../components/header/header.js";
 import Footer from "../components/footer/js/footer.js";
 import Image from "../components/image/image.js";
 import Calculator from "../components/calculator/Calculator.js";
 import AnalyticsItem from "../components/analyticsItem/analyticsItem.js";
+
 
 import "../components/card.css";
 import "../components/card/css/imports.css";
@@ -14,7 +17,15 @@ class Card extends Component {
         super(props)
     }
 
+
+
+
     render() {
+
+        const ratingChanged = (newRating) => {
+            console.log(newRating)
+        }
+
         return (
             <div className="main">
 
@@ -192,32 +203,107 @@ class Card extends Component {
                     </div>
                     <div className="card__detailed-desc-third-container">
                         <h2 className="card__detailed-title">Состав</h2>
-                        <table>
+                        <table className="card__table-border">
                             <tbody>
-                                <tr><td className="card__table-text">Порция</td><td className="card__table-text">40<span className="card__table-sub">г</span></td></tr>
+                                <tr><td className="card__table-text">Порция</td><td className="card__table-text">40<span className="card__table-sub"> г</span></td></tr>
                                 <tr><td className="card__table-text">Количество порций</td><td className="card__table-text">20<span className="card__table-sub"></span></td></tr>
-                                <tr><td className="card__table-text">Калории</td><td className="card__table-text">140<span className="card__table-sub">ккал</span></td></tr>
-                                <tr><td className="card__table-text">Калории из жиров</td><td className="card__table-text">18<span className="card__table-sub">ккал</span></td></tr>
+                                <tr><td className="card__table-text">Калории</td><td className="card__table-text">140<span className="card__table-sub"> ккал</span></td></tr>
+                                <tr><td className="card__table-text">Калории из жиров</td><td className="card__table-text">18<span className="card__table-sub"> ккал</span></td></tr>
                                 <tr><td className="card__table-text">Всего жиров</td><td className="card__table-text">2<span className="card__table-sub"></span></td></tr>
                                 <tr><td className="card__table-text">Глюкоза</td><td className="card__table-text">2,1<span className="card__table-sub"></span></td></tr>
                                 <tr><td className="card__table-text">Белка</td><td className="card__table-text">28<span className="card__table-sub"></span></td></tr>
-                                <tr><td className="card__table-text">Витамин А</td><td className="card__table-text">0,21<span className="card__table-sub">мг</span></td></tr>
-                                <tr><td className="card__table-text">Витамин Д3</td><td className="card__table-text">1,8<span className="card__table-sub">мкг</span></td></tr>
-                                <tr><td className="card__table-text">Витамин Е</td><td className="card__table-text">1,2<span className="card__table-sub">мг</span></td></tr>
-                                <tr><td className="card__table-text">Витамин В1</td><td className="card__table-text">0,21<span className="card__table-sub">мг</span></td></tr>
-                                <tr><td className="card__table-text">Витамин В2</td><td className="card__table-text">0,21<span className="card__table-sub">мг</span></td></tr>
-                                <tr><td className="card__table-text">Витамин В6</td><td className="card__table-text">0,21<span className="card__table-sub">мг</span></td></tr>
-                                <tr><td className="card__table-text">Ниацин</td><td className="card__table-text">3,15<span className="card__table-sub">мг</span></td></tr>
-                                <tr><td className="card__table-text">Фолиевая кислота</td><td className="card__table-text">0,08<span className="card__table-sub">мг</span></td></tr>
-                                <tr><td className="card__table-text">Пантотеновая кислота</td><td className="card__table-text">1,15<span className="card__table-sub">мг</span></td></tr>
-                                <tr><td className="card__table-text">Биотин</td><td className="card__table-text">0,031<span className="card__table-sub">мг</span></td></tr>
-                                <tr><td className="card__table-text">Витамин В12</td><td className="card__table-text">0,525<span className="card__table-sub">мкг</span></td></tr>
-                                <tr><td className="card__table-text">Витамин С</td><td className="card__table-text">147<span className="card__table-sub">мг</span></td></tr>
+                                <tr><td className="card__table-text">Витамин А</td><td className="card__table-text">0,21<span className="card__table-sub"> мг</span></td></tr>
+                                <tr><td className="card__table-text">Витамин Д3</td><td className="card__table-text">1,8<span className="card__table-sub"> мкг</span></td></tr>
+                                <tr><td className="card__table-text">Витамин Е</td><td className="card__table-text">1,2<span className="card__table-sub"> мг</span></td></tr>
+                                <tr><td className="card__table-text">Витамин В1</td><td className="card__table-text">0,21<span className="card__table-sub"> мг</span></td></tr>
+                                <tr><td className="card__table-text">Витамин В2</td><td className="card__table-text">0,21<span className="card__table-sub"> мг</span></td></tr>
+                                <tr><td className="card__table-text">Витамин В6</td><td className="card__table-text">0,21<span className="card__table-sub"> мг</span></td></tr>
+                                <tr><td className="card__table-text">Ниацин</td><td className="card__table-text">3,15<span className="card__table-sub"> мг</span></td></tr>
+                                <tr><td className="card__table-text">Фолиевая кислота</td><td className="card__table-text">0,08<span className="card__table-sub"> мг</span></td></tr>
+                                <tr><td className="card__table-text">Пантотеновая кислота</td><td className="card__table-text">1,15<span className="card__table-sub" > мг</span></td></tr>
+                                <tr><td className="card__table-text">Биотин</td><td className="card__table-text">0,031<span className="card__table-sub"> мг</span></td></tr>
+                                <tr><td className="card__table-text">Витамин В12</td><td className="card__table-text">0,525<span className="card__table-sub"> мкг</span></td></tr>
+                                <tr><td className="card__table-text">Витамин С</td><td className="card__table-text">147<span className="card__table-sub"> мг</span></td></tr>
                             </tbody>
                         </table>
                     </div>
                 </section>
-
+                <section className="card__rewiew">
+                    <div className="card__rewiew-form-container">
+                        <h2 className="card__rewiew-title">Оставить свой отзыв</h2>
+                        <form className="card__rewiew-form-container">
+                            <div className="card-rewiew-rating-container">
+                                <h4 className="card__rewiew-form-subtitle">Пожалуйста поставьте оценку</h4>
+                                <div>
+                                    <ReactStars
+                                        count={5}
+                                        onChange={ratingChanged}
+                                        size={24}
+                                        color2={'#ad1410'} />
+                                </div>
+                            </div>
+                            <input input className="card__input" placeholder="* Имя" type="text" minLength="2" maxLength="30" required />
+                            <input className="card__input" placeholder="* Email" type="email" minLength="2" maxLength="30" required />
+                            <div className="card__rewiew-input-container">
+                                <input className="card__input" placeholder="* Тема" type="text" minLength="2" maxLength="30" required />
+                                <textarea className="card__select-input" placeholder="Сообщение" type="text" minLength="2" maxLength="30" required />
+                            </div>
+                        </form>
+                    </div>
+                    <div className="card__rewiew-container">
+                        <div className="card__user-rewiew">
+                            <div className="card__user-rewiew-info">
+                                <p className="user-name">Кирилл</p>
+                                <p className="date">21.03.2020</p>
+                            </div>
+                            <div className="user-rewiew">
+                                <h4 className="user-rewiew__title">Очень вкусный протеин</h4>
+                                <p className="rewiew">С другой стороны сложившаяся структура организации в
+                                значительной степени обуславливает создание позиций, занимаемых участниками
+                                в отношении поставленных задач. Повседневная практика показывает, что рамки и
+                                место обучения кадров позволяет оценить значение соответствующий условий активизации.
+                                Значимость этих проблем настолько очевидна, что новая модель организационной
+                                деятельности представляет собой интересный эксперимент проверки существенных
+                                финансовых и административных условий. Равным образом консультация с широким
+                                активом представляет собой интересный эксперимент проверки форм развития.</p>
+                            </div>
+                        </div>
+                        <div className="card__user-rewiew">
+                            <div className="card__user-rewiew-info">
+                                <p className="user-name">Кирилл</p>
+                                <p className="date">21.03.2020</p>
+                            </div>
+                            <div className="user-rewiew">
+                                <h4 className="user-rewiew__title">Очень вкусный протеин</h4>
+                                <p className="rewiew">С другой стороны сложившаяся структура организации в
+                                значительной степени обуславливает создание позиций, занимаемых участниками
+                                в отношении поставленных задач. Повседневная практика показывает, что рамки и
+                                место обучения кадров позволяет оценить значение соответствующий условий активизации.
+                                Значимость этих проблем настолько очевидна, что новая модель организационной
+                                деятельности представляет собой интересный эксперимент проверки существенных
+                                финансовых и административных условий. Равным образом консультация с широким
+                                активом представляет собой интересный эксперимент проверки форм развития.</p>
+                            </div>
+                        </div>
+                        <div className="card__user-rewiew">
+                            <div className="card__user-rewiew-info">
+                                <p className="user-name">Кирилл</p>
+                                <p className="date">21.03.2020</p>
+                            </div>
+                            <div className="user-rewiew">
+                                <h4 className="user-rewiew__title">Очень вкусный протеин</h4>
+                                <p className="rewiew">С другой стороны сложившаяся структура организации в
+                                значительной степени обуславливает создание позиций, занимаемых участниками
+                                в отношении поставленных задач. Повседневная практика показывает, что рамки и
+                                место обучения кадров позволяет оценить значение соответствующий условий активизации.
+                                Значимость этих проблем настолько очевидна, что новая модель организационной
+                                деятельности представляет собой интересный эксперимент проверки существенных
+                                финансовых и административных условий. Равным образом консультация с широким
+                                активом представляет собой интересный эксперимент проверки форм развития.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <Footer />
             </div>
         )

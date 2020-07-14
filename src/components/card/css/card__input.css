@@ -1,0 +1,14 @@
+.card__input {
+    width: 214px;
+    max-width: 214px;
+    height: 54px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3%;
+}
+
+.card__input:nth-child(1) {
+    width: 543px;
+    max-width: 543px;
+    height: 54px;
+}

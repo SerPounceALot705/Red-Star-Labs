@@ -5,5 +5,9 @@
     font-weight: 400;
     line-height: 18.72px;
     letter-spacing: 0.5px;
-    font-weight: normal;
+    font-weight: normal;  
+}
+
+td .card__table-text {
+    border-spacing: 5px;
 }

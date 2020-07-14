@@ -1,10 +1,10 @@
 .card__table-sub {
     color: #202020;
     font-family: "TTFirsNeue-Regular";
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 18.72px;
     letter-spacing: 0.5px;
     font-weight: normal;
-    
+    opacity: 0.5;
 }
