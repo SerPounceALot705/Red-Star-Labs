@@ -1,0 +1,10 @@
+.card__title {
+    color: #202020;
+    font-family: "TTFirsNeue-DemiBold";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 23.72px;
+    text-transform: uppercase;
+    letter-spacing: 0.71px;
+    margin-bottom: 17px;
+}
