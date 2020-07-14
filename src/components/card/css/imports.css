@@ -21,3 +21,12 @@
 @import "./card__button.css";
 @import "./card-price__container.css";
 @import "./logoSuperior.css";
+
+
+@import "./card__detailed-description.css";
+@import "./card__detailed-desc-first-container.css";
+@import "./card__detailed-desc-second-container.css";
+@import "./card__detailed-title.css";
+@import "./card__detailed-text.css";
+@import "./card__analytics.css";
+@import "./card__table-text.css";

@@ -1,0 +1,22 @@
+.card__detailed-text {
+    width: 472px;
+    color: #202020;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.72px;
+    letter-spacing: 0.46px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.card__detailed-text-sec {
+    width: 472px;
+    color: #202020;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.72px;
+    letter-spacing: 0.46px;
+    text-align: justify;
+}
