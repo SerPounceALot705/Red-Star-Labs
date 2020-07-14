@@ -3,6 +3,37 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    height: 1080px;
+    max-width: 100%;
+    height: auto;
     position: relative;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .main-about {
+        
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .main-about {
+       
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .main-about {
+        
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .main-about {
+
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .main-about {
+
+    }
 }

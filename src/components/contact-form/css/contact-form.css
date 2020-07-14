@@ -1,5 +1,6 @@
 .contact-form {
     display: flex;
+    flex-direction: row;
     background-color: #ededed;
     width: 100%;
     height: auto;

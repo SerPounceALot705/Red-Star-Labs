@@ -60,3 +60,19 @@
         font-size: 9px;
     }
 }
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .footer__nav-social {
+       order: 2; 
+       margin: 0 auto;
+       margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px)  {
+    .footer__nav-social {
+        order: 2; 
+        margin: 0 auto;
+        margin-top: 200px;
+     }
+}

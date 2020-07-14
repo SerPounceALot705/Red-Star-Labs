@@ -32,3 +32,23 @@
         margin-left: 25px;
     }
 }
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .footer__logo {
+       order: 2; 
+       margin-right: 0;
+       margin-left: auto;
+       width: 150px;
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px)  {
+    .footer__logo {
+        order: 2; 
+        margin-right: 0;
+        margin-left: auto;
+        width: 150px;
+        height: 75px;
+     }
+}

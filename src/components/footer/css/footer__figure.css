@@ -36,3 +36,15 @@
         right: -126%;
     }
 }
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .footer__figure {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .footer__figure {
+        display: none;
+    }
+}

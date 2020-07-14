@@ -1,3 +1,17 @@
 .footer__text-container {
     margin-top: 35px;
 }
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .footer__text-container {
+       order: 2;
+       align-items: center;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .footer__text-container {
+        order: 2;
+        align-items: center;
+     }
+}

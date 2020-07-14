@@ -5,6 +5,7 @@ import ContactForm from "../components/contact-form/js/contact-form.js";
 import Footer from "../components/footer/js/footer.js";
 import Image from "../components/image/image.js";
 
+
 import "../components/main-about.css";
 import "../components/about-brand/css/about-brand.css";
 import "../components/about-brand/css/about__menu-item.css";
@@ -15,7 +16,6 @@ import "../components/about-desctiption/css/red-star-labs__logo.css";
 import "../components/about-desctiption/css/about-description.css";
 import "../components/about-desctiption/css/about-description-brand-text.css";
 import "../components/about-desctiption/css/about-description__bottom-container.css";
-//import "../components/about-desctiption/css/product-photo.css";
 import "../components/about-desctiption/css/about-description-igredients-text.css";
 import "../components/our-mission/css/our-mission.css";
 import "../components/our-mission/css/our-mission__title.css";
@@ -119,9 +119,7 @@ class About extends Component {
                         </div>
                     </div>
                 </section>
-                <section>
                     <ContactForm />
-                </section>
                 <footer className="main">
                     <Footer />
                 </footer>

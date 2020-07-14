@@ -43,3 +43,23 @@
         font-size: 9px;
     }
 }
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .footer__text {
+        margin: 0 auto;
+        margin-top: 75px;
+        align-items: center;
+        width: 80%;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px)  {
+    .footer__text {
+        margin: 0 auto;
+        margin-top: 75px;
+        align-items: center;
+        width: 80%;
+        text-align: justify;
+    }
+}

@@ -1,7 +1,7 @@
 .basket {
     position: absolute;
-    top: 67px;
-    right: -95px;
+    top: 45%;
+    right: -7%;
 }
 
 
@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     .basket {
-        top: 52px;
-        right: -55px;
+        top: 50%;
+        right: -4%;
     }
 }

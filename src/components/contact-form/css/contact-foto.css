@@ -48,3 +48,24 @@
         margin-right: 0;
     }
 }
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+    .contact-foto {
+        order: 2;
+        margin-top: 0;
+        margin-right: 0;
+        max-width: 425px;
+        height: 321px;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contact-foto {
+        order: 2;
+        margin-top: 0;
+        margin-right: 0;
+        max-width: 375px;
+        height: 282px;
+    }
+}
