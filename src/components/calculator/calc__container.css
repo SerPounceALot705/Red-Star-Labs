@@ -1,0 +1,5 @@
+.calc__container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+}

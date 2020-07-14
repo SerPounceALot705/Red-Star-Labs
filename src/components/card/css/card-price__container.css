@@ -1,0 +1,5 @@
+.card-price__container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 90px;
+}

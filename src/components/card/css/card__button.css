@@ -1,0 +1,11 @@
+.card__button {
+    max-width: 184px;
+    height: 50px;
+    background-color: #ac140f;
+    color: #ffffff;
+    font-family: "TTFirsNeue-DemiBold";
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+}
