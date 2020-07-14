@@ -1,4 +1,5 @@
 .product-description {
+    display: block;
     color: #202020;
     font-family: "TTFirsNeue-Regular";
     font-size: 16px;
@@ -7,4 +8,9 @@
     letter-spacing: 0.38px;
     margin-bottom: 14px;
     margin-left: 15px;
+    text-decoration: none;
+}
+
+.product-description:hover {
+    text-decoration: underline;
 }

@@ -4,6 +4,10 @@
 }
 
 .product-line__card:hover {
+    cursor: pointer;
+}
+
+.product-line__card:hover {
     background-color: rgba(235, 236, 235, 0.5)
 }
 
