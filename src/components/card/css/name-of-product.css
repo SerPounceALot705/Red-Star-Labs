@@ -1,9 +1,10 @@
-.card__rewiew-title {
+.name-of-product {
+    width: 234px;
     color: #202020;
     font-family: "TTFirsNeue-DemiBold";
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 20px;
     line-height: 23.72px;
+    font-weight: 600;
     letter-spacing: 0.46px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }

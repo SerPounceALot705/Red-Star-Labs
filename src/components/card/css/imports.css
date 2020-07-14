@@ -36,6 +36,36 @@
 @import "./card__rewiew.css";
 @import "./card-rewiew-rating-container.css";
 @import "./card__rewiew-title.css";
+@import "./card__rewiew-form-container.css";
 @import "./card__rewiew-form-subtitle.css";
 @import "./card__input.css";
 @import "./card__select-input.css";
+@import "./card__form-rewiew-button-container.css";
+@import "./card__form-rewiew-button.css";
+@import "./card-form__cheackbox-container.css";
+@import "./card__rewiew-form-container-main.css";
+
+@import "./card__user-rewiew.css";
+@import "./user-name.css";
+@import "./date.css";
+@import "./user-rewiew__title.css";
+@import "./card__user-rewiew-info.css";
+@import "./card__rewiew-container.css";
+@import "./rewiew.css";
+
+
+@import "./card__video-rewiew.css";
+@import "./video-rewiew__title.css";
+@import "./video-rewiew__text.css";
+@import "./video-rewiew__text-container.css";
+
+@import "./card__other-product-line.css";
+@import "./other-product__title-container.css";
+@import "./other-product-line-main-container.css";
+@import "./other-product-line__title.css";
+@import "./logoSuperior__photo.css";
+@import "./card__other-product-line-container.css";
+@import "./other-product__description-of-product.css";
+@import "./card__other-product-description.css";
+@import "./name-of-product.css";
+@import "./denomination-of-product.css";

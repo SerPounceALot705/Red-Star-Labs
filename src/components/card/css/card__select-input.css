@@ -2,4 +2,11 @@
     width: 543px;
     max-width: 543px;
     height: 54px;
+    border-radius: 0 0 10px 10px;
+    border: none;
+    border-top: 1px solid #F9F9F9;
+    padding-top: 10px;
+    padding-left: 10px;
+    resize: none;
+    height: 186px;
 }
