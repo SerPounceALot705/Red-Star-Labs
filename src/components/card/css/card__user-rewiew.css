@@ -1,0 +1,5 @@
+.card__user-rewiew {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 35px;
+}

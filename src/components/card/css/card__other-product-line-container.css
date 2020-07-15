@@ -1,0 +1,11 @@
+.card__other-product-line-container {
+    display: flex;
+    flex-direction: row;
+    border-right: rgba(249, 249, 249, 0.6) 1px solid;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.card__other-product-line-container:nth-child(3) {
+    border-right: none;
+}

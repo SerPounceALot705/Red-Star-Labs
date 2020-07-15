@@ -1,0 +1,6 @@
+.card__rewiew-container {
+    margin-top: 35px;
+    overflow-y: scroll;
+    height: 528px;
+    box-sizing: border-box;
+}

@@ -229,7 +229,7 @@ class Card extends Component {
                     </div>
                 </section>
                 <section className="card__rewiew">
-                    <div className="card__rewiew-form-container">
+                    <div className="card__rewiew-form-container-main">
                         <h2 className="card__rewiew-title">Оставить свой отзыв</h2>
                         <form className="card__rewiew-form-container">
                             <div className="card-rewiew-rating-container">
@@ -242,11 +242,19 @@ class Card extends Component {
                                         color2={'#ad1410'} />
                                 </div>
                             </div>
-                            <input input className="card__input" placeholder="* Имя" type="text" minLength="2" maxLength="30" required />
-                            <input className="card__input" placeholder="* Email" type="email" minLength="2" maxLength="30" required />
+                            <input input className="card__input-name" placeholder="* Имя" type="text" minLength="2" maxLength="30" required />
+                            <input className="card__input-email" placeholder="* Email" type="email" minLength="2" maxLength="30" required />
                             <div className="card__rewiew-input-container">
-                                <input className="card__input" placeholder="* Тема" type="text" minLength="2" maxLength="30" required />
+                                <input className="card__input-topic" placeholder="* Тема" type="text" minLength="2" maxLength="30" required />
                                 <textarea className="card__select-input" placeholder="Сообщение" type="text" minLength="2" maxLength="30" required />
+                            </div>
+                            <div className="card__form-rewiew-button-container">
+                                <button className="card__form-rewiew-button" type="submit">Отправить</button>
+                                <div className="c__cheackbox-container">
+                                    <input type="checkbox" id="scales" name="scales" defaultChecked
+                                    />
+                                    <label className="contacts-form__label" htmlFor="scales">Даю согласие на обработку персональных данных</label>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -300,6 +308,119 @@ class Card extends Component {
                                 деятельности представляет собой интересный эксперимент проверки существенных
                                 финансовых и административных условий. Равным образом консультация с широким
                                 активом представляет собой интересный эксперимент проверки форм развития.</p>
+                            </div>
+                        </div>
+                        <div className="card__user-rewiew">
+                            <div className="card__user-rewiew-info">
+                                <p className="user-name">Кирилл</p>
+                                <p className="date">21.03.2020</p>
+                            </div>
+                            <div className="user-rewiew">
+                                <h4 className="user-rewiew__title">Очень вкусный протеин</h4>
+                                <p className="rewiew">С другой стороны сложившаяся структура организации в
+                                значительной степени обуславливает создание позиций, занимаемых участниками
+                                в отношении поставленных задач. Повседневная практика показывает, что рамки и
+                                место обучения кадров позволяет оценить значение соответствующий условий активизации.
+                                Значимость этих проблем настолько очевидна, что новая модель организационной
+                                деятельности представляет собой интересный эксперимент проверки существенных
+                                финансовых и административных условий. Равным образом консультация с широким
+                                активом представляет собой интересный эксперимент проверки форм развития.</p>
+                            </div>
+                        </div>
+                        <div className="card__user-rewiew">
+                            <div className="card__user-rewiew-info">
+                                <p className="user-name">Кирилл</p>
+                                <p className="date">21.03.2020</p>
+                            </div>
+                            <div className="user-rewiew">
+                                <h4 className="user-rewiew__title">Очень вкусный протеин</h4>
+                                <p className="rewiew">С другой стороны сложившаяся структура организации в
+                                значительной степени обуславливает создание позиций, занимаемых участниками
+                                в отношении поставленных задач. Повседневная практика показывает, что рамки и
+                                место обучения кадров позволяет оценить значение соответствующий условий активизации.
+                                Значимость этих проблем настолько очевидна, что новая модель организационной
+                                деятельности представляет собой интересный эксперимент проверки существенных
+                                финансовых и административных условий. Равным образом консультация с широким
+                                активом представляет собой интересный эксперимент проверки форм развития.</p>
+                            </div>
+                        </div>
+                        <div className="card__user-rewiew">
+                            <div className="card__user-rewiew-info">
+                                <p className="user-name">Кирилл</p>
+                                <p className="date">21.03.2020</p>
+                            </div>
+                            <div className="user-rewiew">
+                                <h4 className="user-rewiew__title">Очень вкусный протеин</h4>
+                                <p className="rewiew">С другой стороны сложившаяся структура организации в
+                                значительной степени обуславливает создание позиций, занимаемых участниками
+                                в отношении поставленных задач. Повседневная практика показывает, что рамки и
+                                место обучения кадров позволяет оценить значение соответствующий условий активизации.
+                                Значимость этих проблем настолько очевидна, что новая модель организационной
+                                деятельности представляет собой интересный эксперимент проверки существенных
+                                финансовых и административных условий. Равным образом консультация с широким
+                                активом представляет собой интересный эксперимент проверки форм развития.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="card__video-rewiew">
+                    <div className="video-rewiew__text-container">
+                        <h2 className="video-rewiew__title">Видео обзор Clear Whey Isolate</h2>
+                        <p className="video-rewiew__text">Это не просто еще один вид протеинового коктейля.
+                        Из высококачественного изолята сывороточного протеина мы сделали продукт
+                        для приготовления легкого, освежающего коктейля. По вкусу он больше напоминает сок.
+                        В линейке представлено 5 великолепных фруктовых вкусов, среди которых горький лимон,
+                        апельсин с манго, персиковый чай, мохито и фруктовая карамель.</p>
+                    </div>
+                    <iframe id="ytplayer" type="text/html" width="720" height="405"
+                        src="https://www.youtube.com/embed/iAjXRSvnMG0"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </section>
+                <section className="card__other-product-line">
+                    <div className="other-product__title-container">
+                        <h3 className="other-product-line__title">Другие продукты линейки</h3>
+                        <Image
+                            src={require("../images/logoSuperior.png").default}
+                            alt={"logoSuperior"}
+                            className={"logoSuperior__photo"}
+                        />
+                    </div>
+                    <div className="other-product-line-main-container">
+                        <div className="card__other-product-line-container">
+                            <Image
+                                src={require("../images/line-product-item.png").default}
+                                alt={"product-line-item"}
+                                className={"product-line-item__photo"}
+                            />
+                            <div className="other-product__description-of-product">
+                                <p className="denomination-of-product">Сывороточный протеин</p>
+                                <p className="name-of-product">Whey Isolate</p>
+                                <p className="card__other-product-description">Чистый сывороточный протеин</p>
+                            </div>
+                        </div>
+                        <div className="card__other-product-line-container">
+                            <Image
+                                src={require("../images/line-product-item.png").default}
+                                alt={"product-line-item"}
+                                className={"product-line-item__photo"}
+                            />
+                            <div className="other-product__description-of-product">
+                                <p className="denomination-of-product">Сывороточный протеин</p>
+                                <p className="name-of-product">Whey Isolate</p>
+                                <p className="card__other-product-description">Чистый сывороточный протеин</p>
+                            </div>
+                        </div>
+                        <div className="card__other-product-line-container">
+                            <Image
+                                src={require("../images/line-product-item.png").default}
+                                alt={"product-line-item"}
+                                className={"product-line-item__photo"}
+                            />
+                            <div className="other-product__description-of-product">
+                                <p className="denomination-of-product">Сывороточный протеин</p>
+                                <p className="name-of-product">Whey Isolate</p>
+                                <p className="card__other-product-description">Чистый сывороточный протеин</p>
                             </div>
                         </div>
                     </div>

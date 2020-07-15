@@ -1,0 +1,13 @@
+.card__form-rewiew-button {
+    width: 204px;
+    height: 55px;
+    background-color: #b20000;
+    color: #ffffff;
+    font-family: "TTFirsNeue-DemiBold";
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-right: 50px;
+    border: none;
+}

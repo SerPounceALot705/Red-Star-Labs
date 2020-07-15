@@ -1,3 +1,7 @@
 .card__rewiew-form-container {
-    
+    height: 460px;
+    background-color: rgba(223, 223, 223, 0.6);
+    border-radius: 15px;
+    width: 590px;
+    padding: 30px;
 }
