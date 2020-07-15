@@ -45,3 +45,6 @@
 @import "./gallery-item__photo.css";
 @import "./product-line-photo__container.css";
 @import "./catalog_range.css";
+@import "./product-line__categories.css";
+@import "./product-line__drop.css";
+@import "./button-pagination-right.css";

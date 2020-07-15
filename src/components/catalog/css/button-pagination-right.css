@@ -1,13 +1,13 @@
-.button-pagination-left {
+.button-pagination-right {
     width: 31px;
     height: 29px; 
-    background-image: url("../../../images/left.png");
+    background-image: url("../../../images/right.png");
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 9px;
+    margin-left: 9px;
 }
 
-.button-pagination-left:hover {
+.button-pagination-right:hover {
     cursor: pointer;
     background-color:  rgba(235, 236, 235, 0.5);
 }

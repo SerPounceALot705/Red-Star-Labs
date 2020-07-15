@@ -6,4 +6,10 @@
     line-height: 23.72px;
     letter-spacing: 0.54px;
     text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.product-line__dropdown-title-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }

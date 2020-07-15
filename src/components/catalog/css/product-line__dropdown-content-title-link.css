@@ -6,3 +6,8 @@
     text-decoration: none;
     margin-top: 15px;
 }
+
+.product-line__dropdown-content-title-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

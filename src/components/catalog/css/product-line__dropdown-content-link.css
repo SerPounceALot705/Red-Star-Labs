@@ -6,6 +6,10 @@
     margin-top: 8px;  
 }
 
+.product-line__dropdown-content-link:hover {
+    text-decoration: underline;
+}
+
 ul li {
     list-style-type: none;
     padding: 0;

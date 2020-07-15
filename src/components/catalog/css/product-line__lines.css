@@ -1,8 +1,16 @@
 .product-line__lines {
-    display: flex;
-    flex-direction: column;
+    padding: 0;
+}
+
+.product-line__lines ul {
+    padding: 0;
+}
+
+.product-line__lines li {
+    margin-top: 25px;
 }
 
 .product-line__lines a {
     margin-bottom: 15px;
+    margin-top: 15px;
 }

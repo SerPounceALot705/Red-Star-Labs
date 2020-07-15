@@ -1,0 +1,13 @@
+.product-line__drop {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-line__drop img {
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+.product-line__drop h2:hover {
+    text-decoration: none;
+}

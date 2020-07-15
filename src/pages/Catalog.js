@@ -16,12 +16,15 @@ class Catalog extends Component {
 
         this.state = {
             range: {
-                value: {min: 1500, max: 2500},
+                value: { min: 1500, max: 2500 },
                 min: 0,
                 max: 5000
             },
             isLineContainer: false,
             isPhotoContainer: true,
+            isProductList: true,
+            isLine: true,
+            isTarget: true,
             selectBrand: {},
             brandButton: {
                 basic: require("../images/basic-line.png").default,
@@ -128,7 +131,7 @@ class Catalog extends Component {
                     price: "2400 руб",
                     url: "/Card"
                 },
-            ]
+            ],
         };
 
         this.handlerTop = this.handlerTop.bind(this);
@@ -144,6 +147,24 @@ class Catalog extends Component {
 
         this.setState({
             range: defaultValue
+        })
+    }
+
+    handlerIsProductList() {
+        this.setState({
+            isProductList: !this.state.isProductList
+        })
+    }
+
+    handlerIsLine() {
+        this.setState({
+            isLine: !this.state.isLine
+        })
+    }
+
+    handlerIsTarget() {
+        this.setState({
+            isTarget: !this.state.isTarget
         })
     }
 
@@ -191,6 +212,35 @@ class Catalog extends Component {
             </div>);
         };
 
+        function ProteinList() {
+            return (
+                <ul className="product-line__categories">
+                    <li><LinkUrl url={"/"} name={"Протеины"} className={"product-line__dropdown-content-title-link"} /></li>
+                    <li>
+                        <ul>
+                            <li><LinkUrl url={"/"} name={"Сывороточный"} className={"product-line__dropdown-content-link"} /></li>
+                            <li><LinkUrl url={"/"} name={"Изолят"} className={"product-line__dropdown-content-link"} /></li>
+                            <li><LinkUrl url={"/"} name={"Казеин"} className={"product-line__dropdown-content-link"} /></li>
+                            <li><LinkUrl url={"/"} name={"Говяжий"} className={"product-line__dropdown-content-link"} /></li>
+                        </ul>
+                    </li>
+                </ul>);
+        }
+
+        function Targets() {
+            return (<ul className="product-line__targets">
+                <li>
+                    <ul className="product-line__targets-list">
+                        <li><LinkUrl url={"/"} name={"Повышение выносливости"} className={"product-line__dropdown-content-link"} /></li>
+                        <li><LinkUrl url={"/"} name={"Похудение и снижение веса"} className={"product-line__dropdown-content-link"} /></li>
+                        <li><LinkUrl url={"/"} name={"Набор массы"} className={"product-line__dropdown-content-link"} /></li>
+                        <li><LinkUrl url={"/"} name={"Здоровье и долголетие"} className={"product-line__dropdown-content-link"} /></li>
+                        <li><LinkUrl url={"/"} name={"Здоровый сон и восстановление"} className={"product-line__dropdown-content-link"} /></li>
+                    </ul>
+                </li>
+            </ul>);
+        }
+
         return (
             <div className="catalog-main">
                 <Header />
@@ -203,16 +253,27 @@ class Catalog extends Component {
 
                     <section className="product-line__catalog">
                         <div className="product-line-categories__container">
+
+                            <div className="product-line__drop" onClick={() => this.handlerIsProductList()}>
+                                <h2 className={"product-line__dropdown-title-link"}> Категории </h2>
+                                {this.state.isProductList ?
+                                    <Image
+                                        src={require("../images/productArrowUp.png").default}
+                                        alt="arow"
+                                        width={7}
+                                        height={7}
+                                    /> :
+                                    <Image
+                                        src={require("../images/productArrow.png").default}
+                                        alt="arow"
+                                        width={7}
+                                        height={7}
+                                    />
+                                }
+                            </div>
+                            {this.state.isProductList ? <ProteinList /> : null}
+
                             <ul className="product-line__categories">
-                                <li> <LinkUrl url={"/"} name={"Категории"} className={"product-line__dropdown-title-link"} />
-                                    <LinkUrl url={"/"} name={"Протеины"} className={"product-line__dropdown-content-title-link"} />
-                                    <ul className="product-line__dropdown-content-list">
-                                        <li><LinkUrl url={"/"} name={"Сывороточный"} className={"product-line__dropdown-content-link"} /></li>
-                                        <li><LinkUrl url={"/"} name={"Изолят"} className={"product-line__dropdown-content-link"} /></li>
-                                        <li><LinkUrl url={"/"} name={"Казеин"} className={"product-line__dropdown-content-link"} /></li>
-                                        <li><LinkUrl url={"/"} name={"Говяжий"} className={"product-line__dropdown-content-link"} /></li>
-                                    </ul>
-                                </li>
                                 <li><LinkUrl url={"/"} name={"Витамины и минералы"} className={"product-line__dropdown-content-title-link"} /></li>
                                 <li><LinkUrl url={"/"} name={"Аминокислоты и ВСАА"} className={"product-line__dropdown-content-title-link"} /></li>
                                 <li><LinkUrl url={"/"} name={"Карнитин"} className={"product-line__dropdown-content-title-link"} /></li>
@@ -221,93 +282,129 @@ class Catalog extends Component {
                                 <li><LinkUrl url={"/"} name={"Предтренировочные комплексы"} className={"product-line__dropdown-content-title-link"} /></li>
                                 <li><LinkUrl url={"/"} name={"Препараты для связок и суставов"} className={"product-line__dropdown-content-title-link"} /></li>
                             </ul>
-                            <ul className="product-line__lines">
-                                <LinkUrl url={"/"} name={"Линейки"} className={"product-line__dropdown-title-link"} />
-                                <div onClick={(e) => this.handlerTop(e,
-                                    {
-                                        items: [
-                                            { value: "95%", text: "Cодержание действующих веществ" },
-                                            { value: "65%", text: "Витаминный комплекс" },
-                                            { value: "70%", text: "Содержания углеводов" },
-                                            { value: "20%", text: "Сахар" }
-                                        ],
-                                        url: require("../images/line-logo.png").default,
-                                        brand: "basic"
-                                    }
-                                )}>
+
+                            <div className="product-line__drop" onClick={() => this.handlerIsLine()}>
+                                <h2 className={"product-line__dropdown-title-link"}>Линейки</h2>
+                                {this.state.isLine ? <Image
+                                    src={require("../images/productArrowUp.png").default}
+                                    alt="arow"
+                                    width={7}
+                                    height={7}
+                                /> :
                                     <Image
-                                        src={this.state.brandButton.basic}
-                                        alt={"basic-line"}
-                                        className={"line__photo"}
-                                    />
-                                </div>
-                                <div onClick={(e) => this.handlerTop(e,
-                                    {
-                                        items: [
-                                            { value: "80%", text: "Cодержание действующих веществ" },
-                                            { value: "40%", text: "Витаминный комплекс" },
-                                            { value: "70%", text: "Содержания углеводов" },
-                                            { value: "25%", text: "Сахар" }
-                                        ],
-                                        url: require("../images/line-logo.png").default,
-                                        brand: "ess"
-                                    }
-                                )}>
+                                        src={require("../images/productArrow.png").default}
+                                        alt="arow"
+                                        width={7}
+                                        height={7}
+                                    />}
+                            </div>
+                            {this.state.isLine ?
+                                (<ul className="product-line__lines">
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <div onClick={(e) => this.handlerTop(e,
+                                                    {
+                                                        items: [
+                                                            { value: "95%", text: "Cодержание действующих веществ" },
+                                                            { value: "65%", text: "Витаминный комплекс" },
+                                                            { value: "70%", text: "Содержания углеводов" },
+                                                            { value: "20%", text: "Сахар" }
+                                                        ],
+                                                        url: require("../images/line-logo.png").default,
+                                                        brand: "basic"
+                                                    }
+                                                )}>
+                                                    <Image
+                                                        src={this.state.brandButton.basic}
+                                                        alt={"basic-line"}
+                                                        className={"line__photo"}
+                                                    />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div onClick={(e) => this.handlerTop(e,
+                                                    {
+                                                        items: [
+                                                            { value: "80%", text: "Cодержание действующих веществ" },
+                                                            { value: "40%", text: "Витаминный комплекс" },
+                                                            { value: "70%", text: "Содержания углеводов" },
+                                                            { value: "25%", text: "Сахар" }
+                                                        ],
+                                                        url: require("../images/line-logo.png").default,
+                                                        brand: "ess"
+                                                    }
+                                                )}>
+                                                    <Image
+                                                        src={this.state.brandButton.ess}
+                                                        alt={"ess-line"}
+                                                        className={"line__photo"}
+                                                    />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div onClick={(e) => this.handlerTop(e,
+                                                    {
+                                                        items: [
+                                                            { value: "85%", text: "Cодержание действующих веществ" },
+                                                            { value: "65%", text: "Витаминный комплекс" },
+                                                            { value: "50%", text: "Содержания углеводов" },
+                                                            { value: "15%", text: "Сахар" }
+                                                        ],
+                                                        url: require("../images/line-logo.png").default,
+                                                        brand: "super"
+                                                    }
+                                                )}>
+                                                    <Image
+                                                        src={this.state.brandButton.super}
+                                                        alt={"superior-line"}
+                                                        className={"line__photo"}
+                                                    />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div onClick={(e) => this.handlerTop(e,
+                                                    {
+                                                        items: [
+                                                            { value: "65%", text: "Cодержание действующих веществ" },
+                                                            { value: "70%", text: "Витаминный комплекс" },
+                                                            { value: "60%", text: "Содержания углеводов" },
+                                                            { value: "40%", text: "Сахар" }
+                                                        ],
+                                                        url: require("../images/line-logo.png").default,
+                                                        brand: "beo"
+                                                    }
+                                                )}>
+                                                    <Image
+                                                        src={this.state.brandButton.beo}
+                                                        alt={"beo-line"}
+                                                        className={"line__photo"}
+                                                    />
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>) : null}
+
+                            <div className="product-line__drop" onClick={() => this.handlerIsTarget()}>
+                                <h2 className={"product-line__dropdown-title-link"}>Цели</h2>
+                                {this.state.isTarget ?
                                     <Image
-                                        src={this.state.brandButton.ess}
-                                        alt={"ess-line"}
-                                        className={"line__photo"}
-                                    />
-                                </div>
-                                <div onClick={(e) => this.handlerTop(e,
-                                    {
-                                        items: [
-                                            { value: "85%", text: "Cодержание действующих веществ" },
-                                            { value: "65%", text: "Витаминный комплекс" },
-                                            { value: "50%", text: "Содержания углеводов" },
-                                            { value: "15%", text: "Сахар" }
-                                        ],
-                                        url: require("../images/line-logo.png").default,
-                                        brand: "super"
-                                    }
-                                )}>
+                                        src={require("../images/productArrowUp.png").default}
+                                        alt="arow"
+                                        width={7}
+                                        height={7}
+                                    /> :
                                     <Image
-                                        src={this.state.brandButton.super}
-                                        alt={"superior-line"}
-                                        className={"line__photo"}
+                                        src={require("../images/productArrow.png").default}
+                                        alt="arow"
+                                        width={7}
+                                        height={7}
                                     />
-                                </div>
-                                <div onClick={(e) => this.handlerTop(e,
-                                    {
-                                        items: [
-                                            { value: "65%", text: "Cодержание действующих веществ" },
-                                            { value: "70%", text: "Витаминный комплекс" },
-                                            { value: "60%", text: "Содержания углеводов" },
-                                            { value: "40%", text: "Сахар" }
-                                        ],
-                                        url: require("../images/line-logo.png").default,
-                                        brand: "beo"
-                                    }
-                                )}>
-                                    <Image
-                                        src={this.state.brandButton.beo}
-                                        alt={"beo-line"}
-                                        className={"line__photo"}
-                                    />
-                                </div>
-                            </ul>
-                            <ul className="product-line__targets">
-                                <li>
-                                    <LinkUrl url={"/"} name={"Цели"} className={"product-line__dropdown-title-link"} />
-                                    <ul className="product-line__targets-list">
-                                        <li><LinkUrl url={"/"} name={"Повышение выносливости"} className={"product-line__dropdown-content-link"} /></li>
-                                        <li><LinkUrl url={"/"} name={"Похудение и снижение веса"} className={"product-line__dropdown-content-link"} /></li>
-                                        <li><LinkUrl url={"/"} name={"Набор массы"} className={"product-line__dropdown-content-link"} /></li>
-                                        <li><LinkUrl url={"/"} name={"Здоровье и долголетие"} className={"product-line__dropdown-content-link"} /></li>
-                                        <li><LinkUrl url={"/"} name={"Здоровый сон и восстановление"} className={"product-line__dropdown-content-link"} /></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                                }
+                            </div>
+                            {this.state.isTarget ? <Targets /> : null }
+
                         </div>
                         <div className="product-line__catalog-cards-container">
                             <div className="product-line__filters-container">
@@ -341,11 +438,11 @@ class Catalog extends Component {
                                 })}
                             </div>
                             <div className="product-line__catalog-pagination">
-                                <button className="button-pagination-left"></button>
+                                <div className="button-pagination-left"></div>
                                 <div className="number-page">1</div>
                                 <div className="number-page">2</div>
                                 <div className="number-page">3</div>
-                                <button className="button-pagination-right"></button>
+                                <div className="button-pagination-right"></div>
                             </div>
                         </div>
                     </section>
