@@ -1,11 +1,14 @@
 .header {
     display: flex;
     justify-content: space-between;
-    border-bottom: #8E8E8E 2px solid;
     margin: 0 auto;
     width: 80%;
     max-width: 1920px;
     position: relative;
+}
+
+.header-border {
+    border-bottom: #8E8E8E 2px solid;
 }
 
 .header-theme-white nav ul li a {

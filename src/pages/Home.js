@@ -7,6 +7,7 @@ import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import Image from "../components/image/image.js";
 import ProductCard from "../components/productCard/ProductCard.js";
+import Burger from "../components/burger/Burger.js";
 
 import "react-awesome-slider/dist/styles.css";
 import "../components/main.css";
@@ -30,7 +31,7 @@ class Home extends Component {
                     <div className="main">
                         <Header isDark={true} />
                         <AutoplaySlider
-                            play={true}    
+                            play={true}
                             interval={9000}
                         >
                             <div>
@@ -70,7 +71,7 @@ class Home extends Component {
                                 scientific achievements are used for production of sports supplements of this brand.
                             </p>
                         </div>
-                        <ProductCard/>
+                        <ProductCard />
                     </div>
                     <ContactForm />
                     <footer className="main">

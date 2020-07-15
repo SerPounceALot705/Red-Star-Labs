@@ -1,9 +1,12 @@
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React, { Component } from "react";
 import Image from "../image/image.js";
+import { slide as Menu } from 'react-burger-menu';
 
 import Nav from "./js/nav.js";
 import Language from "./js/language.js";
 import Basket from "./js/basket.js";
+import Burger from "../../components/burger/Burger.js";
 
 import "./header.css";
 import "./css/header__logo.css";
@@ -15,8 +18,14 @@ class Header extends Component {
         super(props)
 
         this.LogoUrl = require("../../images/logo.png").default;
-        this.headerClass = "header";
+        this.headerClass = "header header-border";
         this.isDark = this.props.isDark;
+
+        this.state = {
+            innerWidth: window.innerWidth
+        }
+
+        window.addEventListener('resize', this.handleResize.bind(this));
     }
 
     componentWillMount() {
@@ -26,17 +35,18 @@ class Header extends Component {
         }
     }
 
-    render() {
+    handleResize() {
+        this.setState({
+            innerWidth: window.innerWidth
+        })
+    }
+
+    headerNav() {
         return (
-            <section className={this.headerClass}>
-                <Image
-                    src={this.LogoUrl}
-                    alt={"logo"}
-                    className={"header__logo"}
-                />
+            <div className="header">
                 <Nav className="header__nav-links"
                     links={[
-                        { url: "#", name: "продукция", isDrop: true},
+                        { url: "#", name: "продукция", isDrop: true },
                         { url: "About", name: "о бренде" },
                         { url: "WhereICanBuy", name: "где купить?" },
                         { url: "WholesaleCustomers", name: "оптовым клиентам" },
@@ -51,7 +61,21 @@ class Header extends Component {
                     ]}
                 />
                 <Language />
-                <Basket  isDark={this.isDark}/>
+                <Basket isDark={this.isDark} />
+            </div>
+        )
+    }
+
+    render() {
+        return (
+            <section className={this.headerClass}>
+                <Image
+                    src={this.LogoUrl}
+                    alt={"logo"}
+                    className={"header__logo"}
+                />
+
+                {this.state.innerWidth > 768 ? this.headerNav() : <Burger/>}
                 
             </section>
         );
