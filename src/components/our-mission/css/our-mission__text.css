@@ -7,4 +7,33 @@
     font-weight: 400;
     margin-bottom: 116px;
     text-align: center;
+    white-space: pre-wrap;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .our-mission__text {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .our-mission__text {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .our-mission__text {
+        width: 435px;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 375px) {
+    .our-mission__text {
+        width: 345px;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
 }

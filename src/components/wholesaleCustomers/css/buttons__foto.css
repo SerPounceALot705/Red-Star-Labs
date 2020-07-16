@@ -2,3 +2,17 @@
     max-width: 46px;
     height: 63px;
 }
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .buttons__foto {
+        max-width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .buttons__foto {
+        max-width: 50px;
+        height: 50px;
+    }
+}

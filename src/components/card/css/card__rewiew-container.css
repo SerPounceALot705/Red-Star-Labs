@@ -4,3 +4,15 @@
     height: 528px;
     box-sizing: border-box;
 }
+
+
+.card__rewiew-container::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: #ac140f;
+    border-radius: 5px;
+}
+
+.card__rewiew-container::-webkit-scrollbar {
+    width: 2px;
+    background-color: #848484;
+}

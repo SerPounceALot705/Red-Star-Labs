@@ -9,3 +9,54 @@
     background-size: cover;
     margin-right: 52px;
 }
+
+@media screen and (max-width: 1554px) and (min-width: 1401px) {
+    .for-wholesale-customers-form {
+        padding: 25px;
+        width: 651px;
+        margin-right: 35px;
+    }    
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+    .for-wholesale-customers-form {
+        padding: 25px;
+        width: 651px;
+        height: 505px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .for-wholesale-customers-form {
+        padding: 25px;
+        width: 651px;
+        height: 560px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .for-wholesale-customers-form {
+        padding: 25px;
+        width: 600px;
+        height: 550px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .for-wholesale-customers-form {
+        width: 90%;
+        margin: 0 auto;
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 375px) {
+    .for-wholesale-customers-form {
+        width: 85%;
+        margin: 0 auto;
+        padding: 25px;
+    }
+}

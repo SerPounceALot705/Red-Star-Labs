@@ -39,7 +39,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 424px) and (min-width: 375px) {
     .contact-form__container {
         order: 1;
         padding: 35px 0;

@@ -10,3 +10,18 @@
     background-color: black;
 }
 
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .contacts-form__label {
+        width: 175px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .contacts-form__label {
+       width: 150px;
+       margin-top: 0;
+    }
+}
+

@@ -1,0 +1,35 @@
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+    .for-wholesale-customers-advantages__button-container {
+        margin-bottom: 30px;
+
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .for-wholesale-customers-advantages__button-container {
+        margin-bottom: 30px;
+
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .for-wholesale-customers-advantages__button-container {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .for-wholesale-customers-advantages__button-container {
+        margin-bottom: 35px;
+    }
+    
+}
+
+@media screen and (max-width: 425px) and (min-width: 375px) {
+    .for-wholesale-customers-advantages__button-container {
+        margin-bottom: 35px;
+    }
+    
+}

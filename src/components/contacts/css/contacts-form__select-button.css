@@ -21,3 +21,18 @@
     background-color: #d12b2b;
     transition: all .1s linear;
 }
+
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .contacts-form__select-button {
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .contacts-form__select-button {
+       margin-right: 25px;
+    }
+}
+
+

@@ -1,3 +1,20 @@
 .contacts__information-container {
-    margin-right: 200px;
+    
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .contacts__information-container {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .contacts__information-container {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 45px;
+
+    }
 }

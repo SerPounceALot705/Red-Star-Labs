@@ -1,4 +1,27 @@
 .contacts__menu {
     margin-top: 35px;
     margin-bottom: 60px;
+    width: 100%;
+    margin: 35px auto 60px; 
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .contacts__menu {
+        width: 100%;
+        margin: 35px auto 35px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .contacts__menu {
+        width: 100%;
+        margin: 35px auto 35px;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 375px) {
+    .contacts__menu {
+        width: 100%;
+        margin: 35px auto 35px;
+    }
 }

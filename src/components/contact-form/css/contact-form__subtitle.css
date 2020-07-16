@@ -31,9 +31,10 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 424px) and (min-width: 375px) {
     .contact-form__subtitle {
         max-width: 300px;
+        font-size: 17px;
         text-align: center;
     }
 }

@@ -9,3 +9,30 @@
     padding-top: 15px;
     resize: none;
 }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .contacts-form__select-input {
+        width: 500px;
+        height: 186px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .contacts-form__select-input {
+        height: 150px;
+        width: 283px;
+        height: 186px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .contacts-form__select-input {
+        width: 240px;
+        height: 150px;
+        padding-left: 10px;
+        padding-right: 0;
+    }
+}

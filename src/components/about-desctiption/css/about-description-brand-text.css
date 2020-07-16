@@ -1,23 +1,51 @@
 .about-description-brand-text {
-    width: 1085px;
-    height: 101px;
     color: #3a3a3a;
     font-family: "TTFirsNeue-Regular";
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.47px;
     margin-bottom: 114px;
-    text-align: center;
+    text-align: justify;
+    white-space: pre-wrap;
+    width: 80%;
 }
 
 .home-brand-text {
-    width: 1085px;
-    height: 101px;
     color: #3a3a3a;
     font-family: "TTFirsNeue-Regular";
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.47px;
     margin-bottom: 64px;
-    text-align: center;
+    text-align: justify;
+    white-space: pre-wrap;
+    width: 80%;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .about-description-brand-text {
+        margin-bottom: 75px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .about-description-brand-text {
+        margin-bottom: 50px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .about-description-brand-text {
+        margin-bottom: 35px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .about-description-brand-text {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
 }

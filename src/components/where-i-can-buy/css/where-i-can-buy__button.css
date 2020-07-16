@@ -27,3 +27,33 @@
 }
 
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .react-tabs__tab-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .react-tabs__tab-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .react-tabs__tab-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+

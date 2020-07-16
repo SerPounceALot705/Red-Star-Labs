@@ -32,6 +32,7 @@ import "../components/contacts/css/contacts-form__select-button.css";
 import "../components/contacts/css/contacts-form__button-container.css";
 import "../components/contacts/css/contacts-form__label.css";
 import "../components/contacts/css/contact-form__cheackbox-container.css";
+import "../components/contacts/css/contacts-form.css";
 
 
 class Contacts extends Component {

@@ -250,7 +250,7 @@ class Card extends Component {
                             </div>
                             <div className="card__form-rewiew-button-container">
                                 <button className="card__form-rewiew-button" type="submit">Отправить</button>
-                                <div className="c__cheackbox-container">
+                                <div className="contact-form__cheackbox-container">
                                     <input type="checkbox" id="scales" name="scales" defaultChecked
                                     />
                                     <label className="contacts-form__label" htmlFor="scales">Даю согласие на обработку персональных данных</label>

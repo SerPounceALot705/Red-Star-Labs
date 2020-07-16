@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { slide as Menu } from 'react-burger-menu';
 
 import "./css/burger.css";
@@ -23,9 +24,14 @@ class Burger extends Component {
     burgerMenu() {
         return (
             <Menu right>
-                <a id="home" className="menu-item" href="/">Home</a>
-                <a id="about" className="menu-item" href="/about">About</a>
-                <a id="contact" className="menu-item" href="/contact">Contact</a>
+                <div>
+                    <ul>
+                        <li>123123</li>
+                    </ul>
+                </div>
+                <Link className="menu-item" to="/">Home</Link>
+                <Link className="menu-item" to="/about">About</Link>
+                <Link className="menu-item" to="/contact">Contact</Link>
             </Menu>)
     }
 

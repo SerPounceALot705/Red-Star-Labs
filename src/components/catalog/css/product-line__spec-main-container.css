@@ -5,3 +5,16 @@
     margin-bottom: 35px;
     margin-top: 35px;
 }
+
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .product-line__spec-main-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 375px) {
+    .product-line__spec-main-container {
+        display: none;
+    }
+}

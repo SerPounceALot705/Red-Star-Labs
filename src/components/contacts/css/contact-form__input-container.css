@@ -3,3 +3,27 @@
     flex-direction: column;
     padding: 30px;
 }
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+    .contact-form__input-container  {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .contact-form__input-container  {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .contact-form__input-container  {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .contact-form__input-container  {
+        padding-bottom: 0;
+    }
+}

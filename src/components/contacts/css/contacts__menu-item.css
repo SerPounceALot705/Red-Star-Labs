@@ -19,3 +19,9 @@
     font-weight: 400;
     letter-spacing: 0.38px;
 }
+
+@media screen and(max-width: 424px) and (min-width: 375px) {
+    .contacts__menu-item {
+        font-size: 14px;
+    }
+}

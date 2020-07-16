@@ -10,6 +10,7 @@ import "./css/product-card__container.css";
 import "./css/product-card__card.css";
 import "./css/product-card__description.css";
 import "./css/product-card__description-slide.css";
+import "./css/slide__photo.css";
 
 class ProductCard extends Component {
     constructor(props) {
@@ -240,6 +241,7 @@ class ProductCard extends Component {
                                     <Image
                                         src={item.url}
                                         alt={"slide"}
+                                        className={"slide__photo"}
                                     />
                                     <p>{item.text}</p>
                                 </div>

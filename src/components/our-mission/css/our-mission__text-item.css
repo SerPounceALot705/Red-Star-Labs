@@ -1,9 +1,47 @@
 .our-mission__text-item {
-    width: 236px;
     color: #ffffff;
     font-family: "TTFirsNeue-Regular";
     font-size: 25px;
     font-weight: 400;
     text-align: center;
     margin-top: 33px;
+    height: 25px;
 }
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .our-mission__text-item {
+        font-size: 20px;
+        width: 125px;
+        margin-top: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .our-mission__text-item {
+        font-size: 18px;
+        width: 125px;
+        margin-top: 15px;
+        height: 25px;
+
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .our-mission__text-item {
+        font-size: 16px;
+        width: 125px;
+        margin-top: 15px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .our-mission__text-item {
+        font-size: 14px;
+        width: 150px;
+        margin-top: 15px;
+        height: 25px;
+    }
+}
+

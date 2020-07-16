@@ -9,3 +9,27 @@
 .about__menu-item_active {
     font-family: "TTFirsNeue-DemiBold";
 }
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .about__menu-item {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .about__menu-item {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .about__menu-item {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .about__menu-item {
+        font-size: 12px;
+    }
+}

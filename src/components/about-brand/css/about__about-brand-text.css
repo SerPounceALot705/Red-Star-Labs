@@ -6,3 +6,31 @@
     font-weight: 400;
     margin-top: 15px;
 }
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .about__about-brand-text {
+        font-size: 20px;
+        width: 461px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .about__about-brand-text {
+        font-size: 16px;
+        width: 383px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .about__about-brand-text {
+        font-size: 14px;
+        width: 300px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .about__about-brand-text {
+
+    }
+}

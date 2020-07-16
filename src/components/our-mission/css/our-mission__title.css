@@ -7,3 +7,28 @@
     font-weight: 700;
     margin-bottom: 85px;
 }
+
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .our-mission__title {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .our-mission__title {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .our-mission__title {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 375px) {
+    .our-mission__title {
+        margin-bottom: 45px;
+    }
+}

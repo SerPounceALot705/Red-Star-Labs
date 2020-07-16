@@ -19,3 +19,17 @@
     background-color: #d12b2b;
     transition: all .1s linear;
 }
+
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+    .for-wholesale-customers-form__button  {
+        width: 190px;
+        
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 375px) {
+    .for-wholesale-customers-form__button {
+        width: 175px;
+    }
+}

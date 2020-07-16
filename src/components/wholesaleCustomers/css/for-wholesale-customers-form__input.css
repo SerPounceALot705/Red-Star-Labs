@@ -12,3 +12,45 @@
 .for-wholesale-customers-form__input:nth-child(3) {
     width: 297px;
 }
+
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .for-wholesale-customers-form__input {
+        width: 500px;
+    }
+
+    .for-wholesale-customers-form__input:nth-child(3) {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .for-wholesale-customers-form__input {
+        width: 500px;
+    }
+
+    .for-wholesale-customers-form__input:nth-child(3) {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .for-wholesale-customers-form__input {
+        width: 325px;
+    }
+
+    .for-wholesale-customers-form__input:nth-child(3) {
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 425px) and (min-width: 375px) {
+    .for-wholesale-customers-form__input {
+        width: 250px;
+    }
+
+    .for-wholesale-customers-form__input:nth-child(3) {
+        width: 200px;
+    }
+}

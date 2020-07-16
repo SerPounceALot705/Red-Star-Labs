@@ -4,4 +4,42 @@
     background-size: cover;
     overflow: hidden;
     position: relative;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1890px) and (min-width: 1401px) {
+    .wholesale-customers__main {
+        background: none;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+    .wholesale-customers__main {
+        background: none;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .wholesale-customers__main {
+        background: none;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .wholesale-customers__main {
+       background: none;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .wholesale-customers__main {
+        background: none;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 375px) {
+    .wholesale-customers__main {
+       background: none;
+    }  
 }

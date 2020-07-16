@@ -23,6 +23,8 @@ import "../components/our-mission/css/our-mission__text.css";
 import "../components/our-mission/css/our-mission__container.css";
 import "../components/our-mission/css/our-mission__container-item.css";
 import "../components/our-mission/css/our-mission__text-item.css";
+import "../components/about-desctiption/css/product-photo.css";
+import "../components/about-desctiption/css/our-mission__photo-item.css";
 
 class About extends Component {
     constructor(props) {

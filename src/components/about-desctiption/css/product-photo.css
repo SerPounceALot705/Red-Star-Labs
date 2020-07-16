@@ -1,0 +1,29 @@
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .product-photo {
+        width: auto;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .product-photo {
+        width: auto;
+        height: 375px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .product-photo {
+        width: auto;
+        height: 265px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .product-photo {
+        width: auto;
+        height: 200px;
+    }
+}
+
+

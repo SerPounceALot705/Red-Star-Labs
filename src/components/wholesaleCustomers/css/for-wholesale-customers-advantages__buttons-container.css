@@ -3,3 +3,34 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+    .for-wholesale-customers-advantages__buttons-container {
+       
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .for-wholesale-customers-advantages__buttons-container {
+             
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .for-wholesale-customers-advantages__buttons-container {
+       
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .for-wholesale-customers-advantages__buttons-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 375px) {
+    .for-wholesale-customers-advantages__buttons-container {
+       flex-direction: column;
+    }  
+}

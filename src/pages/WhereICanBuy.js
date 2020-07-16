@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { FiPhone } from "react-icons/fi";
-import {FiClock} from "react-icons/fi";
+import { FiClock } from "react-icons/fi";
 import 'react-tabs/style/react-tabs.css';
 import Header from "../components/header/header.js";
 import Footer from "../components/footer/js/footer.js";
@@ -29,6 +29,8 @@ import "../components/where-i-can-buy/shops/css/shop-item-foto.css";
 import "../components/where-i-can-buy/shops/css/where-i-can-buy__first-container.css";
 
 import "../components/where-i-can-buy/shops/css/shop-map.css";
+import "../components/where-i-can-buy/css/mobile__photo.css";
+import "../components/where-i-can-buy/css/mobile-photo-container.css";
 
 class WhereICanBuy extends Component {
     constructor(props) {
@@ -54,28 +56,28 @@ class WhereICanBuy extends Component {
                     workDay: "ПН-ВС 10:00-21:00",
                     regionPhone: "8(800) 500-87-41",
                     map: require("../images/map.png").default
-                },{
+                }, {
                     city: "Москва",
                     phone1: "+7(495) 646-87-80",
                     phone2: "+7(968) 565-82-28",
                     workDay: "ПН-ВС 10:00-21:00",
                     regionPhone: "8(800) 500-87-41",
                     map: require("../images/map.png").default
-                },{
+                }, {
                     city: "Москва",
                     phone1: "+7(495) 646-87-80",
                     phone2: "+7(968) 565-82-28",
                     workDay: "ПН-ВС 10:00-21:00",
                     regionPhone: "8(800) 500-87-41",
                     map: require("../images/map.png").default
-                },{
+                }, {
                     city: "Москва",
                     phone1: "+7(495) 646-87-80",
                     phone2: "+7(968) 565-82-28",
                     workDay: "ПН-ВС 10:00-21:00",
                     regionPhone: "8(800) 500-87-41",
                     map: require("../images/map.png").default
-                },{
+                }, {
                     city: "Москва",
                     phone1: "+7(495) 646-87-80",
                     phone2: "+7(968) 565-82-28",
@@ -87,39 +89,39 @@ class WhereICanBuy extends Component {
             shopCards: [
                 {
                     image: { url: require("../images/sber.png").default, alt: "sber.png", className: "where-i-can-buy__image" },
-                    link:{ url: "/", text: "Сбермаркет"}
+                    link: { url: "/", text: "Сбермаркет" }
                 },
                 {
                     image: { url: require("../images/sber.png").default, alt: "sber.png", className: "where-i-can-buy__image" },
-                    link:{ url: "/", text: "Сбермаркет"}
+                    link: { url: "/", text: "Сбермаркет" }
                 },
                 {
                     image: { url: require("../images/sber.png").default, alt: "sber.png", className: "where-i-can-buy__image" },
-                    link:{ url: "/", text: "Сбермаркет"}
+                    link: { url: "/", text: "Сбермаркет" }
                 },
                 {
                     image: { url: require("../images/sber.png").default, alt: "sber.png", className: "where-i-can-buy__image" },
-                    link:{ url: "/", text: "Сбермаркет"}
+                    link: { url: "/", text: "Сбермаркет" }
                 },
                 {
                     image: { url: require("../images/sber.png").default, alt: "sber.png", className: "where-i-can-buy__image" },
-                    link:{ url: "/", text: "Сбермаркет"}
+                    link: { url: "/", text: "Сбермаркет" }
                 },
                 {
                     image: { url: require("../images/sber.png").default, alt: "sber.png", className: "where-i-can-buy__image" },
-                    link:{ url: "/", text: "Сбермаркет"}
+                    link: { url: "/", text: "Сбермаркет" }
                 },
                 {
                     image: { url: require("../images/sber.png").default, alt: "sber.png", className: "where-i-can-buy__image" },
-                    link:{ url: "/", text: "Сбермаркет"}
+                    link: { url: "/", text: "Сбермаркет" }
                 },
                 {
                     image: { url: require("../images/sber.png").default, alt: "sber.png", className: "where-i-can-buy__image" },
-                    link:{ url: "/", text: "Сбермаркет"}
+                    link: { url: "/", text: "Сбермаркет" }
                 },
                 {
                     image: { url: require("../images/sber.png").default, alt: "sber.png", className: "where-i-can-buy__image" },
-                    link:{ url: "/", text: "Сбермаркет"}
+                    link: { url: "/", text: "Сбермаркет" }
                 }
             ]
         }
@@ -128,7 +130,7 @@ class WhereICanBuy extends Component {
     shopCardSelect(map) {
         this.setState({ mapImageUrl: map })
     }
-    
+
     render() {
         return (
             <div className="where">
@@ -148,22 +150,22 @@ class WhereICanBuy extends Component {
                             <div className="where-i-can-buy__grid-container">
                                 {this.state.shopCards.map((item, index) => {
                                     return (
-                                        <ShopCard     
-                                            key={index}  
+                                        <ShopCard
+                                            key={index}
                                             image={item.image}
                                             link={item.link}
-                                        />)                                    
-                                })}                                             
+                                        />)
+                                })}
                             </div>
                         </TabPanel>
                         <TabPanel>
                             <div className="where-i-can-buy__shops">
                                 <div className="where-i-can-buy__list-shops">
-                                    { this.state.shops.map((item, index) => {
-                                        return(
-                                            <div key={index}  
-                                                onClick={()=> this.shopCardSelect(item.map)}>
-                                                <BuyShopCard shop={item}/> 
+                                    {this.state.shops.map((item, index) => {
+                                        return (
+                                            <div key={index}
+                                                onClick={() => this.shopCardSelect(item.map)}>
+                                                <BuyShopCard shop={item} />
                                             </div>
                                         )
                                     })}
@@ -177,6 +179,13 @@ class WhereICanBuy extends Component {
                         </TabPanel>
                     </Tabs>
                 </section>
+                <div className="mobile-photo-container">
+                    <Image
+                        src={require("../images/gallery-item2.png").default}
+                        alt={"mobile__photo"}
+                        className={"mobile__photo"}
+                    />
+                </div>
                 <section className="main"><Footer /></section>
             </div>
         )

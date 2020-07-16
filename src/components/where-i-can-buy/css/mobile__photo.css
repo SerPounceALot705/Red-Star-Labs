@@ -1,0 +1,23 @@
+.mobile__photo {
+    display: none;
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .mobile__photo {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .mobile__photo {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+}

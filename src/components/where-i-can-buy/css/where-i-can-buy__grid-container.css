@@ -7,3 +7,31 @@
     margin-top: 35px;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .where-i-can-buy__grid-container {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .where-i-can-buy__grid-container {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .where-i-can-buy__grid-container {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .where-i-can-buy__grid-container {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}

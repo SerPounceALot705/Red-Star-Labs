@@ -3,3 +3,29 @@
     flex-direction: column;
     padding: 30px;
 }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .contacts-form__select-main-container  {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .contacts-form__select-main-container  {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .contacts-form__select-main-container  {
+        width: 302px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .contacts-form__select-main-container  {
+        padding: 0;
+        width: 275px;
+    }
+}

@@ -1,4 +1,49 @@
 .contacts__container {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1600px) and (min-width: 1441px) {
+    .contacts__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .contacts__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .contacts__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .contacts__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .contacts__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .contacts__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

@@ -8,3 +8,30 @@
     line-height: 23.72px;
     margin-bottom: 21px;
 }
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .for-wholesale-customers-form__subtitle {
+        width: 550px;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .for-wholesale-customers-form__subtitle {
+        width: 550px;
+        margin-bottom: 35px;
+    }
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .for-wholesale-customers-form__subtitle  {
+       font-size: 12px;
+    }   
+}
+
+@media screen and (max-width: 425px) and (min-width: 375px) {
+    .for-wholesale-customers-form__subtitle {
+        font-size: 12px;
+    }
+}

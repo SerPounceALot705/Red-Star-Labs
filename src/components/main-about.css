@@ -6,29 +6,38 @@
     max-width: 100%;
     height: auto;
     position: relative;
+    height: 1080px;
 }
 
-@media screen and (max-width: 1440px) and (min-width: 1200px) {
+@media screen and (max-width: 1700px) and (min-width: 1441px) {
     .main-about {
-        
+        height: 880px;
     }
 }
 
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .main-about {
+        height: 720px;
+    }
+}
+
+
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
     .main-about {
-       
+        height: 650px;
     }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     .main-about {
-        
+        height: 455px;
     }
 }
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
     .main-about {
-
+        
     }
 }
 

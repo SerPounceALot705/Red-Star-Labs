@@ -8,3 +8,31 @@
     border-bottom: rgba(0, 0, 0, 0.4) 1px solid;
     padding-left: 10px;
 }
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+    .contact-form__select {
+        height: 35px;
+        width: 510px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .contact-form__select {
+        height: 35px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .contact-form__select {
+        height: 35px;
+        width: 302px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .contact-form__select {
+        height: 35px;
+        width: 250px;
+    }
+}
