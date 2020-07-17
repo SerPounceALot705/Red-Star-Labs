@@ -5,3 +5,36 @@
     position: relative;
     z-index: 0;
 }
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .catalog__line-product {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .catalog__line-product {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .catalog__line-product {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .catalog__line-product {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

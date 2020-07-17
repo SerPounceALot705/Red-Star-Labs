@@ -1,0 +1,33 @@
+.product-line__adaptive-image {
+    display: none;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .product-line__adaptive-image {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .product-line__adaptive-image {
+        display: flex;
+     }
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .product-line__adaptive-image {
+       display: flex;
+    }
+    
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .product-line__adaptive-image {
+        display: flex;
+     }
+}

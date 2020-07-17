@@ -50,3 +50,7 @@
 @import "./button-pagination-right.css";
 @import "./product-line-categories__container.css";
 @import "./product-line__filter-item.css";
+@import "./product-line__adaptive-image.css";
+@import "./product-line__adaptive-image-logo.css";
+@import "./product-line__adaptive-image-container.css";
+@import "./product__photo.css";

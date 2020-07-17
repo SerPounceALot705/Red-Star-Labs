@@ -3,3 +3,17 @@
     height: 60px;
     opacity: 0.7;
 }
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .pattern__photo {
+        width: 165px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .pattern__photo {
+        width: 135px;
+        height: 40px;
+    }
+}

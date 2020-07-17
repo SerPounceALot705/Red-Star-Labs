@@ -10,3 +10,18 @@
     margin-right: 15px;
     margin-left: 15px;
 }
+
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .product-price {
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .product-price {
+        font-size: 16px;
+        margin: 0;
+    }
+}

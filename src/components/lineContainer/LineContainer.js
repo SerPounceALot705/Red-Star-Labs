@@ -34,6 +34,18 @@ class LineContainer extends Component {
                 />
                 <section className="product-line">
                     <div className="product-line__container">
+                        <div className="product-line__adaptive-image-container">
+                            <Image
+                                src={require("../../images/gallery-item2.png").default}
+                                alt={"adaptive-image01"}
+                                className={"product-line__adaptive-image"}
+                            />
+                            <Image
+                                src={require("../../images/super-line.png").default}
+                                alt={"adaptive-image-logo"}
+                                className={"product-line__adaptive-image-logo"}
+                            />
+                        </div>
                         <div className="product-line-photo__container">
                             <Image
                                 src={this.props.value.url}

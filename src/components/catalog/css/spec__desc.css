@@ -20,3 +20,10 @@ margin-top: 11px;
         font-size: 10px;
     }
 }
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .catalog__line-product .spec__desc {
+        font-size: 10px;
+        line-height: 15.21px;
+    }
+}

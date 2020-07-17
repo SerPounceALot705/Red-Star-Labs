@@ -2,3 +2,9 @@
     display: flex;
     margin-bottom: 15px;
 }
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .product__container{
+        justify-content: flex-start;
+    }
+}

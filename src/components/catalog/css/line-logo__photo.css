@@ -2,3 +2,18 @@
     width: 265px;
     height: 60px;
 }
+
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .line-logo__photo {
+        width: 165px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .line-logo__photo {
+        width: 165px;
+        height: 40px;
+    }
+}

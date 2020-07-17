@@ -1,0 +1,15 @@
+
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .product__photo {
+        width: 150px;
+        height: 165px;
+    }    
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .product__photo {
+        width: 150px;
+        height: 165px;
+    }    
+}
