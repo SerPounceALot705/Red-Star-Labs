@@ -10,3 +10,33 @@
     font-weight: 500;
     text-align: center;
 }
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .product-line__select {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .product-line__select {
+        font-size: 12px;
+        width: 150px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .product-line__select {
+        font-size: 12px;
+        width: 150px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .product-line__select {
+        font-size: 12px;
+        width: 150px;
+        margin-right: 0;
+    }
+}

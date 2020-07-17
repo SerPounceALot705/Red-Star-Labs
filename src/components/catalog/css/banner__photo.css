@@ -1,4 +1,17 @@
 .banner__photo {
     width: 100%;
+    height: auto;
    
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+    .banner__photo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .banner__photo {
+        display: none;
+    }
 }

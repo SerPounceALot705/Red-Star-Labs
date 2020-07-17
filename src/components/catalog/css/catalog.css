@@ -1,4 +1,6 @@
 .catalog {
     z-index: 0;
     overflow: hidden;
+    max-width: 1920px;
+    width: 100%;
 }

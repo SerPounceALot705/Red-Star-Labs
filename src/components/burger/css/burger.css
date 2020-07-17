@@ -1,10 +1,13 @@
 .bm-item {
-    display: inline-block;
     /* Our sidebar item styling */
     text-decoration: none;
     margin-bottom: 10px;
     color: #d1d1d1;
     transition: color 0.2s;
+}
+
+.bm-item ul {
+    padding-left: 0;
 }
 
 .bm-item:hover {

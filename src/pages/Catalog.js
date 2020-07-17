@@ -403,34 +403,36 @@ class Catalog extends Component {
                                     />
                                 }
                             </div>
-                            {this.state.isTarget ? <Targets /> : null }
+                            {this.state.isTarget ? <Targets /> : null}
 
                         </div>
                         <div className="product-line__catalog-cards-container">
                             <div className="product-line__filters-container">
-                                <p>Сортировать продукт</p>
-                                <select className="product-line__select">
-                                    <option className="product-line__option">По популярности</option>
-                                    <option className="product-line__option">Продукт 1</option>
-                                    <option className="product-line__option">Продукт 2</option>
-                                    <option className="product-line__option">Продукт 3</option>
-                                </select>
-                                <p>Вкус</p>
-                                <select className="product-line__select">
-                                    <option className="product-line__option">Темный шоколад</option>
-                                    <option className="product-line__option">Вкус 1</option>
-                                    <option className="product-line__option">Вкус 2</option>
-                                    <option className="product-line__option">Вкус 3</option>
-                                </select>
-                                <p>Цена</p>
-
-                                <InputRange
-                                    draggableTrack
-                                    maxValue={this.state.range.max}
-                                    minValue={this.state.range.min}
-                                    value={this.state.range.value}
-                                    onChange={value => this.habdlerRange(value)}
-                                    onChangeComplete={value => console.log(value)} />
+                                <div className="product-line__filter-item">
+                                    <p>Сортировать продукт</p>
+                                    <select className="product-line__select">
+                                        <option className="product-line__option">По популярности</option>
+                                        <option className="product-line__option">Продукт 1</option>
+                                        <option className="product-line__option">Продукт 2</option>
+                                        <option className="product-line__option">Продукт 3</option>
+                                    </select></div>
+                                <div className="product-line__filter-item">
+                                    <p>Вкус</p>
+                                    <select className="product-line__select">
+                                        <option className="product-line__option">Темный шоколад</option>
+                                        <option className="product-line__option">Вкус 1</option>
+                                        <option className="product-line__option">Вкус 2</option>
+                                        <option className="product-line__option">Вкус 3</option>
+                                    </select></div>
+                                <div className="product-line__filter-item">
+                                    <p>Цена</p>
+                                    <InputRange
+                                        draggableTrack
+                                        maxValue={this.state.range.max}
+                                        minValue={this.state.range.min}
+                                        value={this.state.range.value}
+                                        onChange={value => this.habdlerRange(value)}
+                                        onChangeComplete={value => console.log(value)} /></div>
                             </div>
                             <div className="product-line__cards">
                                 {this.state.products.map((item, index) => {

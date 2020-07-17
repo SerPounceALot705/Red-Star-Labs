@@ -111,3 +111,34 @@
     transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
     transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
+
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .input-range {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .input-range {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .input-range {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .input-range {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .input-range {
+        width: 100%;
+    }
+}

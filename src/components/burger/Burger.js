@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { slide as Menu } from 'react-burger-menu';
 import LinkUrl from "../header/js/linkUrl.js";
 import LineCard from "../dropDownMenu/js/LineCard.js";
+import Nav from "../header/js/nav.js";
 
 import "./css/burger.css";
 
@@ -27,7 +28,9 @@ class Burger extends Component {
         return (
             <Menu right>
                 <div>
+                
                     <ul>
+                    <h2 className="header__dropdown-content-title">Продукция</h2>
                         <li>
                             <LinkUrl url={"/"} name={"Протеины"} className={"header__dropdown-content-title-link"} />
                             <ul className="header__dropdown-content-list">
@@ -126,10 +129,22 @@ class Burger extends Component {
                     </div>
                 </div>
                 <div>
-                    <Link className="menu-item" to="/">О БРЕНДЕ</Link>
-                    <Link className="menu-item" to="/about">ГДЕ КУПИТЬ?</Link>
-                    <Link className="menu-item" to="/contact">ОПТОВЫМ КЛИЕНТАМ</Link>
-                    <Link className="menu-item" to="/contact">КОНТАКТЫ</Link>
+                <Nav className="header__nav-links"
+                    links={[
+                        { url: "#", name: "продукция", isDrop: true },
+                        { url: "About", name: "о бренде" },
+                        { url: "WhereICanBuy", name: "где купить?" },
+                        { url: "WholesaleCustomers", name: "оптовым клиентам" },
+                        { url: "Contacts", name: "контакты" },
+                    ]}
+                />
+                <Nav className="header__nav-social"
+                    links={[
+                        { url: "#", name: "fb" },
+                        { url: "#", name: "vk" },
+                        { url: "#", name: "in" },
+                    ]}
+                />
 
                 </div>
             </Menu>)
