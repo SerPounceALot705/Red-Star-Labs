@@ -6,8 +6,7 @@ import Header from "../components/header/header.js";
 import Footer from "../components/footer/js/footer.js";
 import Image from "../components/image/image.js";
 import Calculator from "../components/calculator/Calculator.js";
-import AnalyticsItem from "../components/analyticsItem/analyticsItem.js";
-
+import DetaieldDescription from "../components/detaieldDescription/DetaieldDescription.js";
 
 import "../components/card.css";
 import "../components/card/css/imports.css";
@@ -15,10 +14,19 @@ class Card extends Component {
 
     constructor(props) {
         super(props)
+
+        this.state = {
+            isDetaield: true
+        }
+
+        this.handlerIsDetaield = this.handlerIsDetaield.bind(this);
     }
 
-
-
+    handlerIsDetaield() {
+        this.setState({
+            isDetaield: !this.state.isDetaield
+        })
+    }
 
     render() {
 
@@ -28,9 +36,9 @@ class Card extends Component {
 
         return (
             <div className="main">
-
                 <section className="card">
                     <Header />
+            
                     <div className="card__container">
                         <nav className="contacts__menu">
                             <Link to="/" className="contacts__menu-item">{"Главная страница > "}</Link>
@@ -117,13 +125,21 @@ class Card extends Component {
                                     />
                                     <button className="card__button">Добавить в корзину</button>
                                 </div>
-                                <div className="product-line__button">
+                                <div onClick={() => this.handlerIsDetaield()} className="product-line__button">
                                     <p>Все характеристики</p>
-                                    <Image
-                                        src={require("../images/arrow.png").default}
-                                        alt={"arrow"}
-                                        className={"arrow__photo"}
-                                    />
+
+                                    {this.state.isDetaield 
+                                        ? <Image
+                                            src={require("../images/arrowup.png").default}
+                                            alt={"arrow"}
+                                            className={"arrow__photo"}
+                                        />
+                                        : <Image
+                                            src={require("../images/arrow.png").default}
+                                            alt={"arrow"}
+                                            className={"arrow__photo"}
+                                        />
+                                    }
                                 </div>
                             </div>
                             <Image
@@ -134,100 +150,34 @@ class Card extends Component {
                         </div>
                     </div>
                 </section>
-                <section className="card__detailed-description">
-                    <div className="card__detailed-desc-first-container">
-                        <h2 className="card__detailed-title">
-                            Clear Whey Isolate
-                        </h2>
-                        <p className="card__detailed-text">Это не просто еще один вид протеинового коктейля.
-                        Из высококачественного изолята сывороточного протеина
-                        мы сделали продукт для приготовления легкого,
-                        освежающего коктейля. По вкусу он больше напоминает сок.
-                        </p>
-                        <p className="card__detailed-text">
-                            В линейке представлено 5 великолепных фруктовых
-                            вкусов, среди которых горький лимон, апельсин с манго,
-                            персиковый чай, мохито и фруктовая карамель.
-                            </p>
-                        <h2 className="card__detailed-title-first">Для каких целей</h2>
-                        <div>
-                            <div className="product-line__spec-main-container">
 
-                                <div className="product-line__spec">
-                                    <Image
-                                        src={require("../images/ico-spec.png").default}
-                                        alt={"icon-spec__photo"}
-                                        className={"icon-spec__photo"}
-                                    />
-                                    <p className="spec__desc">При интенсивном стиле тренеровок</p>
-                                </div>
-                                <div className="product-line__spec">
-                                    <Image
-                                        src={require("../images/ico-spec2.png").default}
-                                        alt={"icon-spec__photo"}
-                                        className={"icon-spec__photo"}
-                                    />
-                                    <p className="spec__desc">Повышенный витаминный комплекс</p>
-                                </div>
-                                <div className="product-line__spec">
-                                    <Image
-                                        src={require("../images/ico-spec3.png").default}
-                                        alt={"icon-spec__photo"}
-                                        className={"icon-spec__photo"}
-                                    />
-                                    <p className="spec__desc">Для достижения быстрых резуальтатов</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card__detailed-desc-second-container">
-                        <h2 className="card__detailed-title-sec">
-                            Ключевые преимущества
-                            </h2>
-                        <p className="card__detailed-text-sec">20 г протеина;</p>
-                        <p className="card__detailed-text-sec">легкий и освежающий;</p>
-                        <p className="card__detailed-text-sec">без молочного вкуса и текстуры;</p>
-                        <p className="card__detailed-text-sec">4 г BCAA и 3 г глютамина;</p>
-                        <p className="card__detailed-text-sec">мало сахара;</p>
-                        <p className="card__detailed-text-sec">фруктовые вкусы.</p>
-                        <div className="card__analytics">
-                            <AnalyticsItem
-                                items={[
-                                    { value: "85%", text: "Cодержание действующих веществ" },
-                                    { value: "65%", text: "Витаминный комплекс" },
-                                    { value: "70%", text: "Содержания углеводов" },
-                                    { value: "20%", text: "Сахар" }
-                                ]}
-                            />
-                        </div>
-                    </div>
-                    <div className="card__detailed-desc-third-container">
-                        <h2 className="card__detailed-title">Состав</h2>
-                        <table className="card__table-border">
-                            <tbody>
-                                <tr><td className="card__table-text">Порция</td><td className="card__table-text">40<span className="card__table-sub"> г</span></td></tr>
-                                <tr><td className="card__table-text">Количество порций</td><td className="card__table-text">20<span className="card__table-sub"></span></td></tr>
-                                <tr><td className="card__table-text">Калории</td><td className="card__table-text">140<span className="card__table-sub"> ккал</span></td></tr>
-                                <tr><td className="card__table-text">Калории из жиров</td><td className="card__table-text">18<span className="card__table-sub"> ккал</span></td></tr>
-                                <tr><td className="card__table-text">Всего жиров</td><td className="card__table-text">2<span className="card__table-sub"></span></td></tr>
-                                <tr><td className="card__table-text">Глюкоза</td><td className="card__table-text">2,1<span className="card__table-sub"></span></td></tr>
-                                <tr><td className="card__table-text">Белка</td><td className="card__table-text">28<span className="card__table-sub"></span></td></tr>
-                                <tr><td className="card__table-text">Витамин А</td><td className="card__table-text">0,21<span className="card__table-sub"> мг</span></td></tr>
-                                <tr><td className="card__table-text">Витамин Д3</td><td className="card__table-text">1,8<span className="card__table-sub"> мкг</span></td></tr>
-                                <tr><td className="card__table-text">Витамин Е</td><td className="card__table-text">1,2<span className="card__table-sub"> мг</span></td></tr>
-                                <tr><td className="card__table-text">Витамин В1</td><td className="card__table-text">0,21<span className="card__table-sub"> мг</span></td></tr>
-                                <tr><td className="card__table-text">Витамин В2</td><td className="card__table-text">0,21<span className="card__table-sub"> мг</span></td></tr>
-                                <tr><td className="card__table-text">Витамин В6</td><td className="card__table-text">0,21<span className="card__table-sub"> мг</span></td></tr>
-                                <tr><td className="card__table-text">Ниацин</td><td className="card__table-text">3,15<span className="card__table-sub"> мг</span></td></tr>
-                                <tr><td className="card__table-text">Фолиевая кислота</td><td className="card__table-text">0,08<span className="card__table-sub"> мг</span></td></tr>
-                                <tr><td className="card__table-text">Пантотеновая кислота</td><td className="card__table-text">1,15<span className="card__table-sub" > мг</span></td></tr>
-                                <tr><td className="card__table-text">Биотин</td><td className="card__table-text">0,031<span className="card__table-sub"> мг</span></td></tr>
-                                <tr><td className="card__table-text">Витамин В12</td><td className="card__table-text">0,525<span className="card__table-sub"> мкг</span></td></tr>
-                                <tr><td className="card__table-text">Витамин С</td><td className="card__table-text">147<span className="card__table-sub"> мг</span></td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
+                {
+                    this.state.isDetaield ?
+                        <DetaieldDescription table={
+                            [
+                                { text: "Порция", value: "40", span: " г" },
+                                { text: "Количество порций", value: "20", span: "" },
+                                { text: "Калории", value: "140", span: " ккал" },
+                                { text: "Калории из жиров", value: "18", span: " ккал" },
+                                { text: "Всего жиров", value: "2", span: "" },
+                                { text: "Глюкоза", value: "2,1", span: " г" },
+                                { text: "Белка", value: "28", span: " г" },
+                                { text: "Витамин А", value: "0,21", span: " мг" },
+                                { text: "Витамин Д3", value: "1,8", span: " мкг" },
+                                { text: "Витамин Е", value: "1,2", span: " мг" },
+                                { text: "Витамин В1", value: "0,21", span: " мг" },
+                                { text: "Витамин В6", value: "0,21", span: " мг" },
+                                { text: "Ниацин", value: "0,21", span: " мг" },
+                                { text: "Фолиевая кислота", value: "3,15", span: " мг" },
+                                { text: "Пантотеновая кислота", value: "0,08", span: " мг" },
+                                { text: "Биотин", value: "1,15", span: " мг" },
+                                { text: "Витамин В12", value: "0,031", span: " мкг" },
+                                { text: "Витамин С", value: "147", span: " мг" },
+                            ]
+                        } />
+                        : null
+                }
+
                 <section className="card__rewiew">
                     <div className="card__rewiew-form-container-main">
                         <h2 className="card__rewiew-title">Оставить свой отзыв</h2>
@@ -242,7 +192,7 @@ class Card extends Component {
                                         color2={'#ad1410'} />
                                 </div>
                             </div>
-                            <input input className="card__input-name" placeholder="* Имя" type="text" minLength="2" maxLength="30" required />
+                            <input className="card__input-name" placeholder="* Имя" type="text" minLength="2" maxLength="30" required />
                             <input className="card__input-email" placeholder="* Email" type="email" minLength="2" maxLength="30" required />
                             <div className="card__rewiew-input-container">
                                 <input className="card__input-topic" placeholder="* Тема" type="text" minLength="2" maxLength="30" required />
@@ -374,7 +324,7 @@ class Card extends Component {
                     </div>
                     <iframe id="ytplayer" type="text/html" width="720" height="405"
                         src="https://www.youtube.com/embed/iAjXRSvnMG0"
-                        frameborder="0" allowfullscreen>
+                    >
                     </iframe>
                 </section>
                 <section className="card__other-product-line">

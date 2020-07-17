@@ -45,7 +45,7 @@ class DropDownMenu extends Component {
                             <li><LinkUrl url={"/"} name={"Предтренировочные комплексы"} className={"header__dropdown-content-title-link"} /></li>
                             <li><LinkUrl url={"/"} name={"Препараты для связок и суставов"} className={"header__dropdown-content-title-link"} /></li>
                         </ul>
-                        <LinkUrl url={"/Catalog"} name={"Весь каталог"} className={"header__dropdown-content-catalog-link"} />
+                        <LinkUrl url={"catalog"} name={"Весь каталог"} className={"header__dropdown-content-catalog-link"} />
                     </div>
                     <div className="header__dropdown-content-product">
                         <h2 className="header__dropdown-content-title">Продукты по ценам</h2>
