@@ -1,14 +1,4 @@
 
 
 
-@media screen and (max-width: 767px) and (min-width: 425px) {
-    .product-line-categories__container {
-        display: none;
-    }
-}
 
-@media screen and (max-width: 424px) and (min-width: 375px) {
-    .product-line-categories__container {
-        display: none;
-    }
-}

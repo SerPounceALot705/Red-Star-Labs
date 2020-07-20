@@ -16,7 +16,15 @@ class Burger extends Component {
             isLine: true
         }
 
-        window.addEventListener('resize', this.handleResize.bind(this));
+        this.handleResize = this.handleResize.bind(this);
+    }
+
+    componentDidMount() {
+        window.addEventListener("resize", this.handleResize, false);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.handleResize, false);
     }
 
     handleResize() {
@@ -61,8 +69,7 @@ class Burger extends Component {
         return (
             <Menu right>
 
-                { this.state.isLine ? this.product() : <BurgerProductLine />}
-
+                {this.state.isLine ? this.product() : <BurgerProductLine />}
 
                 <div onClick={() => this.handkerIsLine()}>
                     Линейки
