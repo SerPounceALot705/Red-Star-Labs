@@ -46,7 +46,7 @@ class DetaieldDescription extends Component {
                     <div className="product-line__spec-main-container">
                         <div className="product-line__spec">
                             <Image
-                                src={require("../../images/ico-spec.png").default}
+                                src={require("../../images/ico-spec.png")}
                                 alt={"icon-spec__photo"}
                                 className={"icon-spec__photo"}
                             />
@@ -54,7 +54,7 @@ class DetaieldDescription extends Component {
                         </div>
                         <div className="product-line__spec">
                             <Image
-                                src={require("../../images/ico-spec2.png").default}
+                                src={require("../../images/ico-spec2.png")}
                                 alt={"icon-spec__photo"}
                                 className={"icon-spec__photo"}
                             />
@@ -62,7 +62,7 @@ class DetaieldDescription extends Component {
                         </div>
                         <div className="product-line__spec">
                             <Image
-                                src={require("../../images/ico-spec3.png").default}
+                                src={require("../../images/ico-spec3.png")}
                                 alt={"icon-spec__photo"}
                                 className={"icon-spec__photo"}
                             />

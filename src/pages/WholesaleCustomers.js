@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Header from "../components/header/header.js";
 import Footer from "../components/footer/js/footer.js";
 import Image from "../components/image/image.js";
@@ -29,10 +28,6 @@ import "../components/wholesaleCustomers/css/wholesale-customers__main-container
 
 
 class WholesaleCustomers extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <section className="wholesale-customers">
@@ -40,8 +35,8 @@ class WholesaleCustomers extends Component {
                     <Header />
                     <div className="wholesale-customers__main-container">
                         <nav className="contacts__menu">
-                            <Link to="/" className="contacts__menu-item">{"Главная страница > "}</Link>
-                            <Link to="/" className="contacts__menu-item contacts__menu-item_active">{"Оптовым клиентам"}</Link>
+                            <a href="/" className="contacts__menu-item">Главная страница ></a>
+                            <a href="/" className="contacts__menu-item contacts__menu-item_active">Оптовым клиентам</a>
                         </nav>
                         <div className="for-wholesale-customers">
                             <div className="for-wholesale-customers-form">
@@ -65,7 +60,7 @@ class WholesaleCustomers extends Component {
                                 <h2 className="for-wholesale-customers-advantages__title">Наши преимущества:</h2>
                                 <div className="for-wholesale-customers-advantages__container">
                                     <Image
-                                        src={require("../images/advantages1.png").default}
+                                        src={require("../images/advantages1.png")}
                                         alt={"advantages__foto01"}
                                         className={"advantages__foto"}
                                     />
@@ -73,7 +68,7 @@ class WholesaleCustomers extends Component {
                                 </div>
                                 <div className="for-wholesale-customers-advantages__container">
                                     <Image
-                                        src={require("../images/advantages2.png").default}
+                                        src={require("../images/advantages2.png")}
                                         alt={"advantages__foto02"}
                                         className={"advantages__foto"}
                                     />
@@ -81,7 +76,7 @@ class WholesaleCustomers extends Component {
                                 </div>
                                 <div className="for-wholesale-customers-advantages__container">
                                     <Image
-                                        src={require("../images/advantages3.png").default}
+                                        src={require("../images/advantages3.png")}
                                         alt={"advantages__foto03"}
                                         className={"advantages__foto"}
                                     />
@@ -89,7 +84,7 @@ class WholesaleCustomers extends Component {
                                 </div>
                                 <div className="for-wholesale-customers-advantages__container">
                                     <Image
-                                        src={require("../images/advantages4.png").default}
+                                        src={require("../images/advantages4.png")}
                                         alt={"advantages__foto04"}
                                         className={"advantages__foto"}
                                     />
@@ -98,7 +93,7 @@ class WholesaleCustomers extends Component {
                                 <div className="for-wholesale-customers-advantages__buttons-container">
                                     <div className="for-wholesale-customers-advantages__button-container">
                                         <Image
-                                            src={require("../images/icon1.png").default}
+                                            src={require("../images/icon1.png")}
                                             alt={"buttons__foto-01"}
                                             className={"buttons__foto"}
                                         />
@@ -106,7 +101,7 @@ class WholesaleCustomers extends Component {
                                     </div>
                                     <div className="for-wholesale-customers-advantages__button-container">
                                         <Image
-                                            src={require("../images/icon2.png").default}
+                                            src={require("../images/icon2.png")}
                                             alt={"buttons__foto-02"}
                                             className={"buttons__foto"}
                                         />

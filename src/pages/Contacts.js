@@ -1,11 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Header from "../components/header/header.js";
-import Basket from "../components/header/js/basket.js";
 import Footer from "../components/footer/js/footer.js";
-import Image from "../components/image/image.js";
-import { checkPropTypes } from "prop-types";
-
 
 import "../components/contacts.css";
 import "../components/contacts/css/contacts__main.css";
@@ -36,10 +31,6 @@ import "../components/contacts/css/contacts-form.css";
 
 
 class Contacts extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <section className="contacts">
@@ -47,8 +38,8 @@ class Contacts extends Component {
                     <Header />
                     <div className="contacts-main-container">
                         <nav className="contacts__menu">
-                            <Link to="/" className="contacts__menu-item">{"Главная страница > "}</Link>
-                            <Link to="/" className="contacts__menu-item contacts__menu-item_active">{"контакты"}</Link>
+                            <a href="/" className="contacts__menu-item">Главная страница > </a>
+                            <a href="/" className="contacts__menu-item contacts__menu-item_active">контакты</a>
                         </nav>
                         <div className="contacts__container">
                             <div className="contacts__information-container">

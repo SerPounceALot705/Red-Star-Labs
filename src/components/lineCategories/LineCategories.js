@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Image from "../../components/image/image.js";
-import LinkUrl from "../../components/header/js/linkUrl.js";
-import { render } from "react-dom";
 
 class LineCategories extends Component {
     constructor(props) {
@@ -15,10 +13,10 @@ class LineCategories extends Component {
             isTarget: true,
             selectBrand: {},
             brandButton: {
-                basic: require("../../images/basic-line.png").default,
-                ess: require("../../images/ess-lin.png").default,
-                super: require("../../images/super-line.png").default,
-                beo: require("../../images/beo-line.png").default
+                basic: require("../../images/basic-line.png"),
+                ess: require("../../images/ess-lin.png"),
+                super: require("../../images/super-line.png"),
+                beo: require("../../images/beo-line.png")
             }
         }
     }
@@ -26,17 +24,17 @@ class LineCategories extends Component {
     handlerTop(value) {
 
         const defaultBrand = {
-            basic: require("../../images/basic-line.png").default,
-            ess: require("../../images/ess-lin.png").default,
-            super: require("../../images/super-line.png").default,
-            beo: require("../../images/beo-line.png").default
+            basic: require("../../images/basic-line.png"),
+            ess: require("../../images/ess-lin.png"),
+            super: require("../../images/super-line.png"),
+            beo: require("../../images/beo-line.png")
         }
 
         switch (value.brand) {
-            case "basic": defaultBrand.basic = require("../../images/logobasic.png").default; break;
-            case "ess": defaultBrand.ess = require("../../images/logoEssential.png").default; break;
-            case "super": defaultBrand.super = require("../../images/super-line.png").default; break;
-            case "beo": defaultBrand.beo = require("../../images/logoBeo.png").default; break;
+            case "basic": defaultBrand.basic = require("../../images/logobasic.png"); break;
+            case "ess": defaultBrand.ess = require("../../images/logoEssential.png"); break;
+            case "super": defaultBrand.super = require("../../images/super-line.png"); break;
+            case "beo": defaultBrand.beo = require("../../images/logoBeo.png"); break;
         }
 
         this.setState({
@@ -70,13 +68,13 @@ class LineCategories extends Component {
         function ProteinList() {
             return (
                 <ul className="product-line__categories">
-                    <li><LinkUrl url={"/"} name={"Протеины"} className={"product-line__dropdown-content-title-link"} /></li>
+                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Протеины</a></li>
                     <li>
                         <ul>
-                            <li><LinkUrl url={"/"} name={"Сывороточный"} className={"product-line__dropdown-content-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Изолят"} className={"product-line__dropdown-content-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Казеин"} className={"product-line__dropdown-content-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Говяжий"} className={"product-line__dropdown-content-link"} /></li>
+                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Сывороточный</a></li>
+                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Изолят</a></li>
+                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Казеин</a></li>
+                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Говяжий</a></li>
                         </ul>
                     </li>
                 </ul>);
@@ -87,11 +85,11 @@ class LineCategories extends Component {
                 <ul className="product-line__targets">
                     <li>
                         <ul className="product-line__targets-list">
-                            <li><LinkUrl url={"/"} name={"Повышение выносливости"} className={"product-line__dropdown-content-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Похудение и снижение веса"} className={"product-line__dropdown-content-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Набор массы"} className={"product-line__dropdown-content-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Здоровье и долголетие"} className={"product-line__dropdown-content-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Здоровый сон и восстановление"} className={"product-line__dropdown-content-link"} /></li>
+                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Повышение выносливости</a></li>
+                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Похудение и снижение веса</a></li>
+                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Набор массы</a></li>
+                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Здоровье и долголетие</a></li>
+                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Здоровый сон и восстановление</a></li>
                         </ul>
                     </li>
                 </ul>);
@@ -103,13 +101,13 @@ class LineCategories extends Component {
                     <h2 className={"product-line__dropdown-title-link"}> Категории </h2>
                     {this.state.isProductList ?
                         <Image
-                            src={require("../../images/productArrowUp.png").default}
+                            src={require("../../images/productArrowUp.png")}
                             alt="arow"
                             width={7}
                             height={7}
                         /> :
                         <Image
-                            src={require("../../images/productArrow.png").default}
+                            src={require("../../images/productArrow.png")}
                             alt="arow"
                             width={7}
                             height={7}
@@ -119,25 +117,25 @@ class LineCategories extends Component {
                 {this.state.isProductList ? <ProteinList /> : null}
 
                 <ul className="product-line__categories">
-                    <li><LinkUrl url={"/"} name={"Витамины и минералы"} className={"product-line__dropdown-content-title-link"} /></li>
-                    <li><LinkUrl url={"/"} name={"Аминокислоты и ВСАА"} className={"product-line__dropdown-content-title-link"} /></li>
-                    <li><LinkUrl url={"/"} name={"Карнитин"} className={"product-line__dropdown-content-title-link"} /></li>
-                    <li><LinkUrl url={"/"} name={"Специальные препараты"} className={"product-line__dropdown-content-title-link"} /></li>
-                    <li><LinkUrl url={"/"} name={"Батончики"} className={"product-line__dropdown-content-title-link"} /></li>
-                    <li><LinkUrl url={"/"} name={"Предтренировочные комплексы"} className={"product-line__dropdown-content-title-link"} /></li>
-                    <li><LinkUrl url={"/"} name={"Препараты для связок и суставов"} className={"product-line__dropdown-content-title-link"} /></li>
+                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Витамины и минералы</a></li>
+                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Аминокислоты и ВСАА</a></li>
+                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Карнитин</a></li>
+                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Специальные препараты</a></li>
+                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Батончики</a></li>
+                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Предтренировочные комплексы</a></li>
+                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Препараты для связок и суставов</a></li>
                 </ul>
 
                 <div className="product-line__drop" onClick={() => this.handlerIsLine()}>
                     <h2 className={"product-line__dropdown-title-link"}>Линейки</h2>
                     {this.state.isLine ? <Image
-                        src={require("../../images/productArrowUp.png").default}
+                        src={require("../../images/productArrowUp.png")}
                         alt="arow"
                         width={7}
                         height={7}
                     /> :
                         <Image
-                            src={require("../../images/productArrow.png").default}
+                            src={require("../../images/productArrow.png")}
                             alt="arow"
                             width={7}
                             height={7}
@@ -157,7 +155,7 @@ class LineCategories extends Component {
                                                 { value: "70%", text: "Содержания углеводов" },
                                                 { value: "20%", text: "Сахар" }
                                             ],
-                                            url: require("../../images/line-logo.png").default,
+                                            href: require("../../images/line-logo.png"),
                                             brand: "basic"
                                         }
 
@@ -181,7 +179,7 @@ class LineCategories extends Component {
                                                 { value: "70%", text: "Содержания углеводов" },
                                                 { value: "25%", text: "Сахар" }
                                             ],
-                                            url: require("../../images/line-logo.png").default,
+                                            href: require("../../images/line-logo.png"),
                                             brand: "ess"
                                         }
 
@@ -205,7 +203,7 @@ class LineCategories extends Component {
                                                 { value: "50%", text: "Содержания углеводов" },
                                                 { value: "15%", text: "Сахар" }
                                             ],
-                                            url: require("../../images/line-logo.png").default,
+                                            href: require("../../images/line-logo.png"),
                                             brand: "super"
                                         }
 
@@ -229,7 +227,7 @@ class LineCategories extends Component {
                                                 { value: "60%", text: "Содержания углеводов" },
                                                 { value: "40%", text: "Сахар" }
                                             ],
-                                            url: require("../../images/line-logo.png").default,
+                                            href: require("../../images/line-logo.png"),
                                             brand: "beo"
                                         }
                                         
@@ -252,13 +250,13 @@ class LineCategories extends Component {
                     <h2 className={"product-line__dropdown-title-link"}>Цели</h2>
                     {this.state.isTarget ?
                         <Image
-                            src={require("../../images/productArrowUp.png").default}
+                            src={require("../../images/productArrowUp.png")}
                             alt="arow"
                             width={7}
                             height={7}
                         /> :
                         <Image
-                            src={require("../../images/productArrow.png").default}
+                            src={require("../../images/productArrow.png")}
                             alt="arow"
                             width={7}
                             height={7}

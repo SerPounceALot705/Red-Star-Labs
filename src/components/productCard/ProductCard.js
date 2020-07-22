@@ -33,11 +33,11 @@ class ProductCard extends Component {
                             url: "About"
                         },
                         logo: {
-                            url: require("../../images/logobasic.png").default,
+                            url: require("../../images/logobasic.png"),
                             alt: "logobasic"
                         },
                         product: {
-                            url: require("../../images/whey.png").default,
+                            url: require("../../images/whey.png"),
                             alt: "whey"
                         }
                     },
@@ -49,10 +49,10 @@ class ProductCard extends Component {
                             { value: "22%", text: "Сахар" },
                         ],
                         images: [
-                            { url: require("../../images/productslide.png").default, text: "Сывороточный протеин (Impact Whey Protein)" },
-                            { url: require("../../images/productslide.png").default, text: "Сывороточный протеин (Impact Whey Protein)" },
-                            { url: require("../../images/productslide.png").default, text: "Сывороточный протеин (Impact Whey Protein)" },
-                            { url: require("../../images/productslide.png").default, text: "Сывороточный протеин (Impact Whey Protein)" },
+                            { url: require("../../images/productslide.png"), text: "Сывороточный протеин (Impact Whey Protein)" },
+                            { url: require("../../images/productslide.png"), text: "Сывороточный протеин (Impact Whey Protein)" },
+                            { url: require("../../images/productslide.png"), text: "Сывороточный протеин (Impact Whey Protein)" },
+                            { url: require("../../images/productslide.png"), text: "Сывороточный протеин (Impact Whey Protein)" },
                         ]
                     }
                 },
@@ -65,11 +65,11 @@ class ProductCard extends Component {
                             url: "About"
                         },
                         logo: {
-                            url: require("../../images/logoEssential.png").default,
+                            url: require("../../images/logoEssential.png"),
                             alt: "logobasic"
                         },
                         product: {
-                            url: require("../../images/Essentialbank.png").default,
+                            url: require("../../images/Essentialbank.png"),
                             alt: "whey"
                         }
                     },
@@ -81,10 +81,10 @@ class ProductCard extends Component {
                             { value: "40%", text: "Сахар" },
                         ],
                         images: [
-                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
-                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
-                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
-                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
+                            { url: require("../../images/premiumWhey2.png"), text: "test" },
+                            { url: require("../../images/premiumWhey2.png"), text: "test" },
+                            { url: require("../../images/premiumWhey2.png"), text: "test" },
+                            { url: require("../../images/premiumWhey2.png"), text: "test" },
                         ]
                     }
                 },
@@ -97,11 +97,11 @@ class ProductCard extends Component {
                             url: "About"
                         },
                         logo: {
-                            url: require("../../images/logoEssential.png").default,
+                            url: require("../../images/logoEssential.png"),
                             alt: "logobasic"
                         },
                         product: {
-                            url: require("../../images/premiumwhey.png").default,
+                            url: require("../../images/premiumwhey.png"),
                             alt: "whey"
                         }
                     },
@@ -113,10 +113,10 @@ class ProductCard extends Component {
                             { value: "10%", text: "Сахар" },
                         ],
                         images: [
-                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
-                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
-                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
-                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
+                            { url: require("../../images/premiumWhey2.png"), text: "test" },
+                            { url: require("../../images/premiumWhey2.png"), text: "test" },
+                            { url: require("../../images/premiumWhey2.png"), text: "test" },
+                            { url: require("../../images/premiumWhey2.png"), text: "test" },
                         ]
                     }
                 },
@@ -129,11 +129,11 @@ class ProductCard extends Component {
                             url: "About"
                         },
                         logo: {
-                            url: require("../../images/logoSuperior.png").default,
+                            url: require("../../images/logoSuperior.png"),
                             alt: "logobasic"
                         },
                         product: {
-                            url: require("../../images/beowulfbank.png").default,
+                            url: require("../../images/beowulfbank.png"),
                             alt: "whey"
                         }
                     },
@@ -145,10 +145,10 @@ class ProductCard extends Component {
                             { value: "26%", text: "Сахар" },
                         ],
                         images: [
-                            { url: require("../../images/productslide.png").default, text: "test" },
-                            { url: require("../../images/productslide.png").default, text: "test2" },
-                            { url: require("../../images/productslide.png").default, text: "test3" },
-                            { url: require("../../images/productslide.png").default, text: "test5" },
+                            { url: require("../../images/productslide.png"), text: "test" },
+                            { url: require("../../images/productslide.png"), text: "test2" },
+                            { url: require("../../images/productslide.png"), text: "test3" },
+                            { url: require("../../images/productslide.png"), text: "test5" },
                         ]
                     }
                 }
@@ -209,7 +209,7 @@ class ProductCard extends Component {
                         <div className="product-line__spec-main-container">
                             <div className="product-line__spec">
                                 <Image
-                                    src={require("../../images/ico-spec.png").default}
+                                    src={require("../../images/ico-spec.png")}
                                     alt={"icon-spec__photo"}
                                     className={"icon-spec__photo"}
                                 />
@@ -217,7 +217,7 @@ class ProductCard extends Component {
                             </div>
                             <div className="product-line__spec">
                                 <Image
-                                    src={require("../../images/ico-spec2.png").default}
+                                    src={require("../../images/ico-spec2.png")}
                                     alt={"icon-spec__photo"}
                                     className={"icon-spec__photo"}
                                 />
@@ -225,7 +225,7 @@ class ProductCard extends Component {
                             </div>
                             <div className="product-line__spec">
                                 <Image
-                                    src={require("../../images/ico-spec3.png").default}
+                                    src={require("../../images/ico-spec3.png")}
                                     alt={"icon-spec__photo"}
                                     className={"icon-spec__photo"}
                                 />
@@ -241,7 +241,7 @@ class ProductCard extends Component {
                                 <span className="main-button-span">Basic</span>
                             </div>
                             <Image
-                                src={require("../../images/logo basic.png").default}
+                                src={require("../../images/logo basic.png")}
                                 alt={"logo-basic"}
                                 className={"main-button-logo-basic"}
                             />

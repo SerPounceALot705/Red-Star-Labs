@@ -1,16 +1,8 @@
 import React from "react";
 import propTypes from "prop-types";
-import classNames from "classNames";
-
 
 const Image = ({src, alt, className, width, height, ...attrs}) => {
-
-    const classes = classNames(className)
-
-    if (!src) {
-        src = `https://via.placeholder.com/${width}x${height}`
-    }
-
+    
     return (
         <img 
             src = {src}

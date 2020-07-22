@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ReactStars from 'react-stars'
 
 import Header from "../components/header/header.js";
@@ -41,14 +40,14 @@ class Card extends Component {
             
                     <div className="card__container">
                         <nav className="contacts__menu">
-                            <Link to="/" className="contacts__menu-item">{"Главная страница > "}</Link>
-                            <Link to="/catalog" className="contacts__menu-item">{"Протеины > "}</Link>
-                            <Link to="/" className="contacts__menu-item contacts__menu-item_active">{"premium whey concentrate"}</Link>
+                            <a href="/" className="contacts__menu-item">Главная страница > </a>
+                            <a href="/catalog" className="contacts__menu-item">Протеины > </a>
+                            <a href="/" className="contacts__menu-item contacts__menu-item_active">premium whey concentrate</a>
                         </nav>
                         <div className="card-description__main-container">
                             <div className="card__description">
                                 <Image
-                                    src={require("../images/logoSuperior.png").default}
+                                    src={require("../images/logoSuperior.png")}
                                     alt={"superior"}
                                     className={"superior__photo"}
                                 />
@@ -130,12 +129,12 @@ class Card extends Component {
 
                                     {this.state.isDetaield 
                                         ? <Image
-                                            src={require("../images/arrowup.png").default}
+                                            src={require("../images/arrowUp.png")}
                                             alt={"arrow"}
                                             className={"arrow__photo"}
                                         />
                                         : <Image
-                                            src={require("../images/arrow.png").default}
+                                            src={require("../images/arrow.png")}
                                             alt={"arrow"}
                                             className={"arrow__photo"}
                                         />
@@ -143,7 +142,7 @@ class Card extends Component {
                                 </div>
                             </div>
                             <Image
-                                src={require("../images/premiumWhey2.png").default}
+                                src={require("../images/premiumWhey2.png")}
                                 alt={"logoSuperior"}
                                 className={"logoSuperior"}
                             />
@@ -331,7 +330,7 @@ class Card extends Component {
                     <div className="other-product__title-container">
                         <h3 className="other-product-line__title">Другие продукты линейки</h3>
                         <Image
-                            src={require("../images/logoSuperior.png").default}
+                            src={require("../images/logoSuperior.png")}
                             alt={"logoSuperior"}
                             className={"logoSuperior__photo"}
                         />
@@ -339,7 +338,7 @@ class Card extends Component {
                     <div className="other-product-line-main-container">
                         <div className="card__other-product-line-container">
                             <Image
-                                src={require("../images/line-product-item.png").default}
+                                src={require("../images/line-product-item.png")}
                                 alt={"product-line-item"}
                                 className={"product-line-item__photo"}
                             />
@@ -351,7 +350,7 @@ class Card extends Component {
                         </div>
                         <div className="card__other-product-line-container">
                             <Image
-                                src={require("../images/line-product-item.png").default}
+                                src={require("../images/line-product-item.png")}
                                 alt={"product-line-item"}
                                 className={"product-line-item__photo"}
                             />
@@ -363,7 +362,7 @@ class Card extends Component {
                         </div>
                         <div className="card__other-product-line-container">
                             <Image
-                                src={require("../images/line-product-item.png").default}
+                                src={require("../images/line-product-item.png")}
                                 alt={"product-line-item"}
                                 className={"product-line-item__photo"}
                             />

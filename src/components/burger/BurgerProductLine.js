@@ -1,12 +1,7 @@
 import React, { Component } from "react";
-import Burger from "./Burger";
 import LineCard from "../dropDownMenu/js/LineCard.js";
 
 class BurgerProductLine extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <div className="header__dropdown-content-product">
@@ -21,11 +16,11 @@ class BurgerProductLine extends Component {
                                     url: "Card"
                                 },
                                 logo: {
-                                    url: require("../../images/logobasic.png").default,
+                                    url: require("../../images/logobasic.png"),
                                     alt: "logobasic"
                                 },
                                 product: {
-                                    url: require("../../images/whey.png").default,
+                                    url: require("../../images/whey.png"),
                                     alt: "whey"
                                 }
                             }
@@ -39,11 +34,11 @@ class BurgerProductLine extends Component {
                                     url: "Card"
                                 },
                                 logo: {
-                                    url: require("../../images/logoEssential.png").default,
+                                    url: require("../../images/logoEssential.png"),
                                     alt: "logobasic"
                                 },
                                 product: {
-                                    url: require("../../images/Essentialbank.png").default,
+                                    url: require("../../images/Essentialbank.png"),
                                     alt: "whey"
                                 }
                             }
@@ -59,11 +54,11 @@ class BurgerProductLine extends Component {
                                     url: "Card"
                                 },
                                 logo: {
-                                    url: require("../../images/logoEssential.png").default,
+                                    url: require("../../images/logoEssential.png"),
                                     alt: "logobasic"
                                 },
                                 product: {
-                                    url: require("../../images/premiumwhey.png").default,
+                                    url: require("../../images/premiumwhey.png"),
                                     alt: "whey"
                                 }
                             }
@@ -77,11 +72,11 @@ class BurgerProductLine extends Component {
                                     url: "Card"
                                 },
                                 logo: {
-                                    url: require("../../images/logoSuperior.png").default,
+                                    url: require("../../images/logoSuperior.png"),
                                     alt: "logobasic"
                                 },
                                 product: {
-                                    url: require("../../images/beowulfbank.png").default,
+                                    url: require("../../images/beowulfbank.png"),
                                     alt: "whey"
                                 }
                             }

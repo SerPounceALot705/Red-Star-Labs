@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Header from "../components/header/header.js";
 import ContactForm from "../components/contact-form/js/contact-form.js";
 import Footer from "../components/footer/js/footer.js";
@@ -27,10 +26,6 @@ import "../components/about-desctiption/css/product-photo.css";
 import "../components/about-desctiption/css/our-mission__photo-item.css";
 
 class About extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <div className="about">
@@ -38,12 +33,12 @@ class About extends Component {
                     <Header isDark={false} />
                     <section className="about-brand">
                         <nav className="about__menu">
-                            <Link to="/" className="about__menu-item">{"Главная страница > "}</Link>
-                            <Link to="/About" className="about__menu-item about__menu-item_active">{"о бренде"}</Link>
+                            <a href="/" className="about__menu-item">Главная страница > </a>
+                            <a href="/About" className="about__menu-item about__menu-item_active">о бренде</a>
                         </nav>
                         <div className="about__container">
                             <Image
-                                src={require("../images/quality-mark.png").default}
+                                src={require("../images/quality-mark.png")}
                                 alt={"quality-mark"}
                                 className={"about__quality-mark"}
                             />
@@ -57,7 +52,7 @@ class About extends Component {
                 <section className="about-description">
                     <div className="about-description__top-container">
                         <Image
-                            src={require("../images/red-star-labs-logo.png").default}
+                            src={require("../images/red-star-labs-logo.png")}
                             alt={"red-star-labs-logo"}
                             className={"red-star-labs__logo"}
                         />
@@ -70,7 +65,7 @@ class About extends Component {
                     </div>
                     <div className="about-description__bottom-container">
                         <Image
-                            src={require("../images/product-photo.png").default}
+                            src={require("../images/product-photo.png")}
                             alt={"product-photo"}
                             className={"product-photo"}
                         />
@@ -89,7 +84,7 @@ class About extends Component {
                     <div className="our-mission__container">
                         <div className="our-mission__container-item">
                             <Image
-                                src={require("../images/honest.png").default}
+                                src={require("../images/honest.png")}
                                 alt={"honest"}
                                 className={"our-mission__photo-item"}
                             />
@@ -97,7 +92,7 @@ class About extends Component {
                         </div>
                         <div className="our-mission__container-item">
                             <Image
-                                src={require("../images/raw-materials.png").default}
+                                src={require("../images/raw-materials.png")}
                                 alt={"honest"}
                                 className={"our-mission__photo-item"}
                             />
@@ -105,7 +100,7 @@ class About extends Component {
                         </div>
                         <div className="our-mission__container-item">
                             <Image
-                                src={require("../images/price.png").default}
+                                src={require("../images/price.png")}
                                 alt={"honest"}
                                 className={"our-mission__photo-item"}
                             />
@@ -113,7 +108,7 @@ class About extends Component {
                         </div>
                         <div className="our-mission__container-item">
                             <Image
-                                src={require("../images/standarts.png").default}
+                                src={require("../images/standarts.png")}
                                 alt={"honest"}
                                 className={"our-mission__photo-item"}
                             />

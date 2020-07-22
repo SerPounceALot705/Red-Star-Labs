@@ -13,16 +13,12 @@ import "../css/footer__text.css";
 import "../css/footer__figure.css";
 
 class Footer extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <section className="footer">
                 <div className="footer__container">
                     <Image
-                        src={require("../../../images/logo.png").default}
+                        src={require("../../../images/logo.png")}
                         alt={"logo"}
                         className={"footer__logo"}
                     />
@@ -37,7 +33,7 @@ class Footer extends Component {
                     />
                     <div className="footer-figure__container">
                         <Image
-                            src={require("../../../images/figure.png").default}
+                            src={require("../../../images/figure.png")}
                             alt={"figure"}
                             className={"footer__figure"}
                         />

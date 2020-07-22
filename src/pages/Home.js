@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import Header from "../components/header/header.js";
-import Basket from "../components/header/js/basket.js";
 import ContactForm from "../components/contact-form/js/contact-form.js";
 import Footer from "../components/footer/js/footer.js";
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import Image from "../components/image/image.js";
 import ProductCard from "../components/productCard/ProductCard.js";
-import Burger from "../components/burger/Burger.js";
 
 import "react-awesome-slider/dist/styles.css";
 import "../components/main.css";
@@ -18,11 +16,6 @@ import "../components/slider/slider.css"
 import "../components/about-desctiption/css/main-button.css";
 
 class Home extends Component {
-    constructor(props) {
-        super(props)
-
-    }
-
     render() {
         const AutoplaySlider = withAutoplay(AwesomeSlider);
 
@@ -37,21 +30,21 @@ class Home extends Component {
                         >
                             <div>
                                 <Image
-                                    src={require("../images/slider.png").default}
+                                    src={require("../images/slider.png")}
                                     alt={"slider__foto"}
                                     className={"slider__foto"}
                                 />
                             </div>
                             <div>
                                 <Image
-                                    src={require("../images/slider.png").default}
+                                    src={require("../images/slider.png")}
                                     alt={"slider__foto"}
                                     className={"slider__foto"}
                                 />
                             </div>
                             <div>
                                 <Image
-                                    src={require("../images/slider.png").default}
+                                    src={require("../images/slider.png")}
                                     alt={"slider__foto"}
                                     className={"slider__foto"}
                                 />
@@ -61,7 +54,7 @@ class Home extends Component {
                     <div className="about-description">
                         <div className="about-description__top-container">
                             <Image
-                                src={require("../images/logo.png").default}
+                                src={require("../images/logo.png")}
                                 alt={"mainlogo"}
                                 className={"red-star-labs__home"}
                             />

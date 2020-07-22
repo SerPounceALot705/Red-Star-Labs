@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Image from "../image/image.js"
 import AnalyticsItem from "../analyticsItem/analyticsItem.js";
 
@@ -28,7 +27,7 @@ class LineContainer extends Component {
         return (
             <div className="catalog__line-product">
                 <Image
-                    src={require("../../images/line-photo.png").default}
+                    src={require("../../images/line-photo.png")}
                     alt={"line-photo__photo"}
                     className={"line-photo__photo"}
                 />
@@ -36,12 +35,12 @@ class LineContainer extends Component {
                     <div className="product-line__container">
                         <div className="product-line__adaptive-image-container">
                             <Image
-                                src={require("../../images/gallery-item2.png").default}
+                                src={require("../../images/gallery-item2.png")}
                                 alt={"adaptive-image01"}
                                 className={"product-line__adaptive-image"}
                             />
                             <Image
-                                src={require("../../images/super-line.png").default}
+                                src={require("../../images/super-line.png")}
                                 alt={"adaptive-image-logo"}
                                 className={"product-line__adaptive-image-logo"}
                             />
@@ -53,7 +52,7 @@ class LineContainer extends Component {
                                 className={"line-logo__photo"}
                             />
                             <Image
-                                src={require("../../images/pattern.png").default}
+                                src={require("../../images/pattern.png")}
                                 alt={"pattern__photo"}
                                 className={"pattern__photo"}
                             />
@@ -69,7 +68,7 @@ class LineContainer extends Component {
                         <div className="product-line__spec-main-container">
                             <div className="product-line__spec">
                                 <Image
-                                    src={require("../../images/ico-spec.png").default}
+                                    src={require("../../images/ico-spec.png")}
                                     alt={"icon-spec__photo"}
                                     className={"icon-spec__photo"}
                                 />
@@ -77,7 +76,7 @@ class LineContainer extends Component {
                             </div>
                             <div className="product-line__spec">
                                 <Image
-                                    src={require("../../images/ico-spec2.png").default}
+                                    src={require("../../images/ico-spec2.png")}
                                     alt={"icon-spec__photo"}
                                     className={"icon-spec__photo"}
                                 />
@@ -85,7 +84,7 @@ class LineContainer extends Component {
                             </div>
                             <div className="product-line__spec">
                                 <Image
-                                    src={require("../../images/ico-spec3.png").default}
+                                    src={require("../../images/ico-spec3.png")}
                                     alt={"icon-spec__photo"}
                                     className={"icon-spec__photo"}
                                 />
@@ -114,12 +113,12 @@ class LineContainer extends Component {
                     {
                         this.state.isLineContainer ?
                             <Image
-                                src={require("../../images/arrowup.png").default}
+                                src={require("../../images/arrowUp.png")}
                                 alt={"arrow"}
                                 className={"arrow__photo"}
                             /> :
                             <Image
-                                src={require("../../images/arrow.png").default}
+                                src={require("../../images/arrow.png")}
                                 alt={"arrow"}
                                 className={"arrow__photo"}
                             />

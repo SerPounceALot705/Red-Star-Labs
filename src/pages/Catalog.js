@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import InputRange from 'react-input-range';
 import Header from "../components/header/header";
 import Footer from "../components/footer/js/footer";
@@ -25,98 +24,98 @@ class Catalog extends Component {
             selectBrand: {},
             products: [
                 {
-                    src: require("../images/product.png").default,
+                    src: require("../images/product.png"),
                     alt: "product",
                     text: "Протеин Meal Whey 800г.",
                     price: "2400 руб",
                     url: "/Card"
                 },
                 {
-                    src: require("../images/product.png").default,
+                    src: require("../images/product.png"),
                     alt: "product",
                     text: "Протеин Meal Whey 800г.",
                     price: "2400 руб",
                     url: "/Card"
                 },
                 {
-                    src: require("../images/product.png").default,
+                    src: require("../images/product.png"),
                     alt: "product",
                     text: "Протеин Meal Whey 800г.",
                     price: "2400 руб",
                     url: "/Card"
                 },
                 {
-                    src: require("../images/product.png").default,
+                    src: require("../images/product.png"),
                     alt: "product",
                     text: "Протеин Meal Whey 800г.",
                     price: "2400 руб",
                     url: "/Card"
                 },
                 {
-                    src: require("../images/product.png").default,
+                    src: require("../images/product.png"),
                     alt: "product",
                     text: "Протеин Meal Whey 800г.",
                     price: "2400 руб",
                     url: "/Card"
                 },
                 {
-                    src: require("../images/product.png").default,
+                    src: require("../images/product.png"),
                     alt: "product",
                     text: "Протеин Meal Whey 800г.",
                     price: "2400 руб",
                     url: "/Card"
                 },
                 {
-                    src: require("../images/product.png").default,
+                    src: require("../images/product.png"),
                     alt: "product",
                     text: "Протеин Meal Whey 800г.",
                     price: "2400 руб",
                     url: "/Card"
                 },
                 {
-                    src: require("../images/product.png").default,
+                    src: require("../images/product.png"),
                     alt: "product",
                     text: "Протеин Meal Whey 800г.",
                     price: "2400 руб",
                     url: "/Card"
                 },
                 {
-                    src: require("../images/product.png").default,
+                    src: require("../images/product.png"),
                     alt: "product",
                     text: "Протеин Meal Whey 800г.",
                     price: "2400 руб",
                     url: "/Card"
                 },
                 {
-                    src: require("../images/product.png").default,
+                    src: require("../images/product.png"),
                     alt: "product",
                     text: "Протеин Meal Whey 800г.",
                     price: "2400 руб",
                     url: "/Card"
                 },
                 {
-                    src: require("../images/product.png").default,
+                    src: require("../images/product.png"),
                     alt: "product",
                     text: "Протеин Meal Whey 800г.",
                     price: "2400 руб",
                     url: "/Card"
                 },
                 {
-                    src: require("../images/product.png").default,
+                    src: require("../images/product.png"),
                     alt: "product",
                     text: "Протеин Meal Whey 800г.",
                     price: "2400 руб",
                     url: "/Card"
                 },
                 {
-                    src: require("../images/product.png").default,
+                    src: require("../images/product.png"),
                     alt: "product",
                     text: "Протеин Meal Whey 800г.",
                     price: "2400 руб",
                     url: "/Card"
                 },
                 {
-                    src: require("../images/product.png").default,
+                    src: require("../images/product.png"),
                     alt: "product",
                     text: "Протеин Meal Whey 800г.",
                     price: "2400 руб",
@@ -172,14 +171,14 @@ class Catalog extends Component {
         function PhotoContainer() {
             return (<div className="catalog__photo-container">
                 <Image
-                    src={require("../images/banner.png").default}
+                    src={require("../images/banner.png")}
                     alt={"banner__photo"}
                     className={"banner__photo"}
                 />
                 <div className="banner-photo__container-info">
                     <p className="banner-photo__text"><span>50%</span> на все товары линейки</p>
                     <Image
-                        src={require("../images/logobasic.png").default}
+                        src={require("../images/logobasic.png")}
                         alt={"logo-basic__photo"}
                         className={"logo-basic__photo"}
                     />
@@ -199,13 +198,13 @@ class Catalog extends Component {
                                     <h2 className={"product-line__dropdown-title-link"}>Категории и линейки</h2>
                                     {this.state.isDrop ?
                                         <Image
-                                            src={require("../images/productArrowUp.png").default}
+                                            src={require("../images/productArrowUp.png")}
                                             alt="arow"
                                             width={7}
                                             height={7}
                                         /> :
                                         <Image
-                                            src={require("../images/productArrow.png").default}
+                                            src={require("../images/productArrow.png")}
                                             alt="arow"
                                             width={7}
                                             height={7}
@@ -219,8 +218,8 @@ class Catalog extends Component {
                     }
 
                     <nav className="catalog__menu">
-                        <Link to="/" className="catalog__menu-item">{"Главная страница > "}</Link>
-                        <Link to="/" className="caralog__menu-item catalog__menu-item_active">{"Каталог продукции"}</Link>
+                        <a href="/" className="catalog__menu-item">Главная страница > </a>
+                        <a href="/" className="caralog__menu-item catalog__menu-item_active">Каталог продукции</a>
                     </nav>
 
                     {this.state.isLineContainer ? <LineContainer value={this.state.selectBrand} /> : <PhotoContainer />}
@@ -273,17 +272,17 @@ class Catalog extends Component {
 
                     <section className="catalog__gallery">
                         <Image
-                            src={require("../images/gallery-item1.png").default}
+                            src={require("../images/gallery-item1.png")}
                             alt={"gallery-photo01"}
                             className={"gallery-item__photo"}
                         />
                         <Image
-                            src={require("../images/gallery-item2.png").default}
+                            src={require("../images/gallery-item2.png")}
                             alt={"gallery-photo02"}
                             className={"gallery-item__photo"}
                         />
                         <Image
-                            src={require("../images/gallery-item3.png").default}
+                            src={require("../images/gallery-item3.png")}
                             alt={"gallery-photo03"}
                             className={"gallery-item__photo"}
                         />

@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React, { Component } from "react";
 import Image from "../image/image.js";
 import { slide as Menu } from 'react-burger-menu';
@@ -17,7 +16,8 @@ class Header extends Component {
     constructor(props) {
         super(props)
 
-        this.LogoUrl = require("../../images/logo.png").default;
+        this.LogoUrl = require("../../images/logo.png");
+
         this.headerClass = "header header-border";
         this.isDark = this.props.isDark;
 
@@ -29,8 +29,8 @@ class Header extends Component {
     }
 
     componentWillMount() {
-        if (this.isDark == false) {
-            this.LogoUrl = require("../../images/white-logo.png").default;
+        if (this.isDark === false) {
+            this.LogoUrl = require("../../images/white-logo.png");
             this.headerClass = "header header-theme-white";
         }
     }

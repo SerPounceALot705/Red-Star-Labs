@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { slide as Menu } from 'react-burger-menu';
-import LinkUrl from "../header/js/linkUrl.js";
 import Nav from "../header/js/nav.js";
 import BurgerProductLine from "./BurgerProductLine.js";
 import Image from "../image/image.js";
@@ -46,21 +44,21 @@ class Burger extends Component {
                 <ul>
                     <h2 className="header__dropdown-content-title">Продукция</h2>
                     <li>
-                        <LinkUrl url={"/"} name={"Протеины"} className={"header__dropdown-content-title-link"} />
+                        <a href={"/"} className={"header__dropdown-content-title-link"}>Протеины</a>
                         <ul className="header__dropdown-content-list">
-                            <LinkUrl url={"/"} name={"Сывороточный"} className={"header__dropdown-content-link"} />
-                            <LinkUrl url={"/"} name={"Изолят"} className={"header__dropdown-content-link"} />
-                            <LinkUrl url={"/"} name={"Казеин"} className={"header__dropdown-content-link"} />
-                            <LinkUrl url={"/"} name={"Говяжий"} className={"header__dropdown-content-link"} />
+                            <a href={"/"} className={"header__dropdown-content-link"}>Сывороточный</a>
+                            <a href={"/"} className={"header__dropdown-content-link"}>Изолят</a>
+                            <a href={"/"} className={"header__dropdown-content-link"}>Казеин</a>
+                            <a href={"/"} className={"header__dropdown-content-link"}>Говяжий</a>
                         </ul>
                     </li>
-                    <li><LinkUrl url={"/"} name={"Витамины и минералы"} className={"header__dropdown-content-title-link"} /></li>
-                    <li><LinkUrl url={"/"} name={"Аминокислоты и ВСАА"} className={"header__dropdown-content-title-link"} /></li>
-                    <li><LinkUrl url={"/"} name={"Карнитин"} className={"header__dropdown-content-title-link"} /></li>
-                    <li><LinkUrl url={"/"} name={"Специальные препараты"} className={"header__dropdown-content-title-link"} /></li>
-                    <li><LinkUrl url={"/"} name={"Батончики"} className={"header__dropdown-content-title-link"} /></li>
-                    <li><LinkUrl url={"/"} name={"Предтренировочные комплексы"} className={"header__dropdown-content-title-link"} /></li>
-                    <li><LinkUrl url={"/"} name={"Препараты для связок и суставов"} className={"header__dropdown-content-title-link"} /></li>
+                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Витамины и минералы</a></li>
+                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Аминокислоты и ВСАА</a></li>
+                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Карнитин</a></li>
+                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Специальные препараты</a></li>
+                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Батончики</a></li>
+                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Предтренировочные комплексы</a></li>
+                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Препараты для связок и суставов</a></li>
                 </ul>
             </div>
         );
@@ -79,10 +77,10 @@ class Burger extends Component {
                 <div>
                     <Nav className="header__nav-links"
                         links={[
-                            { url: "About", name: "о бренде" },
-                            { url: "WhereICanBuy", name: "где купить?" },
-                            { url: "WholesaleCustomers", name: "оптовым клиентам" },
-                            { url: "Contacts", name: "контакты" },
+                            { href: "About", name: "о бренде" },
+                            { href: "WhereICanBuy", name: "где купить?" },
+                            { href: "WholesaleCustomers", name: "оптовым клиентам" },
+                            { href: "Contacts", name: "контакты" },
                         ]}
                     />
                 </div>
@@ -90,7 +88,7 @@ class Burger extends Component {
                     <p className="social-links__telephone">+7(945)000 00 00</p>
                     <div className="icon-container">
                         <Image
-                            src={require("../../images/fb.png").default}
+                            src={require("../../images/fb.png")}
                             alt={"fb-icon"}
                             className={"fb-icon"}
                         />
@@ -98,7 +96,7 @@ class Burger extends Component {
                     </div>
                     <div className="icon-container">
                         <Image
-                            src={require("../../images/instagram.png").default}
+                            src={require("../../images/instagram.png")}
                             alt={"inst-icon"}
                             className={"inst-icon"}
                         />

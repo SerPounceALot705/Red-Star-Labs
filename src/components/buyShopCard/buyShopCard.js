@@ -19,16 +19,12 @@ import "../../components/where-i-can-buy/shops/css/where-i-can-buy__title.css";
 import "../../components/where-i-can-buy/shops/css/where-i-can-buy__subtitle.css";
 
 class BuyShopCard extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <div className="where-i-can-buy__shop">
                 <div>
                     <Image
-                        src={require("../../images/shop-item.png").default}
+                        src={require("../../images/shop-item.png")}
                         alt={"shop-item-foto"}
                         className={"shop-item-foto"}
                     />

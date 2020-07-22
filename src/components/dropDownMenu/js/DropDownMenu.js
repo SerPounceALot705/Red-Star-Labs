@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import LinkUrl from "../../../components/header/js/linkUrl.js";
 import LineCard from "../../dropDownMenu/js/LineCard.js";
 import Image from "../../image/image.js";
 
@@ -16,10 +15,6 @@ import "../css/header__dropdown-content-product-card.css";
 import "../css/header__dropdown-image.css";
 
 class DropDownMenu extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <div className="header__dropdown-menu">
@@ -29,35 +24,35 @@ class DropDownMenu extends Component {
                         <h2 className="header__dropdown-content-title">Категории</h2>
                         <ul>
                             <li>
-                                <LinkUrl url={"/"} name={"Протеины"} className={"header__dropdown-content-title-link"} />
+                                <a href={"/"} className={"header__dropdown-content-title-link"}>Протеины</a>
                                 <ul className="header__dropdown-content-list">
-                                    <LinkUrl url={"/"} name={"Сывороточный"} className={"header__dropdown-content-link"} />
-                                    <LinkUrl url={"/"} name={"Изолят"} className={"header__dropdown-content-link"} />
-                                    <LinkUrl url={"/"} name={"Казеин"} className={"header__dropdown-content-link"} />
-                                    <LinkUrl url={"/"} name={"Говяжий"} className={"header__dropdown-content-link"} />
+                                    <a href={"/"} className={"header__dropdown-content-link"}>Сывороточный</a>
+                                    <a href={"/"} className={"header__dropdown-content-link"}>Изолят</a>
+                                    <a href={"/"} className={"header__dropdown-content-link"}>Казеин</a>
+                                    <a href={"/"} className={"header__dropdown-content-link"}>Говяжий</a>
                                 </ul>
                             </li>
-                            <li><LinkUrl url={"/"} name={"Витамины и минералы"} className={"header__dropdown-content-title-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Аминокислоты и ВСАА"} className={"header__dropdown-content-title-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Карнитин"} className={"header__dropdown-content-title-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Специальные препараты"} className={"header__dropdown-content-title-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Батончики"} className={"header__dropdown-content-title-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Предтренировочные комплексы"} className={"header__dropdown-content-title-link"} /></li>
-                            <li><LinkUrl url={"/"} name={"Препараты для связок и суставов"} className={"header__dropdown-content-title-link"} /></li>
+                            <li><a href={"/"} className={"header__dropdown-content-title-link"}>Витамины и минералы</a></li>
+                            <li><a href={"/"} className={"header__dropdown-content-title-link"}>Аминокислоты и ВСАА</a></li>
+                            <li><a href={"/"} className={"header__dropdown-content-title-link"}>Карнитин</a></li>
+                            <li><a href={"/"} className={"header__dropdown-content-title-link"}>Специальные препараты</a></li>
+                            <li><a href={"/"} className={"header__dropdown-content-title-link"}>Батончики</a></li>
+                            <li><a href={"/"} className={"header__dropdown-content-title-link"}>Предтренировочные комплексы</a></li>
+                            <li><a href={"/"} className={"header__dropdown-content-title-link"}>Препараты для связок и суставов</a></li>
                         </ul>
-                        <LinkUrl url={"catalog"} name={"Весь каталог"} className={"header__dropdown-content-catalog-link"} />
+                        <a href={"catalog"} className={"header__dropdown-content-catalog-link"}>Весь каталог</a>
                     </div>
                     <div className="header__dropdown-content-product">
                         <h2 className="header__dropdown-content-title">Продукты по ценам</h2>
                         <div className="header__dropdown-ul">
                             <ul>
-                                <li><LinkUrl url={"/"} name={"Витамины и минералы"} className={"header__dropdown-content-title-link"} /></li>
-                                <li><LinkUrl url={"/"} name={"Аминокислоты и ВСАА"} className={"header__dropdown-content-title-link"} /></li>
-                                <li><LinkUrl url={"/"} name={"Карнитин"} className={"header__dropdown-content-title-link"} /></li>
-                                <li><LinkUrl url={"/"} name={"Специальные препараты"} className={"header__dropdown-content-title-link"} /></li>
-                                <li><LinkUrl url={"/"} name={"Батончики"} className={"header__dropdown-content-title-link"} /></li>
-                                <li><LinkUrl url={"/"} name={"Предтренировочные комплексы"} className={"header__dropdown-content-title-link"} /></li>
-                                <li><LinkUrl url={"/"} name={"Препараты для связок и суставов"} className={"header__dropdown-content-title-link"} /></li>
+                                <li><a href={"/"} className={"header__dropdown-content-title-link"}>Витамины и минералы</a></li>
+                                <li><a href={"/"} className={"header__dropdown-content-title-link"}>Аминокислоты и ВСАА</a></li>
+                                <li><a href={"/"} className={"header__dropdown-content-title-link"}>Карнитин</a></li>
+                                <li><a href={"/"} className={"header__dropdown-content-title-link"}>Специальные препараты</a></li>
+                                <li><a href={"/"} className={"header__dropdown-content-title-link"}>Батончики</a></li>
+                                <li><a href={"/"} className={"header__dropdown-content-title-link"}>Предтренировочные комплексы</a></li>
+                                <li><a href={"/"} className={"header__dropdown-content-title-link"}>Препараты для связок и суставов</a></li>
                             </ul>
                         </div>
                     </div>
@@ -70,14 +65,14 @@ class DropDownMenu extends Component {
                                     {
                                         link: {
                                             text: "Для насыщения организма витаминами",
-                                            url: "Card"
+                                            url: "/Card"
                                         },
                                         logo: {
-                                            url: require("../../../images/logobasic.png").default,
+                                            url: require("../../../images/logobasic.png"),
                                             alt: "logobasic"
                                         },
                                         product: {
-                                            url: require("../../../images/whey.png").default,
+                                            url: require("../../../images/whey.png"),
                                             alt: "whey"
                                         }
                                     }
@@ -88,14 +83,14 @@ class DropDownMenu extends Component {
                                     {
                                         link: {
                                             text: "Для насыщения организма витаминами",
-                                            url: "Card"
+                                            url: "/Card"
                                         },
                                         logo: {
-                                            url: require("../../../images/logoEssential.png").default,
+                                            url: require("../../../images/logoEssential.png"),
                                             alt: "logobasic"
                                         },
                                         product: {
-                                            url: require("../../../images/Essentialbank.png").default,
+                                            url: require("../../../images/Essentialbank.png"),
                                             alt: "whey"
                                         }
                                     }
@@ -108,14 +103,14 @@ class DropDownMenu extends Component {
                                     {
                                         link: {
                                             text: "Для насыщения организма витаминами",
-                                            url: "Card"
+                                            url: "/Card"
                                         },
                                         logo: {
-                                            url: require("../../../images/logoEssential.png").default,
+                                            url: require("../../../images/logoEssential.png"),
                                             alt: "logobasic"
                                         },
                                         product: {
-                                            url: require("../../../images/premiumwhey.png").default,
+                                            url: require("../../../images/premiumwhey.png"),
                                             alt: "whey"
                                         }
                                     }
@@ -126,14 +121,14 @@ class DropDownMenu extends Component {
                                     {
                                         link: {
                                             text: "Для насыщения организма витаминами",
-                                            url: "Card"
+                                            url: "/Card"
                                         },
                                         logo: {
-                                            url: require("../../../images/logoSuperior.png").default,
+                                            url: require("../../../images/logoSuperior.png"),
                                             alt: "logobasic"
                                         },
                                         product: {
-                                            url: require("../../../images/beowulfbank.png").default,
+                                            url: require("../../../images/beowulfbank.png"),
                                             alt: "whey"
                                         }
                                     }
@@ -142,7 +137,7 @@ class DropDownMenu extends Component {
                     </div>
                     <div className="header__dropdown-image">
                         <Image
-                            src={require("../../../images/promo.png").default}
+                            src={require("../../../images/promo.png")}
                             alt={"promo"}
                             width={900}
                             height={132}

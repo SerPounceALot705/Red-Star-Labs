@@ -3,15 +3,12 @@ import Image from "../image/image.js";
 
 
 class ProductLine extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     render() {
         return (
             <section className="product-line">
                 <Image
-                    src={require("../../images/logo.png").default}
+                    src={require("../../images/logo.png")}
                     alt={"logo"}
                     className={"product-line__logo"}
                 />
@@ -22,28 +19,28 @@ class ProductLine extends Component {
                 <div className="product-line__container">
                     <div className="product-line__item">
                         <Image
-                            src={require("../../../images/Basic.png").default}
+                            src={require("../../../images/Basic.png")}
                             alt={"product-line-item"}
                             className={"product-line__item"}
                         />
                     </div>
                     <div className="product-line__item">
                         <Image
-                            src={require("../../../images/Essential.png").default}
+                            src={require("../../../images/Essential.png")}
                             alt={"product-line-item"}
                             className={"product-line__item"}
                         />
                     </div>
                     <div className="product-line__item">
                         <Image
-                            src={require("../../../images/Superior.png").default}
+                            src={require("../../../images/Superior.png")}
                             alt={"product-line-item"}
                             className={"product-line__item"}
                         />
                     </div>
                     <div className="product-line__item">
                         <Image
-                            src={require("../../../images/Beowulf.png").default}
+                            src={require("../../../images/Beowulf.png")}
                             alt={"product-line-item"}
                             className={"product-line__item"}
                         />
@@ -58,3 +55,5 @@ class ProductLine extends Component {
         )
     }
 }    
+
+export default ProductLine;

@@ -13,16 +13,12 @@ import "../css/contact-form__button.css";
 import "../css/contact-foto.css";
 
 class ContactForm extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <section className="contact-form">
                 <div className="contact-form__main-container">
                     <Image
-                        src={require("../../../images/contact-foto.png").default}
+                        src={require("../../../images/contact-foto.png")}
                         alt={"contact-foto"}
                         className={"contact-foto"}
                     />
