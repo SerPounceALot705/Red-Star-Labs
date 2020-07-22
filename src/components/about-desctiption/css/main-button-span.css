@@ -1,0 +1,26 @@
+.main-button-span {
+    color: #292727;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 14px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .main-button-span  {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .main-button-span  {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .main-button-span {
+        font-size: 12px;
+    }
+}

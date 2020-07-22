@@ -5,7 +5,6 @@
 }
 
 
-
 @media screen and (max-width: 1440px) and (min-width: 1200px) {
     .basket {
         top: 62px;
@@ -26,3 +25,19 @@
         right: -4%;
     }
 }
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .header-border .basket {
+        top: 45%;
+        right: 20%;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .header-border .basket {
+        top: 45%;
+        right: 15%;
+    }
+}
+
+

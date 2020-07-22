@@ -17,18 +17,18 @@
 
 @media screen and (max-width: 1440px) and (min-width: 1200px) {
     .link {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
     .link {
-        font-size: 10px;
+        font-size: 9px;
     }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) { 
     .link {
-        font-size: 8px;
+        font-size: 7px;
     }
 }

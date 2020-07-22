@@ -23,6 +23,26 @@
     .header__logo {
         width: 100px;
         height: 55px;
+        margin-right: 35px;
     }
 }
 
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .header__logo {
+        margin-top: 38px;
+        margin-bottom: 12px;
+        width: 190px;
+        height: 85px;
+    }
+
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .header__logo {
+        margin-top: 38px;
+        margin-bottom: 12px;
+        width: 160px;
+        height: 76px;
+    }
+
+}

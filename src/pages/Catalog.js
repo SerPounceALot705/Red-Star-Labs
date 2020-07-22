@@ -194,8 +194,8 @@ class Catalog extends Component {
 
                     {
                         this.state.innerWidth > 768 ? null :
-                            <div>
-                                <div onClick={() => this.handlerDrop()}>
+                            <div className="catalog-adaptive-drop">
+                                <div className="drop-container" onClick={() => this.handlerDrop()}>
                                     <h2 className={"product-line__dropdown-title-link"}>Категории и линейки</h2>
                                     {this.state.isDrop ?
                                         <Image

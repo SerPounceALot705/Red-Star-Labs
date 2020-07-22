@@ -74,8 +74,7 @@ class Header extends Component {
                     alt={"logo"}
                     className={"header__logo"}
                 />
-
-                {this.state.innerWidth > 768 ? this.headerNav() : <Burger/>}
+                {this.state.innerWidth > 768 ? this.headerNav() : <div><Basket/> <Burger/> </div>}
                 
             </section>
         );

@@ -1,0 +1,15 @@
+.drop-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 15px;
+}
+
+.drop-container img {
+    padding-top: 5px;
+    margin-left: 10px;
+}
+
+.drop-container .product-line__dropdown-title-link {
+    color: #c5c5c5;
+}

@@ -12,9 +12,9 @@
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .contacts-form__select-input {
-        width: 500px;
+        width: 289px;
         height: 186px;
-        padding-left: 0;
+        padding-left: 10px;
         padding-right: 0;
     }
 }

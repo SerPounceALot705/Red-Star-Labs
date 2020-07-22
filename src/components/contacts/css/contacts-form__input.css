@@ -10,7 +10,14 @@
     width: 197px;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 1024px) {
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .contacts-form__input {
+        height: 35px;
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
     .contacts-form__input {
         height: 35px;
         width: 500px;
@@ -20,14 +27,14 @@
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .contacts-form__input {
         height: 35px;
-        width: 500px;
+        width: 290px;
     }
 }
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
     .contacts-form__input {
         height: 35px;
-        width: 300px;
+        width: 290px;
     }
 }
 

@@ -11,6 +11,12 @@ import "./css/product-card__card.css";
 import "./css/product-card__description.css";
 import "./css/product-card__description-slide.css";
 import "./css/slide__photo.css";
+import "../about-desctiption/css/main-button.css";
+import "../about-desctiption/css/main-button-span.css";
+import "../about-desctiption/css/main-button-logo-basic.css";
+import "../about-desctiption/css/main-button-text.css";
+import "../about-desctiption/css/main-button-text-container.css";
+import "../about-desctiption/css/main-button-link.css";
 
 class ProductCard extends Component {
     constructor(props) {
@@ -43,10 +49,10 @@ class ProductCard extends Component {
                             { value: "22%", text: "Сахар" },
                         ],
                         images: [
-                            {url: require("../../images/productslide.png").default, text: "Сывороточный протеин (Impact Whey Protein)"},
-                            {url: require("../../images/productslide.png").default, text: "Сывороточный протеин (Impact Whey Protein)"},
-                            {url: require("../../images/productslide.png").default, text: "Сывороточный протеин (Impact Whey Protein)"},
-                            {url: require("../../images/productslide.png").default, text: "Сывороточный протеин (Impact Whey Protein)"},
+                            { url: require("../../images/productslide.png").default, text: "Сывороточный протеин (Impact Whey Protein)" },
+                            { url: require("../../images/productslide.png").default, text: "Сывороточный протеин (Impact Whey Protein)" },
+                            { url: require("../../images/productslide.png").default, text: "Сывороточный протеин (Impact Whey Protein)" },
+                            { url: require("../../images/productslide.png").default, text: "Сывороточный протеин (Impact Whey Protein)" },
                         ]
                     }
                 },
@@ -75,10 +81,10 @@ class ProductCard extends Component {
                             { value: "40%", text: "Сахар" },
                         ],
                         images: [
-                            {url: require("../../images/premiumWhey2.png").default, text: "test"},
-                            {url: require("../../images/premiumWhey2.png").default, text: "test"},
-                            {url: require("../../images/premiumWhey2.png").default, text: "test"},
-                            {url: require("../../images/premiumWhey2.png").default, text: "test"},
+                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
+                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
+                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
+                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
                         ]
                     }
                 },
@@ -107,10 +113,10 @@ class ProductCard extends Component {
                             { value: "10%", text: "Сахар" },
                         ],
                         images: [
-                            {url: require("../../images/premiumWhey2.png").default, text: "test"},
-                            {url: require("../../images/premiumWhey2.png").default, text: "test"},
-                            {url: require("../../images/premiumWhey2.png").default, text: "test"},
-                            {url: require("../../images/premiumWhey2.png").default, text: "test"},
+                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
+                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
+                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
+                            { url: require("../../images/premiumWhey2.png").default, text: "test" },
                         ]
                     }
                 },
@@ -139,10 +145,10 @@ class ProductCard extends Component {
                             { value: "26%", text: "Сахар" },
                         ],
                         images: [
-                            {url: require("../../images/productslide.png").default, text: "test"},
-                            {url: require("../../images/productslide.png").default, text: "test2"},
-                            {url: require("../../images/productslide.png").default, text: "test3"},
-                            {url: require("../../images/productslide.png").default, text: "test5"},
+                            { url: require("../../images/productslide.png").default, text: "test" },
+                            { url: require("../../images/productslide.png").default, text: "test2" },
+                            { url: require("../../images/productslide.png").default, text: "test3" },
+                            { url: require("../../images/productslide.png").default, text: "test5" },
                         ]
                     }
                 }
@@ -229,6 +235,17 @@ class ProductCard extends Component {
                         <div className="analytics__container">
                             <AnalyticsItem items={this.state.selectOptions.lables} />
                         </div>
+                        <div className="main-button">
+                            <div className="main-button-text-container">
+                                <span className="main-button-text">Все продукты линейки</span>
+                                <span className="main-button-span">Basic</span>
+                            </div>
+                            <Image
+                                src={require("../../images/logo basic.png").default}
+                                alt={"logo-basic"}
+                                className={"main-button-logo-basic"}
+                            />
+                        </div>
                     </div>
                     <div className="product-card__description-slide">
                         <AutoplaySlider
@@ -238,13 +255,13 @@ class ProductCard extends Component {
                             {this.state.selectOptions.images.map((item, index) => {
                                 return (
                                     <div key={index}>
-                                    <Image
-                                        src={item.url}
-                                        alt={"slide"}
-                                        className={"slide__photo"}
-                                    />
-                                    <p>{item.text}</p>
-                                </div>
+                                        <Image
+                                            src={item.url}
+                                            alt={"slide"}
+                                            className={"slide__photo"}
+                                        />
+                                        <p>{item.text}</p>
+                                    </div>
                                 )
                             })}
 

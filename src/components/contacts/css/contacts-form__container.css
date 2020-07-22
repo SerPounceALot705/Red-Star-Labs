@@ -6,7 +6,16 @@
 }
 
 
-@media screen and (max-width: 1200px) and (min-width: 1024px) {
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .contacts-form__container{
+        flex-direction: column;
+        align-items: center;
+        height: 600px;
+    }
+}
+
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
     .contacts-form__container{
         flex-direction: column;
         align-items: center;
@@ -18,7 +27,8 @@
     .contacts-form__container{
         flex-direction: column;
         align-items: center;
-        height: 600px;
+        height: 559px;
+        width: 375px;
     }
 }
 

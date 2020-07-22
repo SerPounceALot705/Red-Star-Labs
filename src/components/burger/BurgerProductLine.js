@@ -69,7 +69,7 @@ class BurgerProductLine extends Component {
                             }
                         } />
                     <LineCard
-                        className={"header__dropdown-content-card"}
+                        className={"header__dropdown-content-card header__dropdown-content-card_burger"}
                         content={
                             {
                                 link: {

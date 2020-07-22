@@ -23,6 +23,14 @@
 }
 
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .contacts-form__select-button {
+        margin-right: 25px;
+        width: 128px;
+        height: 45px;
+    }
+}
+
 @media screen and (max-width: 767px) and (min-width: 425px) {
     .contacts-form__select-button {
         margin-right: 25px;

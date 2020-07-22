@@ -15,6 +15,7 @@ import "../components/page.css";
 import "../components/header/css/basket.css";
 import "../vendor/fonts.css";
 import "../components/slider/slider.css"
+import "../components/about-desctiption/css/main-button.css";
 
 class Home extends Component {
     constructor(props) {

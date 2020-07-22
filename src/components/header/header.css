@@ -7,6 +7,10 @@
     position: relative;
 }
 
+.header-theme-white {
+    border-bottom: #8E8E8E 2px solid;  
+}
+
 .header-border {
     border-bottom: #8E8E8E 2px solid;
 }

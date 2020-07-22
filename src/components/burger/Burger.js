@@ -4,6 +4,7 @@ import { slide as Menu } from 'react-burger-menu';
 import LinkUrl from "../header/js/linkUrl.js";
 import Nav from "../header/js/nav.js";
 import BurgerProductLine from "./BurgerProductLine.js";
+import Image from "../image/image.js";
 
 import "./css/burger.css";
 
@@ -71,32 +72,41 @@ class Burger extends Component {
 
                 {this.state.isLine ? this.product() : <BurgerProductLine />}
 
-                <div onClick={() => this.handkerIsLine()}>
+                <div className="header__dropdown-content-title" onClick={() => this.handkerIsLine()}>
                     Линейки
                 </div>
 
                 <div>
                     <Nav className="header__nav-links"
                         links={[
-                            { url: "#", name: "продукция" },
                             { url: "About", name: "о бренде" },
                             { url: "WhereICanBuy", name: "где купить?" },
                             { url: "WholesaleCustomers", name: "оптовым клиентам" },
                             { url: "Contacts", name: "контакты" },
                         ]}
                     />
-                    <Nav className="header__nav-social"
-                        links={[
-                            { url: "#", name: "fb" },
-                            { url: "#", name: "vk" },
-                            { url: "#", name: "in" },
-                        ]}
-                    />
-
+                </div>
+                <div className="burger-social">
+                    <p className="social-links__telephone">+7(945)000 00 00</p>
+                    <div className="icon-container">
+                        <Image
+                            src={require("../../images/fb.png").default}
+                            alt={"fb-icon"}
+                            className={"fb-icon"}
+                        />
+                        <a href=""></a>
+                    </div>
+                    <div className="icon-container">
+                        <Image
+                            src={require("../../images/instagram.png").default}
+                            alt={"inst-icon"}
+                            className={"inst-icon"}
+                        />
+                        <a href=""></a>
+                    </div>
                 </div>
             </Menu>)
     }
-
     render() {
         return (
             <div>

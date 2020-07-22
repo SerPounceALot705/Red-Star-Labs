@@ -1,0 +1,38 @@
+.main-button {
+    display: none;
+    width: 96%;
+    height: 42px;
+    background-color: #dbdbdb;
+    background: url("../../../images/button.png");
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.about-description .main-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .main-button {
+        width: 111%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .main-button {
+        width: 105%;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .main-button {
+        width: 103%;
+    }
+}
+
+
+
+

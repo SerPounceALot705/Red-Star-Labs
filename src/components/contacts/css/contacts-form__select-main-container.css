@@ -4,9 +4,22 @@
     padding: 30px;
 }
 
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .contacts-form__select-main-container  {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .contacts-form__select-main-container  {
+        padding-top: 0;
+    }
+}
+
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .contacts-form__select-main-container  {
         padding-top: 0;
+        align-items: center;
     }
 }
 
