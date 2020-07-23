@@ -21,9 +21,6 @@ class LineContainer extends Component {
     }
 
     applayContainer() {
-
-        console.log(this.props.value)
-
         return (
             <div className="catalog__line-product">
                 <Image

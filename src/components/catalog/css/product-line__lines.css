@@ -14,3 +14,43 @@
     margin-bottom: 15px;
     margin-top: 15px;
 }
+
+.basic-line {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../../../images/logobasic2.png");
+}
+
+.basic-line:hover {
+    background-repeat: no-repeat;
+}
+
+.ess-line {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../../../images/logoEssential.png");
+}
+
+.superior-line {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../../../images/super-line.png");
+}
+
+.beo-line {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../../../images/logoBeo.png");
+}
+
+.product-line__lines li ul li a {
+    display: block;
+    width: 129px;
+    height: 29px;
+    filter: grayscale(100%);
+}
+
+.product-line__lines li ul li a:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
+}

@@ -9,7 +9,8 @@ import LineCategories from "../components/lineCategories/LineCategories.js";
 
 import "../components/catalog/css/imports.css";
 
-class Catalog extends Component {
+class Line extends Component {
+
     constructor(props) {
         super(props)
 
@@ -21,7 +22,6 @@ class Catalog extends Component {
                 min: 0,
                 max: 5000
             },
-            selectBrand: {},
             products: [
                 {
                     src: require("../images/product.png"),
@@ -125,7 +125,6 @@ class Catalog extends Component {
         };
 
         this.handleResize = this.handleResize.bind(this);
-        this.updateData = this.updateData.bind(this);
     }
 
     componentDidMount() {
@@ -160,14 +159,8 @@ class Catalog extends Component {
         })
     }
 
-    updateData(brand, isOpen) {
-        this.setState({
-            selectBrand: brand,
-            isLineContainer: isOpen
-        })
-    }
-
     render() {
+
         function PhotoContainer() {
             return (<div className="catalog__photo-container">
                 <Image
@@ -212,20 +205,20 @@ class Catalog extends Component {
                                     }
                                 </div>
                                 <div>
-                                    {this.state.isDrop ? <LineCategories isLineBlock={true} /> : null}
+                                    {this.state.isDrop ? <LineCategories isLineBlock={false}/> : null}
                                 </div>
                             </div>
                     }
 
                     <nav className="catalog__menu">
-                        <a href="/" className="catalog__menu-item">Главная страница &gt; </a>
+                        <a href="/" className="catalog__menu-item">Главная страница > </a>
                         <a href="/" className="caralog__menu-item catalog__menu-item_active">Каталог продукции</a>
                     </nav>
 
-                    {this.state.isLineContainer ? <LineContainer value={this.state.selectBrand} /> : <PhotoContainer />}
+                    <LineContainer value={this.props.selectBrand} />
 
                     <section className="product-line__catalog">
-                        {this.state.innerWidth < 768 ? null : <LineCategories isLineBlock={true} />}
+                        {this.state.innerWidth < 768 ? null : <LineCategories isLineBlock={false}/>}
 
                         <div className="product-line__catalog-cards-container">
                             <div className="product-line__filters-container">
@@ -236,16 +229,7 @@ class Catalog extends Component {
                                         <option className="product-line__option">Продукт 1</option>
                                         <option className="product-line__option">Продукт 2</option>
                                         <option className="product-line__option">Продукт 3</option>
-                                    </select>
-                                </div>
-                                <div className="product-line__filter-item product-line__filter_price">
-                                    <select className="product-line__select ">
-                                        <option className="product-line__option">По цене</option>
-                                        <option className="product-line__option">Опция 1</option>
-                                        <option className="product-line__option">Опция 2</option>
-                                        <option className="product-line__option">Опция 3</option>
-                                    </select>
-                                </div>
+                                    </select></div>
                                 <div className="product-line__filter-item">
                                     <p>Вкус</p>
                                     <select className="product-line__select">
@@ -253,8 +237,7 @@ class Catalog extends Component {
                                         <option className="product-line__option">Вкус 1</option>
                                         <option className="product-line__option">Вкус 2</option>
                                         <option className="product-line__option">Вкус 3</option>
-                                    </select>
-                                </div>
+                                    </select></div>
                                 <div className="product-line__filter-item">
                                     <p>Цена</p>
                                     <InputRange
@@ -263,8 +246,7 @@ class Catalog extends Component {
                                         minValue={this.state.range.min}
                                         value={this.state.range.value}
                                         onChange={value => this.habdlerRange(value)}
-                                        onChangeComplete={value => console.log(value)} />
-                                </div>
+                                        onChangeComplete={value => console.log(value)} /></div>
                             </div>
                             <div className="product-line__cards">
                                 {this.state.products.map((item, index) => {
@@ -302,9 +284,8 @@ class Catalog extends Component {
                         <Footer />
                     </section>
                 </section>
-            </div>
-        )
+            </div>)
     }
 }
 
-export default Catalog;
+export default Line;

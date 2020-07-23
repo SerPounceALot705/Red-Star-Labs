@@ -126,121 +126,32 @@ class LineCategories extends Component {
                     <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Препараты для связок и суставов</a></li>
                 </ul>
 
-                <div className="product-line__drop" onClick={() => this.handlerIsLine()}>
-                    <h2 className={"product-line__dropdown-title-link"}>Линейки</h2>
-                    {this.state.isLine ? <Image
-                        src={require("../../images/productArrowUp.png")}
-                        alt="arow"
-                        width={7}
-                        height={7}
-                    /> :
-                        <Image
-                            src={require("../../images/productArrow.png")}
+                {this.props.isLineBlock ?
+                    <div className="product-line__drop" onClick={() => this.handlerIsLine()}>
+                        <h2 className={"product-line__dropdown-title-link"}>Линейки</h2>
+                       
+                        {this.state.isLine ? <Image
+                            src={require("../../images/productArrowUp.png")}
                             alt="arow"
                             width={7}
                             height={7}
-                        />}
-                </div>
-                {this.state.isLine ?
+                        /> :
+                            <Image
+                                src={require("../../images/productArrow.png")}
+                                alt="arow"
+                                width={7}
+                                height={7}
+                            />}
+                    </div> : null}
+
+                {this.state.isLine && this.props.isLineBlock ?
                     (<ul className="product-line__lines">
                         <li>
                             <ul>
-                                <li>
-                                    <div onClick={() => {
-
-                                        const brand = {
-                                            items: [
-                                                { value: "95%", text: "Cодержание действующих веществ" },
-                                                { value: "65%", text: "Витаминный комплекс" },
-                                                { value: "70%", text: "Содержания углеводов" },
-                                                { value: "20%", text: "Сахар" }
-                                            ],
-                                            href: require("../../images/line-logo.png"),
-                                            brand: "basic"
-                                        }
-
-                                        this.handlerTop(brand)
-                                        this.props.updateData(brand, true)
-                                    }}>
-                                        <Image
-                                            src={this.state.brandButton.basic}
-                                            alt={"basic-line"}
-                                            className={"line__photo"}
-                                        />
-                                    </div>
-                                </li>
-                                <li>
-                                    <div onClick={() => {
-
-                                        const brand = {
-                                            items: [
-                                                { value: "80%", text: "Cодержание действующих веществ" },
-                                                { value: "40%", text: "Витаминный комплекс" },
-                                                { value: "70%", text: "Содержания углеводов" },
-                                                { value: "25%", text: "Сахар" }
-                                            ],
-                                            href: require("../../images/line-logo.png"),
-                                            brand: "ess"
-                                        }
-
-                                        this.handlerTop(brand)
-                                        this.props.updateData(brand, true)
-                                    }}>
-                                        <Image
-                                            src={this.state.brandButton.ess}
-                                            alt={"ess-line"}
-                                            className={"line__photo"}
-                                        />
-                                    </div>
-                                </li>
-                                <li>
-                                    <div onClick={() => {
-
-                                        const brand = {
-                                            items: [
-                                                { value: "85%", text: "Cодержание действующих веществ" },
-                                                { value: "65%", text: "Витаминный комплекс" },
-                                                { value: "50%", text: "Содержания углеводов" },
-                                                { value: "15%", text: "Сахар" }
-                                            ],
-                                            href: require("../../images/line-logo.png"),
-                                            brand: "super"
-                                        }
-
-                                        this.handlerTop(brand)
-                                        this.props.updateData(brand, true)
-                                    }}>
-                                        <Image
-                                            src={this.state.brandButton.super}
-                                            alt={"superior-line"}
-                                            className={"line__photo"}
-                                        />
-                                    </div>
-                                </li>
-                                <li>
-                                    <div onClick={() => {
-
-                                        const brand = {
-                                            items: [
-                                                { value: "65%", text: "Cодержание действующих веществ" },
-                                                { value: "70%", text: "Витаминный комплекс" },
-                                                { value: "60%", text: "Содержания углеводов" },
-                                                { value: "40%", text: "Сахар" }
-                                            ],
-                                            href: require("../../images/line-logo.png"),
-                                            brand: "beo"
-                                        }
-                                        
-                                        this.handlerTop(brand)
-                                        this.props.updateData(brand, true)                             
-                                    }}>
-                                        <Image
-                                            src={this.state.brandButton.beo}
-                                            alt={"beo-line"}
-                                            className={"line__photo"}
-                                        />
-                                    </div>
-                                </li>
+                                <li><a href="/LineBasic" className="basic-line"></a></li>
+                                <li><a href="/LineEss" className="ess-line"></a></li>
+                                <li><a href="/LineSuperior" className="superior-line"></a></li>
+                                <li><a href="/LineBeo" className="beo-line"></a></li>
                             </ul>
                         </li>
                     </ul>) : null
