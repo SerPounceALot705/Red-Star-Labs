@@ -32,3 +32,29 @@
     letter-spacing: 0.46px;
     margin-bottom: 22px;
 }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card__detailed-title {
+        font-size: 18px;
+    }
+
+    .card__detailed-title-first {
+        margin-top: 25px;
+    }
+
+    .card__detailed-title-sec {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card__detailed-title-first {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card__detailed-title-first {
+        margin-top: 25px;
+    }
+}

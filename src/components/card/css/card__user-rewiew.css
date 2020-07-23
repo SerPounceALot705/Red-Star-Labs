@@ -3,3 +3,9 @@
     flex-direction: row;
     margin-bottom: 35px;
 }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card__user-rewiew {
+        flex-direction: column;
+    }
+}

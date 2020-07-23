@@ -5,3 +5,31 @@
     width: 80%;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .card__detailed-description {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card__detailed-description {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card__detailed-description {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card__detailed-description {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+}

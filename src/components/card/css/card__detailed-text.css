@@ -1,5 +1,4 @@
 .card__detailed-text {
-    width: 472px;
     color: #202020;
     font-family: "TTFirsNeue-Regular";
     font-size: 20px;
@@ -8,6 +7,7 @@
     letter-spacing: 0.46px;
     text-align: justify;
     margin-bottom: 15px;
+    white-space: pre-wrap;
 }
 
 .card__detailed-text-sec {
@@ -19,4 +19,36 @@
     line-height: 23.72px;
     letter-spacing: 0.46px;
     text-align: justify;
+}
+
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card__detailed-text {
+        font-size: 16px;
+    }
+
+    .card__detailed-text-sec {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card__detailed-text {
+        font-size: 16px;
+    }  
+
+    .card__detailed-text-sec {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card__detailed-text {
+        font-size: 16px;
+    }
+
+    .card__detailed-text-sec {
+        font-size: 16px;
+    }
 }

@@ -1,33 +1,27 @@
-.card-description__main-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-@media screen and (max-width: 1199px) and (min-width: 1024px) {
-    .card-description__main-container {
-        
-    }
-}
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-    .card-description__main-container {
-       
+    .card__detailed-desc-third-container {
+        width: 29%;
     }
 }
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
-    .card-description__main-container {
+    .card__detailed-desc-third-container {
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
+        margin-top: 25px;
     }
 }
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
-    .card-description__main-container {
+    .card__detailed-desc-third-container {
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
+        margin-top: 25px;
     }
 }

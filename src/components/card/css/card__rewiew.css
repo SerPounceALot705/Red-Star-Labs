@@ -6,3 +6,33 @@
     margin-bottom: 150px;
     margin-top: 150px;
 }
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .card__rewiew {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .card__rewiew {
+        width: 90%; 
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card__rewiew {
+        width: 95%;  
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card__rewiew {
+        
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card__rewiew {
+        
+    }
+}

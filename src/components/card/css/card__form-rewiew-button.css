@@ -11,3 +11,22 @@
     margin-right: 50px;
     border: none;
 }
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .card__form-rewiew-button {
+        width: 185px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .card__form-rewiew-button {
+        width: 185px   
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card__form-rewiew-button {
+        width: 155px;     
+    }
+}
+
