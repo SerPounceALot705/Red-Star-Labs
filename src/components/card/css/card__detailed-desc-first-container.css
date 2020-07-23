@@ -12,6 +12,7 @@
 @media screen and (max-width: 767px) and (min-width: 425px) {
     .card__detailed-desc-first-container {
         width: 100%;
+        order: 3;
 
     }
 }
@@ -19,5 +20,6 @@
 @media screen and (max-width: 424px) and (min-width: 375px) {
     .card__detailed-desc-first-container {
         width: 100%;
+        order: 3;
     }
 }

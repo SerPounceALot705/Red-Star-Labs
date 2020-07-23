@@ -21,6 +21,7 @@
 @import "./card__button.css";
 @import "./card-price__container.css";
 @import "./logoSuperior.css";
+@import "./card__adaptive.css";
 
 
 @import "./card__detailed-description.css";
@@ -53,6 +54,8 @@
 @import "./card__user-rewiew-info.css";
 @import "./card__rewiew-container.css";
 @import "./rewiew.css";
+@import "./card__rewiew-button-adaptive.css";
+@import "./card__rewiew-title-adaptive.css";
 
 
 @import "./card__video-rewiew.css";

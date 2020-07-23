@@ -5,9 +5,12 @@ import Header from "../components/header/header.js";
 import Footer from "../components/footer/js/footer.js";
 import Image from "../components/image/image.js";
 import Calculator from "../components/calculator/Calculator.js";
+import AwesomeSlider from 'react-awesome-slider';
+import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import DetaieldDescription from "../components/detaieldDescription/DetaieldDescription.js";
 
 import "../components/card.css";
+import "react-awesome-slider/dist/styles.css";
 import "../components/card/css/imports.css";
 class Card extends Component {
 
@@ -29,6 +32,8 @@ class Card extends Component {
 
     render() {
 
+        const AutoplaySlider = withAutoplay(AwesomeSlider);
+
         const ratingChanged = (newRating) => {
             console.log(newRating)
         }
@@ -40,8 +45,8 @@ class Card extends Component {
 
                     <div className="card__container">
                         <nav className="contacts__menu">
-                            <a href="/" className="contacts__menu-item">Главная страница > </a>
-                            <a href="/catalog" className="contacts__menu-item">Протеины > </a>
+                            <a href="/" className="contacts__menu-item">Главная страница &gt; </a>
+                            <a href="/catalog" className="contacts__menu-item">Протеины &gt; </a>
                             <a href="/" className="contacts__menu-item contacts__menu-item_active">premium whey concentrate</a>
                         </nav>
                         <div className="card-description__main-container">
@@ -53,6 +58,25 @@ class Card extends Component {
                                 />
                                 <h2 className="card__title">PREMIUM WHEY CONCENTRATE</h2>
                                 <p className="card__subtitle">Изолят сывороточного белка</p>
+                                <div className="card__adaptive">
+                                    <p>750 мг</p>
+                                    <div className="card__adaptive-slider">
+                                        <AutoplaySlider
+                                            play={true}
+                                            interval={6000}
+                                        >
+                                            <div>
+                                                <Image
+                                                    src={require("../images/premiumWhey2.png")}
+                                                    alt={"logoSuperior"}
+                                                    className={"logoSuperior"}
+                                                />
+                                            </div>
+                                        </AutoplaySlider>
+                                    </div>
+                                    <Calculator price={1000}
+                                    />
+                                </div>
                                 <div className="card__description-container">
                                     <h3 className="card__description-title">Питательная ценность на 100г. продукта</h3>
                                     <div className="card__description-both-container">
@@ -178,6 +202,10 @@ class Card extends Component {
                 }
 
                 <section className="card__rewiew">
+                    <h3 className="card__rewiew-title-adaptive">Отзывы</h3>
+                    <div className="card__rewiew-button-adaptive">
+                        <p>Оставить отзыв</p>
+                    </div>
                     <div className="card__rewiew-form-container-main">
                         <h2 className="card__rewiew-title">Оставить свой отзыв</h2>
                         <form className="card__rewiew-form-container">
@@ -322,8 +350,8 @@ class Card extends Component {
                         апельсин с манго, персиковый чай, мохито и фруктовая карамель.</p>
                     </div>
                     <div className="video">
-                        <iframe id="ytplayer" type="text/html" width="720" height="405" 
-                        src="https://www.youtube.com/embed/iAjXRSvnMG0">
+                        <iframe id="ytplayer" type="text/html" width="720" height="405"
+                            src="https://www.youtube.com/embed/iAjXRSvnMG0">
                         </iframe>
                     </div>
                 </section>

@@ -3,3 +3,15 @@
     height: 237px;
     margin-bottom: 35px;
 }
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card__description-container {
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card__description-container {
+        order: 3;
+    }
+}

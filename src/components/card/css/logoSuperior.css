@@ -17,9 +17,18 @@
 }
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
-
+    .logoSuperior {
+        order: 2;
+        width: 34%;
+        height: auto;
+    }
+    
 }
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
-
+    .logoSuperior {
+        order: 2;
+        width: 34%;
+        height: auto;
+    }
 }
