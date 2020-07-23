@@ -3,3 +3,40 @@
     width: 50%;
     margin-right: 35px;
 }
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .video-rewiew__text-container {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .video-rewiew__text-container {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .video-rewiew__text-container {
+        margin-top: 0px;    
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .video-rewiew__text-container {
+        margin-top: 0;
+        margin-right: 0; 
+        order: 2;
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .video-rewiew__text-container {
+        margin-top: 0;
+        margin-right: 0; 
+        order: 2;  
+        width: 100%;
+    }
+}

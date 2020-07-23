@@ -7,3 +7,15 @@
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .user-name {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .user-name {
+        margin-bottom: 15px;
+    }
+}

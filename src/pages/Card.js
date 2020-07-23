@@ -37,7 +37,7 @@ class Card extends Component {
             <div className="main">
                 <section className="card">
                     <Header />
-            
+
                     <div className="card__container">
                         <nav className="contacts__menu">
                             <a href="/" className="contacts__menu-item">Главная страница > </a>
@@ -127,7 +127,7 @@ class Card extends Component {
                                 <div onClick={() => this.handlerIsDetaield()} className="product-line__button">
                                     <p>Все характеристики</p>
 
-                                    {this.state.isDetaield 
+                                    {this.state.isDetaield
                                         ? <Image
                                             src={require("../images/arrowUp.png")}
                                             alt={"arrow"}
@@ -321,10 +321,11 @@ class Card extends Component {
                         В линейке представлено 5 великолепных фруктовых вкусов, среди которых горький лимон,
                         апельсин с манго, персиковый чай, мохито и фруктовая карамель.</p>
                     </div>
-                    <iframe id="ytplayer" type="text/html" width="720" height="405"
-                        src="https://www.youtube.com/embed/iAjXRSvnMG0"
-                    >
-                    </iframe>
+                    <div className="video">
+                        <iframe id="ytplayer" type="text/html" width="720" height="405" 
+                        src="https://www.youtube.com/embed/iAjXRSvnMG0">
+                        </iframe>
+                    </div>
                 </section>
                 <section className="card__other-product-line">
                     <div className="other-product__title-container">

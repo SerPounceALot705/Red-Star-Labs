@@ -10,3 +10,29 @@
     white-space: pre-wrap;
 }
 
+
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .video-rewiew__text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .video-rewiew__text {
+        font-size: 16px;  
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .video-rewiew__text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .video-rewiew__text {
+        font-size: 14px;  
+    }
+}
+

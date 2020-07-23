@@ -7,3 +7,21 @@
     letter-spacing: 0.46px;
     margin-bottom: 28px;
 }
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .video-rewiew__title {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .video-rewiew__title {
+        margin-bottom: 18px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .video-rewiew__title {
+        margin-bottom: 14px;
+    }
+}
