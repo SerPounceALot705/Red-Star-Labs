@@ -5,5 +5,4 @@
 
 .header__dropdown-menu:hover .header__dropdown-content {
     display: flex;
-    transition: all 2s ease-in-out;
 }

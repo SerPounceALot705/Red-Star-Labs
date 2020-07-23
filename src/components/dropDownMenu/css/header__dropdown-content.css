@@ -1,24 +1,30 @@
 .header__dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.9);
     min-width: 1238px;
-    max-height: 560px;
+    max-height: 595px;
     width: 100%;
     padding: 12px 16px;
     z-index: 999;
-    top: 53px;
+    top: 18px;
     left: -250%;
-    padding-top: 20px;
-    padding-left: 43px;
     text-decoration: none;
+    padding: 0;
 }
 
-.header__dropdown-content::after {
+.header__dropdown-content-box {
+    display: flex;
+    margin-top: 35px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding-top: 20px;
+    padding-left: 43px;
+}
+
+.header__dropdown-content-box::after {
     content: '';
     position: absolute;
     left: 19%;
-    bottom: 100%;
+    bottom: 94%;
     width: 0;
     height: 0;
     border-style: solid;
