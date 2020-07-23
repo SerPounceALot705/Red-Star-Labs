@@ -8,6 +8,7 @@
 }
 
 .product-line__dropdown-content-title-link:hover {
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
 }
+

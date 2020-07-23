@@ -3,6 +3,9 @@
     justify-content: center;
     flex-direction: row;
     padding-top: 15px;
+    width: 100%;
+    background-color: #282828;
+    height: 45px;
 }
 
 .drop-container img {

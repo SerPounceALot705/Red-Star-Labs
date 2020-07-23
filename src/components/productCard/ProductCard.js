@@ -97,7 +97,7 @@ class ProductCard extends Component {
                             url: "About"
                         },
                         logo: {
-                            url: require("../../images/logoEssential.png"),
+                            url: require("../../images/logoSuperior.png"),
                             alt: "logobasic"
                         },
                         product: {
@@ -129,7 +129,7 @@ class ProductCard extends Component {
                             url: "About"
                         },
                         logo: {
-                            url: require("../../images/logoSuperior.png"),
+                            url: require("../../images/logoBeo.png"),
                             alt: "logobasic"
                         },
                         product: {

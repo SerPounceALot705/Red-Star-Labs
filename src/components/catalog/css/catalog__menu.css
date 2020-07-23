@@ -4,3 +4,16 @@
     margin-bottom: 52px;
     margin-top: 35px;
 }
+
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .catalog__menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .catalog__menu {
+        display: none;
+    }
+}

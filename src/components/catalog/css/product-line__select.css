@@ -1,12 +1,11 @@
 .product-line__select {
     background-color: #cccccc;
     border: 1px solid #e1e1e1;
-    width: 175px;
+    width: 145px;
     height: 25px;
-    margin-right: 25px;
     color: #000000;
     font-family: "TTFirsNeue-Regular";
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     text-align: center;
 }
@@ -20,7 +19,7 @@
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .product-line__select {
         font-size: 12px;
-        width: 150px;
+        width: 125px;
         margin-right: 0;
     }
 }
@@ -28,7 +27,7 @@
 @media screen and (max-width: 767px) and (min-width: 425px) {
     .product-line__select {
         font-size: 12px;
-        width: 150px;
+        width: 125px;
         margin-right: 0;
     }
 }
@@ -36,7 +35,7 @@
 @media screen and (max-width: 424px) and (min-width: 375px) {
     .product-line__select {
         font-size: 12px;
-        width: 150px;
+        width: 125px;
         margin-right: 0;
     }
 }

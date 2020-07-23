@@ -10,6 +10,6 @@
 }
 
 .product-line__dropdown-title-link:hover {
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
 }

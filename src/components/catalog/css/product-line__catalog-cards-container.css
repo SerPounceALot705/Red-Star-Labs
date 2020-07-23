@@ -1,33 +1,16 @@
 .product-line__catalog-cards-container {
-    width: 830px;
+    width: 75%;
 }
 
-@media screen and (max-width: 1440px) and (min-width: 1200px) {
-    .product-line__catalog-cards-container {
-        width: 700px;
-    }
-}
-
-@media screen and (max-width: 1199px) and (min-width: 1024px) {
-    .product-line__catalog-cards-container {
-        width: 650px;
-    }
-}
-
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-    .product-line__catalog-cards-container {
-        width: 650px;
-    }
-}
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
     .product-line__catalog-cards-container {
-        width: 95%;
+        width: 90%;
     }
 }
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
     .product-line__catalog-cards-container {
-        width: 95%;
+        width: 90%;
     }
 }

@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 35px;
-    flex-wrap: wrap;
+   
 }
 
 .product-line__filters-container p {
@@ -11,14 +11,32 @@
     font-family: "TTFirsNeue-Regular";
     font-size: 13px;
     font-weight: 300;
-    text-transform: uppercase;
     line-height: 19.72px;
     margin-right: 10px;
 }
 
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .product-line__filters-container p {
+        font-size: 12px;
+    }
+
+    .product-line__filters-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+    } 
+}
+
+
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
     .product-line__filters-container p {
         font-size: 12px;
+    }
+
+    .product-line__filters-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
     }
 }
 
@@ -27,6 +45,11 @@
         font-size: 10px;
         line-height: 15.72px;
     }
+
+    .product-line__filters-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 }
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
@@ -34,11 +57,18 @@
         font-size: 10px;
         line-height: 15.72px;
     }
+
+    .product-line__filters-container {
+        flex-wrap: wrap;
+    }
 }   
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
     .product-line__filters-container p {
         font-size: 10px;
         line-height: 15.72px;
+    }
+    .product-line__filters-container {
+        flex-wrap: wrap;
     }
 }

@@ -69,11 +69,13 @@ class Header extends Component {
     render() {
         return (
             <section className={this.headerClass}>
+                <a href="/">
                 <Image
                     src={this.LogoUrl}
                     alt={"logo"}
                     className={"header__logo"}
                 />
+               </a>
                 {this.state.innerWidth > 768 ? this.headerNav() : <div><Basket/> <Burger/> </div>}
                 
             </section>

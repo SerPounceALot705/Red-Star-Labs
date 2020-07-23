@@ -32,3 +32,16 @@
         width: 90%;
     }
 }
+
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .header-border {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .header-border {
+        border-bottom: none;
+    }
+}
