@@ -30,3 +30,30 @@
     padding-left: 10px;
 }
 
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .card__input-topic {
+        width: 457px; 
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .card__input-topic {
+        width: 455px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card__input-topic {
+        width: 405px; 
+    }
+
+    .card__input-name {
+        width: 188px;
+    }
+
+    .card__input-email {
+        width: 188px;
+    }
+}
+
+

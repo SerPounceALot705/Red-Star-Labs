@@ -144,18 +144,6 @@ class WhereICanBuy extends Component {
                             <Tab>онлайн</Tab>
                         </TabList>
                         <TabPanel>
-                            <div className="where-i-can-buy__grid-container">
-                                {this.state.shopCards.map((item, index) => {
-                                    return (
-                                        <ShopCard
-                                            key={index}
-                                            image={item.image}
-                                            link={item.link}
-                                        />)
-                                })}
-                            </div>
-                        </TabPanel>
-                        <TabPanel>
                             <div className="where-i-can-buy__shops">
                                 <div className="where-i-can-buy__list-shops">
                                     {this.state.shops.map((item, index) => {
@@ -172,6 +160,18 @@ class WhereICanBuy extends Component {
                                     alt={"shop-map"}
                                     className={"shop-map"}
                                 />
+                            </div>
+                        </TabPanel>
+                        <TabPanel>
+                            <div className="where-i-can-buy__grid-container">
+                                {this.state.shopCards.map((item, index) => {
+                                    return (
+                                        <ShopCard
+                                            key={index}
+                                            image={item.image}
+                                            link={item.link}
+                                        />)
+                                })}
                             </div>
                         </TabPanel>
                     </Tabs>

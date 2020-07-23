@@ -1,5 +1,4 @@
 .video-rewiew__text {
-    width: 595px;
     height: 184px;
     color: #202020;
     font-family: "TTFirsNeue-Regular";
@@ -8,4 +7,6 @@
     line-height: 23.72px;
     letter-spacing: 0.46px;
     text-align: justify;
+    white-space: pre-wrap;
 }
+

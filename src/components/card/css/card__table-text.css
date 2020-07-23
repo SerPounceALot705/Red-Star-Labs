@@ -11,3 +11,9 @@
 td .card__table-text {
     border-spacing: 5px;
 }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card__table-text {
+        font-size: 11px;
+    }
+}

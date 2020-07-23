@@ -2,3 +2,22 @@
     width: 35.6%;
     max-width: 472px;
 }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card__detailed-desc-first-container {
+        width: 28.6%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card__detailed-desc-first-container {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card__detailed-desc-first-container {
+        width: 100%;
+    }
+}
