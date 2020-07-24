@@ -11,9 +11,11 @@ class Calculator extends Component {
 
         this.state = {
             sum: this.props.price,
-            count: 1
+            count: 1,
+            innerWidth: window.innerWidth
         }
 
+        this.handleResize = this.handleResize.bind(this);
         this.handlerMinusSum = this.handlerMinusSum.bind(this);
         this.handlerPlusSum = this.handlerPlusSum.bind(this);
         this.handlerChangeSum = this.handlerChangeSum.bind(this);
@@ -23,6 +25,12 @@ class Calculator extends Component {
         this.setState({
             count: this.state.count + 1,
             sum: this.state.sum + this.props.price
+        })
+    }
+
+    handleResize() {
+        this.setState({
+            innerWidth: window.innerWidth
         })
     }
 
@@ -41,8 +49,8 @@ class Calculator extends Component {
         if (value > 1 && value != "") {
             this.setState({
                 count: e.target.value,
-                sum: value * this.props.price 
-            })   
+                sum: value * this.props.price
+            })
         } else {
             this.setState({
                 count: 1,
@@ -53,14 +61,50 @@ class Calculator extends Component {
 
     render() {
         return (
-            <div className="calc__container">
-                <span className="card__product-price">{this.state.sum}&#8381;</span>
-                <button className="calc__button" onClick={() => this.handlerMinusSum()}>-</button>
-                <input  className="calc__input" type="number" value={this.state.count} onChange={this.handlerChangeSum}  />
-                <button className="calc__button" onClick={() => this.handlerPlusSum()}>+</button>
+            <div className="calc">
+                {this.state.innerWidth > 768
+                    ? <div className="calc__container">
+                        <div className="label__container">
+                            <label className="label__title">Вкус:</label>
+                            <select className="card-select">
+                                <option>апельсин, манго и маракуйя</option>
+                            </select>
+                        </div>
+                        <div className="calc__buttons-desc-container">
+                            <div className="calc__prices-buttons-container">
+                                <span className="card__product-price">{this.state.sum}&#8381;</span>
+                                <button className="calc__button" onClick={() => this.handlerMinusSum()}>-</button>
+                                <input className="calc__input" type="number" value={this.state.count} onChange={this.handlerChangeSum} />
+                                <button className="calc__button" onClick={() => this.handlerPlusSum()}>+</button>
+                            </div>
+                            <button className="card__button">Добавить в корзину</button>
+                        </div>
+
+                    </div>
+                    : <div className="calc__container">
+                        <span className="card__product-price">{this.state.sum}&#8381;</span>
+                        <div className="label__container">
+                            <label className="label__title">Вкус:</label>
+                            <select className="card-select">
+                                <option>апельсин, манго и маракуйя</option>
+                            </select>
+                        </div>
+                        <div className="calc__buttons-container">
+                            <div>
+                                <button className="calc__button" onClick={() => this.handlerMinusSum()}>-</button>
+                                <input className="calc__input" type="number" value={this.state.count} onChange={this.handlerChangeSum} />
+                                <button className="calc__button" onClick={() => this.handlerPlusSum()}>+</button>
+                            </div>
+                            <button className="card__button">Добавить в корзину</button>
+                        </div>
+
+                    </div>
+                }
             </div>
         )
     }
+
+
 }
 
 export default Calculator;

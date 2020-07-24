@@ -1,7 +1,7 @@
 .card-description__main-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
@@ -22,6 +22,10 @@
         flex-direction: column;
         margin: 0 auto;
     }
+
+    .card-description__main-container .logoSuperior {
+
+    }
 }
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
@@ -30,4 +34,6 @@
         flex-direction: column;
         margin: 0 auto;
     }
+
+    
 }

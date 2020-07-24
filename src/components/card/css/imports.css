@@ -22,6 +22,13 @@
 @import "./card-price__container.css";
 @import "./logoSuperior.css";
 @import "./card__adaptive.css";
+@import "./card__adaptive-slider.css";
+@import "./card__adaptive-photo.css";
+@import "./card__adaptive-text.css";
+@import "./card__img-container.css";
+@import "./calc__prices-buttons-container.css";
+@import "./calc__buttons-desc-container.css";
+@import "./card__description.css";
 
 
 @import "./card__detailed-description.css";
@@ -63,6 +70,12 @@
 @import "./video-rewiew__text.css";
 @import "./video-rewiew__text-container.css";
 @import "./video.css";
+
+@import "./photo-gallery__slider.css";
+@import "./card-adaptive__photo-gallery.css";
+@import "./adaptive__photo-slide.css";
+@import "./adaptive__photo-gallery-title.css";
+@import "./adaptive-photo-gal.css";
 
 @import "./card__other-product-line.css";
 @import "./other-product__title-container.css";

@@ -4,30 +4,33 @@
     max-width: 434px;
 }
 
+
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
     .logoSuperior {
-
+        width: 369px;
+        height: 530px;
+        margin-top: 85px;
     }
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .logoSuperior {
-        
+        width: 269px;
+        height: 400px;
+        margin-top: 240px;
     }
 }
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
     .logoSuperior {
-        order: 2;
         width: 34%;
         height: auto;
     }
-    
+
 }
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
     .logoSuperior {
-        order: 2;
         width: 34%;
         height: auto;
     }

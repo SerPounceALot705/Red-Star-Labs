@@ -9,3 +9,15 @@
     margin-bottom: 17px;
     width: 259px;
 }
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card__description-title {
+        color: firebrick;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card__description-title {
+        color: firebrick;
+    }
+}

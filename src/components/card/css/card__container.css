@@ -2,3 +2,9 @@
     width: 80%;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card__container {
+        width: 90%;
+    }
+}

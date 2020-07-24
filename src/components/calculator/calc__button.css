@@ -7,8 +7,17 @@
     font-family: "TTFirsNeue-DemiBold";
     font-size: 18px;
     font-weight: 400;
-    line-height: 18.72px;
     letter-spacing: 0.5px;
     margin-bottom: 61px;
     font-weight: bold;
+}
+
+.calc__buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.calc__buttons-container div {
+    margin-right: 25px;
 }

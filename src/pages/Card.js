@@ -58,14 +58,29 @@ class Card extends Component {
                                 />
                                 <h2 className="card__title">PREMIUM WHEY CONCENTRATE</h2>
                                 <p className="card__subtitle">Изолят сывороточного белка</p>
+                                <p className="card__adaptive-text">750 мг</p>
                                 <div className="card__adaptive">
-                                    <p>750 мг</p>
+
                                     <div className="card__adaptive-slider">
                                         <AutoplaySlider
                                             play={true}
                                             interval={6000}
                                         >
-                                            <div>
+                                            <div className="card__adaptive-photo">
+                                                <Image
+                                                    src={require("../images/premiumWhey2.png")}
+                                                    alt={"logoSuperior"}
+                                                    className={"logoSuperior"}
+                                                />
+                                            </div>
+                                            <div className="card__adaptive-photo">
+                                                <Image
+                                                    src={require("../images/premiumWhey2.png")}
+                                                    alt={"logoSuperior"}
+                                                    className={"logoSuperior"}
+                                                />
+                                            </div>
+                                            <div className="card__adaptive-photo">
                                                 <Image
                                                     src={require("../images/premiumWhey2.png")}
                                                     alt={"logoSuperior"}
@@ -137,16 +152,9 @@ class Card extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="label__container">
-                                    <label className="label__title">Вкус:</label>
-                                    <select className="card-select">
-                                        <option>апельсин, манго и маракуйя</option>
-                                    </select>
-                                </div>
                                 <div className="card-price__container">
                                     <Calculator price={1000}
                                     />
-                                    <button className="card__button">Добавить в корзину</button>
                                 </div>
                                 <div onClick={() => this.handlerIsDetaield()} className="product-line__button">
                                     <p>Все характеристики</p>
@@ -165,11 +173,14 @@ class Card extends Component {
                                     }
                                 </div>
                             </div>
-                            <Image
-                                src={require("../images/premiumWhey2.png")}
-                                alt={"logoSuperior"}
-                                className={"logoSuperior"}
-                            />
+                            <div className="card__img-container">
+                                <Image
+                                    src={require("../images/premiumWhey2.png")}
+                                    alt={"logoSuperior"}
+                                    className={"logoSuperior"}
+                                />
+                            </div>
+
                         </div>
                     </div>
                 </section>
@@ -353,6 +364,37 @@ class Card extends Component {
                         <iframe id="ytplayer" type="text/html" width="720" height="405"
                             src="https://www.youtube.com/embed/iAjXRSvnMG0">
                         </iframe>
+                    </div>
+                </section>
+                <section className="card-adaptive__photo-gallery">
+                    <h3 className="adaptive__photo-gallery-title">Фотогалерея</h3>
+                    <div className="photo-gallery__slider">
+                        <AutoplaySlider
+                            play={true}
+                            interval={6000}
+                        >
+                            <div className="adaptive__photo-slide">
+                                <Image
+                                    src={require("../images/adaptive-photo-gal.png")}
+                                    alt={"adaptive-photo-gal01"}
+                                    className={"adaptive-photo-gal"}
+                                />
+                            </div>
+                            <div className="adaptive__photo-slide">
+                                <Image
+                                    src={require("../images/adaptive-photo-gal.png")}
+                                    alt={"adaptive-photo-gal02"}
+                                    className={"adaptive-photo-gal"}
+                                />
+                            </div>
+                            <div className="adaptive__photo-slide">
+                                <Image
+                                    src={require("../images/adaptive-photo-gal.png")}
+                                    alt={"adaptive-photo-gal03"}
+                                    className={"adaptive-photo-gal"}
+                                />
+                            </div>
+                        </AutoplaySlider>
                     </div>
                 </section>
                 <section className="card__other-product-line">

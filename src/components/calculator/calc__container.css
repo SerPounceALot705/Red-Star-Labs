@@ -3,3 +3,7 @@
     flex-direction: row;
     margin-right: 25px;
 }
+
+.calc {
+    width: 100%;
+}

@@ -6,9 +6,22 @@
     line-height: 55.72px;
     text-transform: uppercase;
     letter-spacing: 0.71px;
-    width: 105px;
     display: flex;
     flex-direction: row;
     margin-left: 0;
     margin-right: 25px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card__product-price {
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card__product-price {
+        margin-right: 0;
+        text-align: center;
+    }
 }

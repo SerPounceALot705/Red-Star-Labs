@@ -2,3 +2,20 @@
     display: flex;
     justify-content: flex-start;
 }
+
+
+
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .label__container {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .label__container {
+        justify-content: center;
+        width: 100%;
+    }
+}

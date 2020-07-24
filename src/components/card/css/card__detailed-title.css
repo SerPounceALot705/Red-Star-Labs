@@ -50,11 +50,25 @@
 @media screen and (max-width: 767px) and (min-width: 425px) {
     .card__detailed-title-first {
         margin-top: 25px;
+        color: firebrick;
+    }
+
+    .card__detailed-title {
+        color: firebrick;
+    }
+
+    .card__detailed-title-sec {
+        color: firebrick;
     }
 }
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
     .card__detailed-title-first {
         margin-top: 25px;
+        color: firebrick;
+    }
+
+    .card__detailed-title-sec {
+        color: firebrick;
     }
 }

@@ -3,3 +3,33 @@
     flex-direction: row;
     margin-bottom: 90px;
 }
+
+.card-price__container .calc__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-price__container .label__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card-price__container .calc {
+        display: none;
+    }
+
+    .card-price__container {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card-price__container .calc {
+        display: none;
+    }
+
+    .card-price__container {
+        margin-bottom: 0;
+    }
+}

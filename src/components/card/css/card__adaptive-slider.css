@@ -1,4 +1,24 @@
 .card__adaptive-slider {
     display: flex;
     justify-content: center;
+    width: 90%;
+    height: 250px;
+}
+
+.card__adaptive-slider .awssld__bullets {
+    bottom: 97%;
+    left: 0%;
+
+}
+
+.card__adaptive-slider .awssld__bullets--active {
+    background: firebrick;
+}
+
+.card__adaptive-slider .awssld__next {
+    opacity: 0;
+}
+
+.card__adaptive-slider .awssld__prev {
+    opacity: 0;
 }

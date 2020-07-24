@@ -8,3 +8,16 @@
     font-weight: normal;
     width: 150px;
 }
+
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card-description__additionaly-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card-description__additionaly-text {
+        display: none;
+    }
+}

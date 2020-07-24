@@ -1,0 +1,11 @@
+.adaptive__photo-gallery-title {
+    font-family: "TTFirsNeue-DemiBold";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.72px;
+    letter-spacing: 0.46px;
+    color: firebrick;
+    width: 82%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}

@@ -3,8 +3,34 @@
     font-family: "TTFirsNeue-DemiBold";
     font-size: 30px;
     font-weight: 400;
-    line-height: 23.72px;
+    line-height: 33.72px;
     text-transform: uppercase;
     letter-spacing: 0.71px;
     margin-bottom: 17px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card__title {
+        color: #202020;
+        font-family: "TTFirsNeue-DemiBold";
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 23.72px;
+        text-transform: uppercase;
+        letter-spacing: 0.71px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card__title {
+        color: #202020;
+        font-family: "TTFirsNeue-DemiBold";
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 23.72px;
+        text-transform: uppercase;
+        letter-spacing: 0.71px;
+        margin-bottom: 5px;
+    }
 }

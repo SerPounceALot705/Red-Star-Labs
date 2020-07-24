@@ -1,0 +1,23 @@
+.card-adaptive__photo-gallery {
+    display: none;
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card-adaptive__photo-gallery {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card-adaptive__photo-gallery {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+}

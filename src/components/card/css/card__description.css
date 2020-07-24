@@ -2,5 +2,36 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    margin-right: 250px;
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .card__description {
+        margin-right: 150px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .card__description {
+        margin-right: 75px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card__description {
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card__description {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card__description {
+        margin-right: 0;
+    }
 }
