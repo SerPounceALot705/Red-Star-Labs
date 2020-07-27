@@ -11,6 +11,7 @@
     margin-right: 9px;
     line-height: 31.72px;
     cursor: pointer;
+    box-shadow: 1px 1px 0px #757776 inset;
     
 }
 
@@ -20,4 +21,9 @@
 
 .number-page:focus {
     color: #a61313;
+}
+
+.number-page_selected {
+    color: #a93133;
+    box-shadow: -1px -1px 0px 0px #757776 inset;
 }

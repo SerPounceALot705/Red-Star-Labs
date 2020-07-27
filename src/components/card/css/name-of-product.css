@@ -8,3 +8,39 @@
     letter-spacing: 0.46px;
     margin-bottom: 35px;
 }
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .name-of-product {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .name-of-product {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .name-of-product {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .name-of-product {
+        font-size: 18px;
+        margin-bottom: 10px;
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .name-of-product {
+        font-size: 18px; 
+        margin-bottom: 10px;
+    }
+}

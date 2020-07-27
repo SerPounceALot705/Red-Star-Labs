@@ -3,4 +3,31 @@
     font-family: "TTFirsNeue-Regular";
     font-size: 15px;
     font-weight: 400;
+    padding-bottom: 25px;
+}
+
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .card__other-product-description {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card__other-product-description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card__other-product-description {
+        font-size: 14px;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card__other-product-description {
+        display: none;
+    }
 }

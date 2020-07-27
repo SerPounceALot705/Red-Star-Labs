@@ -17,6 +17,7 @@ import "../about-desctiption/css/main-button-logo-basic.css";
 import "../about-desctiption/css/main-button-text.css";
 import "../about-desctiption/css/main-button-text-container.css";
 import "../about-desctiption/css/main-button-link.css";
+import "../about-desctiption/css/main-button-link.css";
 
 class ProductCard extends Component {
     constructor(props) {
@@ -237,6 +238,7 @@ class ProductCard extends Component {
                             <AnalyticsItem items={this.state.selectOptions.lables} />
                         </div>
                         <div className="main-button">
+                            <a className="main-button-link" href="LineBasic">
                             <div className="main-button-text-container">
                                 <span className="main-button-text">Все продукты линейки</span>
                                 <span className="main-button-span">Basic</span>
@@ -246,6 +248,8 @@ class ProductCard extends Component {
                                 alt={"logo-basic"}
                                 className={"main-button-logo-basic"}
                             />
+                            </a>
+                            
                         </div>
                     </div>
                     <div className="product-card__description-slide">

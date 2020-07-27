@@ -4,8 +4,66 @@
     border-right: rgba(249, 249, 249, 0.6) 1px solid;
     padding-right: 50px;
     padding-left: 50px;
+    opacity: 0.6;
+    transition: all ease-in-out 0.2s;
 }
 
 .card__other-product-line-container:nth-child(3) {
     border-right: none;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .card__other-product-line-container:hover {
+        opacity: 1;
+    }
+    .card__other-product-line-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .card__other-product-line-container:hover {
+        opacity: 1;
+    }
+
+    .card__other-product-line-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card__other-product-line-container:hover {
+        opacity: 1;
+    }
+
+    .card__other-product-line-container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card__other-product-line-container:hover {
+        opacity: 1;
+    }
+
+    .card__other-product-line-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card__other-product-line-container:hover {
+        opacity: 1;
+    }
+
+    .card__other-product-line-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 265px;
+    }
 }

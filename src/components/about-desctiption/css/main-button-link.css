@@ -1,5 +1,8 @@
 .main-button-link {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-between;
     width: 100%;
-    height: 100%;
+    
 }

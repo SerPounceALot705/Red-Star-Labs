@@ -6,3 +6,15 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .other-product__title-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .other-product__title-container {
+        flex-direction: column;
+    }
+}

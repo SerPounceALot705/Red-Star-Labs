@@ -255,7 +255,7 @@ class Line extends Component {
                             </div>
                             <div className="product-line__catalog-pagination">
                                 <div className="button-pagination-left"></div>
-                                <div className="number-page">1</div>
+                                <div className="number-page number-page_selected">1</div>
                                 <div className="number-page">2</div>
                                 <div className="number-page">3</div>
                                 <div className="button-pagination-right"></div>

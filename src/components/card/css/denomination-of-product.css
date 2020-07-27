@@ -6,3 +6,49 @@
     font-weight: 400;
     line-height: 23.72px;
 }
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .denomination-of-product {
+        width: 200px;
+        color: #202020;
+        font-family: "TTFirsNeue-Regular";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23.72px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .denomination-of-product {
+        width: 175px;
+        color: #202020;
+        font-family: "TTFirsNeue-Regular";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23.72px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .denomination-of-product {
+        width: 150px;
+        color: #202020;
+        font-family: "TTFirsNeue-Regular";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23.72px;
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .denomination-of-product {
+        width: 100px;
+        color: #202020;
+        font-family: "TTFirsNeue-Regular";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23.72px;
+        order: 2;
+    }
+}
