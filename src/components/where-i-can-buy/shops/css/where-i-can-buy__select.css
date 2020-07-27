@@ -1,0 +1,11 @@
+.where-i-can-buy__select {
+    width: 183px;
+    height: 32px;
+    position: absolute;
+    margin-top: 20px;
+    right: 0;
+    font-family: "TTFirsNeue-DemiBold";
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 10px;
+}

@@ -1,4 +1,4 @@
 .where-i-can-buy__mode-of-operation {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }

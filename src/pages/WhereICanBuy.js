@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { FiPhone } from "react-icons/fi";
+import { FiClock } from "react-icons/fi";
+
 import 'react-tabs/style/react-tabs.css';
 import Header from "../components/header/header.js";
 import Footer from "../components/footer/js/footer.js";
@@ -28,6 +31,7 @@ import "../components/where-i-can-buy/shops/css/where-i-can-buy__first-container
 import "../components/where-i-can-buy/shops/css/shop-map.css";
 import "../components/where-i-can-buy/css/mobile__photo.css";
 import "../components/where-i-can-buy/css/mobile-photo-container.css";
+import "../components/where-i-can-buy/shops/css/where-i-can-buy__select.css";
 
 class WhereICanBuy extends Component {
     constructor(props) {
@@ -132,7 +136,7 @@ class WhereICanBuy extends Component {
                     link: { url: "/", text: "Сбермаркет" }
                 }
             ],
-            selectShop:   {
+            selectShop: {
                 id: 1,
                 city: "Москва",
                 phone1: "+7(495) 646-87-80",
@@ -168,7 +172,7 @@ class WhereICanBuy extends Component {
 
     handlerChange(event) {
         const selectItem = this.state.shops.find(s => s.id == event.target.value);
-        this.setState({ 
+        this.setState({
             mapImageUrl: selectItem.map,
             selectShop: selectItem
         })
@@ -215,7 +219,7 @@ class WhereICanBuy extends Component {
                                 </div>
                                 :
                                 <div className="where-i-can-buy__shops">
-                                    <select onChange={this.handlerChange}>
+                                    <select className="where-i-can-buy__select" onChange={this.handlerChange}>
                                         {this.state.shops.map((item, index) => {
                                             return (
                                                 <option value={item.id} key={index}>{item.city}</option>
@@ -225,10 +229,21 @@ class WhereICanBuy extends Component {
                                     <div className="where-i-can-buy__shop-card">
                                         <ul>
                                             <li>{this.state.selectShop.city}</li>
-                                            <li>{this.state.selectShop.phone1}</li>
-                                            <li>{this.state.selectShop.phone2}</li>
-                                            <li>{this.state.selectShop.workDay}</li>
-                                            <li>{this.state.selectShop.regionPhone}</li>
+                                            <li><div className="where-i-can-buy__adress-container">
+                                                <FiPhone />
+                                                <div className="where-i-can-buy__adress">
+                                                    <span className="where-i-can-buy__town">{this.state.selectShop.city}</span>
+                                                    <p className="where-i-can-buy__phone-number">{this.state.selectShop.phone1}</p>
+                                                    <p className="where-i-can-buy__phone-number">{this.state.selectShop.phone2}</p>
+                                                </div>
+                                            </div></li>
+
+                                            <li> <div className="where-i-can-buy__adress-container">
+                                                <FiClock />
+                                                <div className="where-i-can-buy__adress">
+                                                    <p className="where-i-can-buy__subtitle">{this.state.selectShop.workDay}</p>
+                                                </div>
+                                            </div></li>
                                         </ul>
                                     </div>
                                     <Image

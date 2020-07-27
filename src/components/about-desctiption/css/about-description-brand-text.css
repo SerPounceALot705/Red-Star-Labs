@@ -33,6 +33,8 @@
     .about-description-brand-text {
         margin-bottom: 50px;
         font-size: 18px;
+        width: 90%;
+        text-align: justify;
     }
 }
 
@@ -40,6 +42,8 @@
     .about-description-brand-text {
         margin-bottom: 35px;
         font-size: 18px;
+        width: 90%;
+        text-align: justify;
     }
 }
 
@@ -47,5 +51,7 @@
     .about-description-brand-text {
         margin-bottom: 25px;
         font-size: 18px;
+        width: 90%;
+        text-align: justify;
     }
 }

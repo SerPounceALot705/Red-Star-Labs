@@ -31,12 +31,21 @@
         top: 45%;
         right: 20%;
     }
+
+    .header-theme-white .basket {
+        right: 18%;
+    }
 }
+
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
     .header-border .basket {
         top: 45%;
         right: 15%;
+    }
+
+    .header-theme-white .basket {
+        right: 22%;
     }
 }
 

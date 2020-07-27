@@ -19,6 +19,7 @@ import "../../components/where-i-can-buy/shops/css/where-i-can-buy__title.css";
 import "../../components/where-i-can-buy/shops/css/where-i-can-buy__subtitle.css";
 
 class BuyShopCard extends Component {
+    
     render() {
         return (
             <div className="where-i-can-buy__shop">
@@ -43,16 +44,19 @@ class BuyShopCard extends Component {
                             <p className="where-i-can-buy__phone-number">{this.props.shop.phone1}</p>
                             <p className="where-i-can-buy__phone-number">{this.props.shop.phone2}</p>
                         </div>
-                        <div className="where-i-can-buy__mode-of-operation">
-                            <p className="where-i-can-buy__time"> {this.props.shop.workDay} </p>
-                        </div>
                     </div>
                     <div className="where-i-can-buy__adress-container">
                         <FiClock />
                         <div className="where-i-can-buy__adress">
-                            <span className="where-i-can-buy__town"> Регионы:</span>
-                            <p className="where-i-can-buy__subtitle">{this.props.shop.regionPhone}</p>
+                            <p className="where-i-can-buy__subtitle">{this.props.shop.workDay}</p>
                         </div>
+                    </div>
+                </div>
+                <div className="where-i-can-buy__third-container">
+
+                    <div className="where-i-can-buy__mode-of-operation">
+                        <span className="where-i-can-buy__town"> Регионы:</span>
+                        <p className="where-i-can-buy__time"> {this.props.shop.regionPhone} </p>
                     </div>
                 </div>
             </div>

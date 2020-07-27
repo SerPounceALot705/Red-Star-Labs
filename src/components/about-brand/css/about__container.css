@@ -9,6 +9,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        left: 35%;
+        left: 28%;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .about__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 12%;
     }
 }

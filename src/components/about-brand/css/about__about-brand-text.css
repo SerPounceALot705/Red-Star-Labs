@@ -31,6 +31,8 @@
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
     .about__about-brand-text {
-
+        font-size: 12px;
+        width: 300px;
+        text-align: justify;  
     }
 }

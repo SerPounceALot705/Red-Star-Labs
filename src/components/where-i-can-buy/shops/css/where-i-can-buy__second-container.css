@@ -1,3 +1,5 @@
 .where-i-can-buy__second-container {
     margin-right: 15px;
+    display: flex;
+    flex-direction: column;
 }

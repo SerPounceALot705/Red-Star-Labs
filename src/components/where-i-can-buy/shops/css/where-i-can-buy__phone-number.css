@@ -9,3 +9,21 @@
     text-decoration: none;
     max-width: 265px;
 }
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .where-i-can-buy__phone-number {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .where-i-can-buy__phone-number {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .where-i-can-buy__phone-number {
+        font-size: 12px;
+    }
+}

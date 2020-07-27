@@ -1,0 +1,19 @@
+
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .where-i-can-buy__list-item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .where-i-can-buy__list-item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .where-i-can-buy__list-item {
+        width: 100%;
+    }
+}

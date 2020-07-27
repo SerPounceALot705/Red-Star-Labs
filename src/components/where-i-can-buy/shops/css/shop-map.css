@@ -1,3 +1,29 @@
 .shop-map {
-    max-width: 55%;
+    max-width: 45%;
+    height: 612px;
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1401px) {
+    .shop-map {
+        width: 80%;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .shop-map {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .shop-map {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .shop-map {
+        max-width: 80%;
+    }
 }
