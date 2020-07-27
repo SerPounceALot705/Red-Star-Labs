@@ -1,9 +1,63 @@
 .other-product-line-main-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 90%;
+    width: 1510px;
     margin: 0 auto;
-    padding-bottom: 75px;
+    transition: all ease-in-out 0.2s;
+}
+
+.other-product-line-main-container::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: #ac140f;
+    border-radius: 5px;
+    height: 2px;
+}
+
+.other-product-line-main-container::-webkit-scrollbar {
+    width: 2px;
+    background-color: #848484;
+    height: 2px;
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .other-product-line-main-container {
+        box-sizing: border-box;
+        overflow-x: scroll;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .other-product-line-main-container {
+        box-sizing: border-box;
+        overflow-x: scroll;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .other-product-line-main-container {
+        box-sizing: border-box;
+        overflow-x: scroll;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .other-product-line-main-container {
+        box-sizing: border-box;
+        overflow-x: scroll;
+        width: 100%;
+        padding-bottom: 25px;
+    }   
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .other-product-line-main-container {
+        box-sizing: border-box;
+        overflow-x: scroll;
+        width: 100%;
+        padding-bottom: 25px;
+    }
 }
 

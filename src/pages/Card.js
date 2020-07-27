@@ -406,44 +406,47 @@ class Card extends Component {
                             className={"logoSuperior__photo"}
                         />
                     </div>
-                    <div className="other-product-line-main-container">
-                        <div className="card__other-product-line-container">
-                            <Image
-                                src={require("../images/line-product-item.png")}
-                                alt={"product-line-item"}
-                                className={"product-line-item__photo"}
-                            />
-                            <div className="other-product__description-of-product">
-                                <p className="denomination-of-product">Сывороточный протеин</p>
-                                <p className="name-of-product">Whey Isolate</p>
-                                <p className="card__other-product-description">Чистый сывороточный протеин</p>
+                    <div className="other-product-line-products-container">
+                        <div className="other-product-line-main-container">
+                            <div className="card__other-product-line-container">
+                                <Image
+                                    src={require("../images/line-product-item.png")}
+                                    alt={"product-line-item"}
+                                    className={"product-line-item__photo"}
+                                />
+                                <div className="other-product__description-of-product">
+                                    <p className="denomination-of-product">Сывороточный протеин</p>
+                                    <p className="name-of-product">Whey Isolate</p>
+                                    <p className="card__other-product-description">Чистый сывороточный протеин</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="card__other-product-line-container">
-                            <Image
-                                src={require("../images/line-product-item.png")}
-                                alt={"product-line-item"}
-                                className={"product-line-item__photo"}
-                            />
-                            <div className="other-product__description-of-product">
-                                <p className="denomination-of-product">Сывороточный протеин</p>
-                                <p className="name-of-product">Whey Isolate</p>
-                                <p className="card__other-product-description">Чистый сывороточный протеин</p>
+                            <div className="card__other-product-line-container">
+                                <Image
+                                    src={require("../images/line-product-item.png")}
+                                    alt={"product-line-item"}
+                                    className={"product-line-item__photo"}
+                                />
+                                <div className="other-product__description-of-product">
+                                    <p className="denomination-of-product">Сывороточный протеин</p>
+                                    <p className="name-of-product">Whey Isolate</p>
+                                    <p className="card__other-product-description">Чистый сывороточный протеин</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="card__other-product-line-container">
-                            <Image
-                                src={require("../images/line-product-item.png")}
-                                alt={"product-line-item"}
-                                className={"product-line-item__photo"}
-                            />
-                            <div className="other-product__description-of-product">
-                                <p className="denomination-of-product">Сывороточный протеин</p>
-                                <p className="name-of-product">Whey Isolate</p>
-                                <p className="card__other-product-description">Чистый сывороточный протеин</p>
+                            <div className="card__other-product-line-container">
+                                <Image
+                                    src={require("../images/line-product-item.png")}
+                                    alt={"product-line-item"}
+                                    className={"product-line-item__photo"}
+                                />
+                                <div className="other-product__description-of-product">
+                                    <p className="denomination-of-product">Сывороточный протеин</p>
+                                    <p className="name-of-product">Whey Isolate</p>
+                                    <p className="card__other-product-description">Чистый сывороточный протеин</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </section>
                 <Footer />
             </div>
