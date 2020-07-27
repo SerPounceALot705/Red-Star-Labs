@@ -165,7 +165,7 @@ class ProductCard extends Component {
         })
     }
 
-    handlerSelectProduct(e, options) {
+    handlerSelectProduct(options) {
         this.setState({
             selectOptions: options
         })
@@ -180,9 +180,10 @@ class ProductCard extends Component {
                     {this.state.LineCards.map((item, index) => {
                         return (
                             <div
+                                ref={index}
                                 key={index}
                                 className="product-card__container-card"
-                                onClick={(e) => this.handlerSelectProduct(e, item.options)}
+                                onClick={() => this.handlerSelectProduct(item.options)}
                             >
                                 <LineCard
                                     className={item.className}

@@ -7,3 +7,62 @@
     height: 612px;
     margin-bottom: 202px;
 }
+
+@media screen and (max-width: 767px) {
+    
+    .where-i-can-buy {
+        width: 100% !important;
+    }
+
+    .where-i-can-buy__shops {
+        margin-bottom: 0;
+        height: auto;
+    }
+
+    .where-i-can-buy__shops select {
+        position: absolute;
+        margin-top: 20px;
+        right: 0;
+    }
+
+    .where-i-can-buy__shop-card {
+        position: absolute;
+        height: 140px;
+        width: 160px;
+        right: 35%;
+        background-color: #ffffff;
+        margin-top: 120px;
+    }
+
+    .where-i-can-buy__shop-card::before {
+        position: absolute;
+        top: 100%;
+        content: "";
+        border: 80px solid transparent; 
+        border-top: 30px solid #ffffff;
+    }
+
+    .where-i-can-buy__shop-card ul {
+        height: 120px;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+    }
+
+    .where-i-can-buy__shop-card ul li {
+        height: 20px;
+        width: 160px;
+        padding: 0;
+        color: black;
+    }
+
+    .shop-map {
+        width: 100%;
+        max-width: 100% !important;
+        height: 60%;
+    }
+
+    .react-tabs__tab-panel {
+        width: 100%;
+    }
+}
