@@ -3,6 +3,10 @@
     height: auto;
     margin: 0 auto;
     z-index: 0;
+    
+}
+
+.gallery-item__photo_grey {
     filter: grayscale(100%);
 }
 
