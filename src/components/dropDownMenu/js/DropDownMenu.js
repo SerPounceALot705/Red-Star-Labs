@@ -140,7 +140,7 @@ class DropDownMenu extends Component {
                             <Image
                                 src={require("../../../images/promo.png")}
                                 alt={"promo"}
-                                width={900}
+                                width={860}
                                 height={132}
                             />
                         </div>

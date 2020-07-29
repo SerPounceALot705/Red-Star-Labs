@@ -1,0 +1,16 @@
+.header__dropdown-content-scroll {
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    transition: all ease-in-out 0.4s;
+}
+
+.header__dropdown-content-scroll:hover .header__dropdown-content-pattern {
+    transition: all ease-in-out 0.4s;
+    width: 125px;
+}
+
+.header__dropdown-content-scroll:hover {
+    background-color: rgba(220, 220, 220, 0.3);
+}

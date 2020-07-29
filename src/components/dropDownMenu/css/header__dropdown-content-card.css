@@ -4,9 +4,9 @@
    justify-content: space-between;
    margin-top: 25px;
    width: 250px;
-   margin-left: 25px;
    padding-right: 25px;
    text-decoration: none;
+   overflow: hidden;
 }
 
 .header__dropdown-content-card:first-child {
