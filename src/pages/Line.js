@@ -275,7 +275,7 @@ class Line extends Component {
                             <Image
                                 src={require("../images/gallery-item1.png")}
                                 alt={"gallery-photo01"}
-                                className={"gallery-item__photo"}
+                                className={"gallery-item__photo gallery-item__photo_grey"}
                             />
                         </div>
                         <div className="catalog__gallery-item-container">
@@ -289,7 +289,7 @@ class Line extends Component {
                             <Image
                                 src={require("../images/gallery-item2.png")}
                                 alt={"gallery-photo02"}
-                                className={"gallery-item__photo"}
+                                className={"gallery-item__photo gallery-item__photo_grey"}
                             />
                         </div>
                         <div className="catalog__gallery-item-container">
@@ -299,11 +299,11 @@ class Line extends Component {
                                     alt={"logoEssential"}
                                     className={"catalog__gallery-LinePhoto"}
                                 />
-                            </a> href="LineBasic"
+                            </a>
                             <Image
                                 src={require("../images/gallery-item3.png")}
                                 alt={"gallery-photo03"}
-                                className={"gallery-item__photo"}
+                                className={"gallery-item__photo gallery-item__photo_grey"}
                             />
                         </div>
                     </section>
