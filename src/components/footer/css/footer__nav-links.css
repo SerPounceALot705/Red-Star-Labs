@@ -6,6 +6,7 @@
     height: 13px;
     max-width: 691px;
     margin-left: 55px;
+    z-index: 1;
 }
 
 .footer__nav-links li {

@@ -25,8 +25,8 @@
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
     .product-description {
-        font-size: 12px;
+        font-size: 11px;
         margin-top: 15px;
-        margin-left: 25px;
+        margin-left: 0;
     }
 }

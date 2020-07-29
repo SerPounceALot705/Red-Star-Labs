@@ -7,6 +7,7 @@ import "../css/header__dropdown-content-card-brand.css";
 import "../css/header__dropdown-content-scroll.css";
 import "../css/header__dropdown-content-pattern.css";
 
+
 class LineCard extends Component {
     render() {
         return (

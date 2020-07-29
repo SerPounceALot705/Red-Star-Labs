@@ -229,7 +229,16 @@ class Line extends Component {
                                         <option className="product-line__option">Продукт 1</option>
                                         <option className="product-line__option">Продукт 2</option>
                                         <option className="product-line__option">Продукт 3</option>
-                                    </select></div>
+                                    </select>
+                                </div>
+                                <div className="product-line__filter-item product-line__filter_price">
+                                    <select className="product-line__select ">
+                                        <option className="product-line__option">По цене</option>
+                                        <option className="product-line__option">Опция 1</option>
+                                        <option className="product-line__option">Опция 2</option>
+                                        <option className="product-line__option">Опция 3</option>
+                                    </select>
+                                </div>
                                 <div className="product-line__filter-item">
                                     <p>Вкус</p>
                                     <select className="product-line__select">
@@ -237,7 +246,8 @@ class Line extends Component {
                                         <option className="product-line__option">Вкус 1</option>
                                         <option className="product-line__option">Вкус 2</option>
                                         <option className="product-line__option">Вкус 3</option>
-                                    </select></div>
+                                    </select>
+                                </div>
                                 <div className="product-line__filter-item">
                                     <p>Цена</p>
                                     <InputRange
@@ -246,7 +256,8 @@ class Line extends Component {
                                         minValue={this.state.range.min}
                                         value={this.state.range.value}
                                         onChange={value => this.habdlerRange(value)}
-                                        onChangeComplete={value => console.log(value)} /></div>
+                                        onChangeComplete={value => console.log(value)} />
+                                </div>
                             </div>
                             <div className="product-line__cards">
                                 {this.state.products.map((item, index) => {

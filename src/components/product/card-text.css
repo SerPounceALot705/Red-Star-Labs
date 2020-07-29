@@ -1,0 +1,13 @@
+.card-text {
+    color: #202020;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 11px;
+    margin-left: 5px;
+    height: 25px;
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card-text {
+        font-size: 10px;
+    }
+}

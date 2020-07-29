@@ -2,10 +2,38 @@
     margin-top: 25px;
     border-right: rgba(0, 0, 0, 0.4) 1px solid;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    transition: all ease-in 0.3s;
+
 }
+
+.product-line__card:hover .product-line__card-item .product-line__card-info {
+    transition: all ease-in 0.3s;
+    opacity: 1;
+    left: 17px;
+}
+
+.product-line__card:hover .product-line__card-item .product__photo {
+    transition: all ease-in 0.3s;
+    left: 0;
+}
+
+.product-line__card:hover .product__container .product-button {
+    transition: all ease-in 0.3s;
+    width: 75px;
+    opacity: 1;
+}
+
+
+.product-line__card:hover .product__container .red-basket__photo {
+    display: none;
+    transition: all ease-in 0.3s;
+}
+
+
 
 .product-line__card:hover {
     cursor: pointer;
@@ -37,15 +65,15 @@
     .product-line__card:nth-child(4) {
         border-right: rgba(0, 0, 0, 0.4) 1px solid;
     }
-    
+
     .product-line__card:nth-child(8) {
         border-right: rgba(0, 0, 0, 0.4) 1px solid;
     }
-    
+
     .product-line__card:nth-child(12) {
         border-right: rgba(0, 0, 0, 0.4) 1px solid;
     }
-    
+
     .product-line__card:nth-child(16) {
         border-right: rgba(0, 0, 0, 0.4) 1px solid;
     }
@@ -53,15 +81,15 @@
     .product-line__card:nth-child(3) {
         border-right: none;
     }
-    
+
     .product-line__card:nth-child(6) {
         border-right: none;
     }
-    
+
     .product-line__card:nth-child(9) {
         border-right: none;
     }
-    
+
     .product-line__card:nth-child(12) {
         border-right: none;
     }
@@ -76,7 +104,7 @@
     .product-line__card:nth-child(2) {
         border-right: none;
     }
-    
+
     .product-line__card:nth-child(4) {
         border-right: none;
     }
@@ -84,11 +112,11 @@
     .product-line__card:nth-child(6) {
         border-right: none;
     }
-    
+
     .product-line__card:nth-child(8) {
         border-right: none;
     }
-    
+
     .product-line__card:nth-child(10) {
         border-right: none;
     }
@@ -106,7 +134,7 @@
     .product-line__card:nth-child(2) {
         border-right: none;
     }
-    
+
     .product-line__card:nth-child(4) {
         border-right: none;
     }
@@ -114,11 +142,11 @@
     .product-line__card:nth-child(6) {
         border-right: none;
     }
-    
+
     .product-line__card:nth-child(8) {
         border-right: none;
     }
-    
+
     .product-line__card:nth-child(10) {
         border-right: none;
     }
@@ -136,7 +164,7 @@
     .product-line__card:nth-child(2) {
         border-right: none;
     }
-    
+
     .product-line__card:nth-child(4) {
         border-right: none;
     }
@@ -144,11 +172,11 @@
     .product-line__card:nth-child(6) {
         border-right: none;
     }
-    
+
     .product-line__card:nth-child(8) {
         border-right: none;
     }
-    
+
     .product-line__card:nth-child(10) {
         border-right: none;
     }
@@ -163,10 +191,28 @@
 }
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
+
+
+    .product-line__card:hover .product-line__card-item .product-line__card-info {
+        transition: all ease-in 0.3s;
+        opacity: 1;
+        left: -36px;
+    }
+
+    .product-line__card:hover .product-line__card-item .product__photo {
+        transition: all ease-in 0.3s;
+        left: -44px;
+    }
+
+
+    .product-line__card {
+        padding: 0;
+    }
+
     .product-line__card:nth-child(2) {
         border-right: none;
     }
-    
+
     .product-line__card:nth-child(4) {
         border-right: none;
     }
@@ -174,11 +220,11 @@
     .product-line__card:nth-child(6) {
         border-right: none;
     }
-    
+
     .product-line__card:nth-child(8) {
         border-right: none;
     }
-    
+
     .product-line__card:nth-child(10) {
         border-right: none;
     }
@@ -189,5 +235,11 @@
 
     .product-line__card:nth-child(14) {
         border-right: none;
+    }
+
+    .product-line__card:hover .product__container .product-button {
+        transition: all ease-in 0.3s;
+        width: 60px;
+        opacity: 1;
     }
 }

@@ -17,15 +17,20 @@
     font-weight: 400;
     letter-spacing: 0.47px;
     margin-bottom: 64px;
-    text-align: justify;
+    text-align: center;
     white-space: pre-wrap;
-    width: 80%;
+    width: 61%;
 }
 
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
     .about-description-brand-text {
         margin-bottom: 75px;
         font-size: 18px;
+    }
+
+    .home-brand-text {
+        text-align: center;
+        width: 70%;
     }
 }
 
@@ -36,6 +41,11 @@
         width: 90%;
         text-align: justify;
     }
+
+    .home-brand-text {
+        text-align: justify;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
@@ -45,6 +55,11 @@
         width: 90%;
         text-align: justify;
     }
+
+    .home-brand-text {
+        text-align: justify;
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
@@ -53,5 +68,10 @@
         font-size: 18px;
         width: 90%;
         text-align: justify;
+    }
+    
+    .home-brand-text {
+        text-align: justify;
+        width: 90%;
     }
 }
