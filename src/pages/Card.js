@@ -400,11 +400,13 @@ class Card extends Component {
                 <section className="card__other-product-line">
                     <div className="other-product__title-container">
                         <h3 className="other-product-line__title">Другие продукты линейки</h3>
-                        <Image
-                            src={require("../images/logoSuperior.png")}
-                            alt={"logoSuperior"}
-                            className={"logoSuperior__photo"}
-                        />
+                        <a href="LineBasic">
+                            <Image
+                                src={require("../images/logoSuperior.png")}
+                                alt={"logoSuperior"}
+                                className={"logoSuperior__photo"}
+                            />
+                        </a>
                     </div>
                     <div className="other-product-line-products-container">
                         <div className="other-product-line-main-container">

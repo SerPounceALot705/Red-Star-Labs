@@ -1,6 +1,8 @@
 .header__basket {
     width: 26px;
     height: 24px;
+    position: relative;
+    z-index: 0;
 }
 
 @media screen and (max-width: 1440px) and (min-width: 1200px) {

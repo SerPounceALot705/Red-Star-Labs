@@ -2,3 +2,20 @@
     margin-right: 15px;
 }
 
+
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .where-i-can-buy__first-container {
+        margin-right: 0;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .where-i-can-buy__first-container {
+        margin-right: 0;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+}

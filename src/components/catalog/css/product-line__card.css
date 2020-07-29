@@ -2,8 +2,9 @@
     margin-top: 25px;
     border-right: rgba(0, 0, 0, 0.4) 1px solid;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .product-line__card:hover {

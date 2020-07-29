@@ -31,3 +31,21 @@
         line-height: 17.5px;
     }     
 }
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .where-i-can-buy__shop-description {
+        margin-right: 0;
+        font-size: 14px;
+        line-height: 18.72px;
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .where-i-can-buy__shop-description {
+        margin-right: 0;
+        font-size: 14px;
+        line-height: 18.72px;
+        max-width: 200px;
+    }
+}

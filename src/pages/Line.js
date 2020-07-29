@@ -205,20 +205,20 @@ class Line extends Component {
                                     }
                                 </div>
                                 <div>
-                                    {this.state.isDrop ? <LineCategories isLineBlock={false}/> : null}
+                                    {this.state.isDrop ? <LineCategories isLineBlock={false} /> : null}
                                 </div>
                             </div>
                     }
 
                     <nav className="catalog__menu">
-                        <a href="/" className="catalog__menu-item">Главная страница > </a>
+                        <a href="/" className="catalog__menu-item">Главная страница &gt; </a>
                         <a href="/" className="caralog__menu-item catalog__menu-item_active">Каталог продукции</a>
                     </nav>
 
                     <LineContainer value={this.props.selectBrand} />
 
                     <section className="product-line__catalog">
-                        {this.state.innerWidth < 768 ? null : <LineCategories isLineBlock={false}/>}
+                        {this.state.innerWidth < 768 ? null : <LineCategories isLineBlock={false} />}
 
                         <div className="product-line__catalog-cards-container">
                             <div className="product-line__filters-container">
@@ -264,21 +264,48 @@ class Line extends Component {
                     </section>
 
                     <section className="catalog__gallery">
-                        <Image
-                            src={require("../images/gallery-item1.png")}
-                            alt={"gallery-photo01"}
-                            className={"gallery-item__photo"}
-                        />
-                        <Image
-                            src={require("../images/gallery-item2.png")}
-                            alt={"gallery-photo02"}
-                            className={"gallery-item__photo"}
-                        />
-                        <Image
-                            src={require("../images/gallery-item3.png")}
-                            alt={"gallery-photo03"}
-                            className={"gallery-item__photo"}
-                        />
+                        <div className="catalog__gallery-item-container">
+                            <a href="LineBasic">
+                                <Image
+                                    src={require("../images/logobasic.png")}
+                                    alt={"logoBasic"}
+                                    className={"catalog__gallery-LinePhoto"}
+                                />
+                            </a>
+                            <Image
+                                src={require("../images/gallery-item1.png")}
+                                alt={"gallery-photo01"}
+                                className={"gallery-item__photo"}
+                            />
+                        </div>
+                        <div className="catalog__gallery-item-container">
+                            <a href="LineBasic">
+                                <Image
+                                    src={require("../images/logoBeo.png")}
+                                    alt={"logoBeo"}
+                                    className={"catalog__gallery-LinePhoto"}
+                                />
+                            </a>
+                            <Image
+                                src={require("../images/gallery-item2.png")}
+                                alt={"gallery-photo02"}
+                                className={"gallery-item__photo"}
+                            />
+                        </div>
+                        <div className="catalog__gallery-item-container">
+                            <a href="LineBasic">
+                                <Image
+                                    src={require("../images/logoEssential.png")}
+                                    alt={"logoEssential"}
+                                    className={"catalog__gallery-LinePhoto"}
+                                />
+                            </a> href="LineBasic"
+                            <Image
+                                src={require("../images/gallery-item3.png")}
+                                alt={"gallery-photo03"}
+                                className={"gallery-item__photo"}
+                            />
+                        </div>
                     </section>
                     <section className="main">
                         <Footer />

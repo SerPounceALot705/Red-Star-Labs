@@ -11,3 +11,17 @@
     margin-left: 10px;
 
 }
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .where-i-can-buy__town {
+        font-family: "TTFirsNeue-Regular";
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .where-i-can-buy__town {
+        font-family: "TTFirsNeue-Regular";
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,16 @@
+.product-line__card-info {
+    left: -70px;
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    transition: left .2s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.product-line__card-info:hover {
+    right: 0;
+    
+}

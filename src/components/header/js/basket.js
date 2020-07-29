@@ -3,6 +3,7 @@ import Image from "../../image/image.js";
 
 import "../css/basket.css";
 import "../css/header__basket.css";
+import "../css/basket-active.css";
 
 class Basket extends Component {
     constructor(props) {
@@ -26,6 +27,8 @@ class Basket extends Component {
                     alt={"Basket"}
                     className={"header__basket"}                   
                 />
+                 <div className="basket-active">
+                </div>
             </div>
         )
     }

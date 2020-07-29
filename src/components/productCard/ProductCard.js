@@ -31,7 +31,7 @@ class ProductCard extends Component {
                     {
                         link: {
                             text: "Для насыщения организма витаминами",
-                            url: "About"
+                            url: "LineBasic"
                         },
                         logo: {
                             url: require("../../images/logobasic.png"),
@@ -63,7 +63,7 @@ class ProductCard extends Component {
 
                         link: {
                             text: "Для насыщения организма витаминами",
-                            url: "About"
+                            url: "LineBasic"
                         },
                         logo: {
                             url: require("../../images/logoEssential.png"),
@@ -95,7 +95,7 @@ class ProductCard extends Component {
                     {
                         link: {
                             text: "Для насыщения организма витаминами",
-                            url: "About"
+                            url: "LineBasic"
                         },
                         logo: {
                             url: require("../../images/logoSuperior.png"),
@@ -127,7 +127,7 @@ class ProductCard extends Component {
 
                         link: {
                             text: "Для насыщения организма витаминами",
-                            url: "About"
+                            url: "LineBasic"
                         },
                         logo: {
                             url: require("../../images/logoBeo.png"),

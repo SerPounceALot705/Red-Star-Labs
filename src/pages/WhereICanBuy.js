@@ -32,6 +32,7 @@ import "../components/where-i-can-buy/shops/css/shop-map.css";
 import "../components/where-i-can-buy/css/mobile__photo.css";
 import "../components/where-i-can-buy/css/mobile-photo-container.css";
 import "../components/where-i-can-buy/shops/css/where-i-can-buy__select.css";
+import "../components/where-i-can-buy/shops/css/fip-container.css";
 
 class WhereICanBuy extends Component {
     constructor(props) {
@@ -188,7 +189,7 @@ class WhereICanBuy extends Component {
                 <Header isDark={true} />
                 <section className="where-i-can-buy">
                     <nav className="where-i-can-buy__menu">
-                        <a href="/" className="where__menu-item">Главная страница > </a>
+                        <a href="/" className="where__menu-item">Главная страница &gt; </a>
                         <a href="/" className="where__menu-item where__menu-item_active">где купить?</a>
                     </nav>
 
@@ -227,24 +228,27 @@ class WhereICanBuy extends Component {
                                         })}
                                     </select>
                                     <div className="where-i-can-buy__shop-card">
-                                        <ul>
-                                            <li>{this.state.selectShop.city}</li>
-                                            <li><div className="where-i-can-buy__adress-container">
-                                                <FiPhone />
-                                                <div className="where-i-can-buy__adress">
-                                                    <span className="where-i-can-buy__town">{this.state.selectShop.city}</span>
-                                                    <p className="where-i-can-buy__phone-number">{this.state.selectShop.phone1}</p>
-                                                    <p className="where-i-can-buy__phone-number">{this.state.selectShop.phone2}</p>
-                                                </div>
-                                            </div></li>
-
-                                            <li> <div className="where-i-can-buy__adress-container">
-                                                <FiClock />
-                                                <div className="where-i-can-buy__adress">
-                                                    <p className="where-i-can-buy__subtitle">{this.state.selectShop.workDay}</p>
-                                                </div>
-                                            </div></li>
-                                        </ul>
+                                        <div className="where-i-can-buy__first-container">
+                                            <span className="where-i-can-buy__name-of-shop">5lb</span>
+                                            <p className="where-i-can-buy__shop-description">
+                                                Интернет-магазин спортивного питания
+                                            </p>
+                                        </div>
+                                        <div className="where-i-can-buy__adress-container">
+                                            
+                                            <div className="fip-container"><FiPhone /></div>
+                                            <div className="where-i-can-buy__adress">
+                                                <span className="where-i-can-buy__town">{this.state.selectShop.city}</span>
+                                                <p className="where-i-can-buy__phone-number">{this.state.selectShop.phone1}</p>
+                                                <p className="where-i-can-buy__phone-number">{this.state.selectShop.phone2}</p>
+                                            </div>
+                                        </div>
+                                        <div className="where-i-can-buy__adress-container">
+                                            <div className="second-fip-container"><FiClock /></div>
+                                            <div className="where-i-can-buy__adress">
+                                                <p className="where-i-can-buy__subtitle">{this.state.selectShop.workDay}</p>
+                                            </div>
+                                        </div>
                                     </div>
                                     <Image
                                         src={this.state.mapImageUrl}
