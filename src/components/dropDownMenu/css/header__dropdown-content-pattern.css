@@ -2,4 +2,5 @@
     width: 0;
     overflow: hidden;
     background-image: url("../../../images/pattern.png");
+    transition: all ease-in-out 0.4s;
 }

@@ -4,6 +4,7 @@ import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import Image from "../image/image.js";
 import LineCard from "../dropDownMenu/js/LineCard.js";
 import AnalyticsItem from "../analyticsItem/analyticsItem.js";
+import LineCardSelect from "../lineCardSelect/LineCardSelect.js";
 
 import "react-awesome-slider/dist/styles.css";
 import "./css/product-card__container.css";
@@ -166,7 +167,24 @@ class ProductCard extends Component {
         })
     }
 
-    handlerSelectProduct(options) {
+    findAncestor(el, cls) {
+        while ((el = el.parentElement) && !el.classList.contains(cls));
+        return el;
+    }
+
+    handlerSelectProduct(e, options) {
+        const select = document.getElementsByClassName("product-card__container-card-select");
+
+        for (let i = 0; i < select.length; i++) {
+            select[i].classList.remove("product-card__container-card-select");
+        }
+
+        const element = this.findAncestor(e.target, "product-card__container-card");
+
+        if (element != null) {
+            element.classList.add("product-card__container-card-select");
+        }
+
         this.setState({
             selectOptions: options
         })
@@ -184,9 +202,9 @@ class ProductCard extends Component {
                                 ref={index}
                                 key={index}
                                 className="product-card__container-card"
-                                onClick={() => this.handlerSelectProduct(item.options)}
+                                onClick={((e) => this.handlerSelectProduct(e, item.options))}
                             >
-                                <LineCard
+                                <LineCardSelect
                                     className={item.className}
                                     content={
                                         {
@@ -239,17 +257,17 @@ class ProductCard extends Component {
                         </div>
                         <div className="main-button">
                             <a className="main-button-link" href="LineBasic">
-                            <div className="main-button-text-container">
-                                <span className="main-button-text">Все продукты линейки</span>
-                                <span className="main-button-span">Basic</span>
-                            </div>
-                            <Image
-                                src={require("../../images/logo basic.png")}
-                                alt={"logo-basic"}
-                                className={"main-button-logo-basic"}
-                            />
+                                <div className="main-button-text-container">
+                                    <span className="main-button-text">Все продукты линейки</span>
+                                    <span className="main-button-span">Basic</span>
+                                </div>
+                                <Image
+                                    src={require("../../images/logo basic.png")}
+                                    alt={"logo-basic"}
+                                    className={"main-button-logo-basic"}
+                                />
                             </a>
-                            
+
                         </div>
                     </div>
                     <div className="product-card__description-slide">

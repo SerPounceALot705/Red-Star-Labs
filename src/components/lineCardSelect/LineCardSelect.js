@@ -1,22 +1,17 @@
 import React, { Component } from "react";
-import Image from "../../image/image.js";
+import Image from "../image/image.js";
 
-import "../css/header__dropdown-content-card.css"
-import "../css/header__dropdown-content-text.css";
-import "../css/header__dropdown-content-card-brand.css";
-import "../css/header__dropdown-content-scroll.css";
-import "../css/header__dropdown-content-pattern.css";
+import "../dropDownMenu/css/header__dropdown-content-card.css"
+import "../dropDownMenu/css/header__dropdown-content-text.css";
+import "../dropDownMenu/css/header__dropdown-content-card-brand.css";
+import "../dropDownMenu/css/header__dropdown-content-scroll.css";
+import "../dropDownMenu/css/header__dropdown-content-pattern.css";
 
-class LineCard extends Component {
-    constructor(props) {
-        super(props)
-    }
-
+class LineCardSelect extends Component {
     render() {
         return (
             <div className={this.props.className}>
                 <div className="header__dropdown-content-scroll">
-                    <div className="header__dropdown-content-pattern"></div>
                     <div className="header__dropdown-content-card-brand">
                         <Image
                             src={this.props.content.logo.url}
@@ -39,4 +34,4 @@ class LineCard extends Component {
     }
 }
 
-export default LineCard;
+export default LineCardSelect;
