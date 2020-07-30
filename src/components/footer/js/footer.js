@@ -17,18 +17,19 @@ class Footer extends Component {
         return (
             <section className="footer">
                 <div className="footer__container">
-                    <Image
-                        src={require("../../../images/logo.png")}
-                        alt={"logo"}
-                        className={"footer__logo"}
-                    />
+                    <a href="/">
+                        <Image
+                            src={require("../../../images/logo.png")}
+                            alt={"logo"}
+                            className={"footer__logo"}
+                        />
+                    </a>
                     <Nav className="footer__nav-links"
                         links={[
-                            { url: "#", name: "продукция" },
-                            { url: "#", name: "о бренде" },
-                            { url: "#", name: "где купить?" },
-                            { url: "#", name: "оптовым клиентам" },
-                            { url: "#", name: "контакты" },
+                            { url: "About", name: "о бренде" },
+                            { url: "WhereICanBuy", name: "где купить?" },
+                            { url: "WholesaleCustomers", name: "оптовым клиентам" },
+                            { url: "Contacts", name: "контакты" },
                         ]}
                     />
                     <div className="footer-figure__container">

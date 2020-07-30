@@ -1,6 +1,7 @@
 .product__container {
     display: flex;
     margin-bottom: 15px;
+    position: relative;
 }
 
 @media screen and (max-width: 424px) and (min-width: 375px) {

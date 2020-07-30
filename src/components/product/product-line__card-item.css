@@ -1,5 +1,12 @@
 .product-line__card-item {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .product-line__card-item {
+        width: 75px;
+        padding-top: 25px;
+    }
 }

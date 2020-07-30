@@ -1,15 +1,26 @@
-
+.product__photo {
+    width: 150px;
+    height: 165px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: -28px;
+    transition: all ease-in 0.3s;
+}    
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
     .product__photo {
         width: 150px;
         height: 165px;
+        position: relative;
+        left: -22%;
     }    
 }
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
     .product__photo {
-        width: 150px;
-        height: 165px;
+        width: 110px;
+        height: 124px;
+        left: -85px;
     }    
 }

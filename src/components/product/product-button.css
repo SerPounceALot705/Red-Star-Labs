@@ -1,0 +1,18 @@
+.product-button {
+    width: 0;
+    height: 20px;
+    background-color: firebrick;
+    color: floralwhite;
+    font-family: "TTFirsNeue-Regular";
+    text-align: center;
+    padding-top: 2px;
+    font-size: 13px;
+    position: absolute;
+    left: 56%;
+    display: block;
+    opacity: 0;
+    transition: all ease-in 0.3s;
+    white-space: nowrap;
+}
+
+
