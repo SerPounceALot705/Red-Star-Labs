@@ -1,18 +1,9 @@
 import React, { Component } from "react";
-import LineCard from "../../dropDownMenu/js/LineCard.js";
+
+import LineCard from "./LineCard.js";
 import Image from "../../image/image.js";
 
-import "../css/header__dropdown-menu.css";
-import "../css/header__dropdown-content.css";
-import "../css/header__dropdown-content-title.css";
-import "../css/header__dropdown-content-link.css";
-import "../css/header__dropdown-content-title-link.css";
-import "../css/header__dropdown-content-list.css";
-import "../css/header__dropdown-content-categories.css";
-import "../css/header__dropdown-content-product.css";
-import "../css/header__dropdown-content-catalog-link.css";
-import "../css/header__dropdown-content-product-card.css";
-import "../css/header__dropdown-image.css";
+import "../css/imports.css";
 
 class DropDownMenu extends Component {
     render() {
@@ -66,7 +57,7 @@ class DropDownMenu extends Component {
                                         {
                                             link: {
                                                 text: "Для насыщения организма витаминами",
-                                                url: "/Card"
+                                                url: "/LineBasic"
                                             },
                                             logo: {
                                                 url: require("../../../images/logobasic.png"),
@@ -84,7 +75,7 @@ class DropDownMenu extends Component {
                                         {
                                             link: {
                                                 text: "Для насыщения организма витаминами",
-                                                url: "/Card"
+                                                url: "/LineBasic"
                                             },
                                             logo: {
                                                 url: require("../../../images/logoEssential.png"),
@@ -104,7 +95,7 @@ class DropDownMenu extends Component {
                                         {
                                             link: {
                                                 text: "Для насыщения организма витаминами",
-                                                url: "/Card"
+                                                url: "/LineBasic"
                                             },
                                             logo: {
                                                 url: require("../../../images/logoEssential.png"),
@@ -122,7 +113,7 @@ class DropDownMenu extends Component {
                                         {
                                             link: {
                                                 text: "Для насыщения организма витаминами",
-                                                url: "/Card"
+                                                url: "/LineBasic"
                                             },
                                             logo: {
                                                 url: require("../../../images/logoSuperior.png"),

@@ -1,19 +1,13 @@
 import React, { Component } from "react";
 import Image from "../../image/image.js";
 
-import "../css/imports.css";
+import "../../dropDownMenu/css/imports.css";
 
-
-class LineCard extends Component {
-    constructor(props) {
-        super(props)
-    }
-
+class LineCardSelect extends Component {
     render() {
         return (
             <div className={this.props.className}>
                 <div className="header__dropdown-content-scroll">
-                    <div className="header__dropdown-content-pattern"></div>
                     <div className="header__dropdown-content-card-brand">
                         <Image
                             src={this.props.content.logo.url}
@@ -36,4 +30,4 @@ class LineCard extends Component {
     }
 }
 
-export default LineCard;
+export default LineCardSelect;

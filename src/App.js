@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import About from "./pages/About.js";
-import Home from "./pages/Home.js";
-import WhereICanBuy from "./pages/WhereICanBuy.js";
-import WholesaleCustomers from "./pages/WholesaleCustomers.js";
-import Contacts from "./pages/Contacts.js";
-import Catalog from "./pages/Catalog.js";
-import Card from "./pages/Card.js";
-import Line from "./pages/Line.js";
+import About from "./components/about/About.js";
+import Home from "./components/home/Home.js";
+import WhereICanBuy from "./components/where-i-can-buy/WhereICanBuy.js";
+import WholesaleCustomers from "./components/wholesaleCustomers/WholesaleCustomers.js";
+import Contacts from "./components/contacts/Contacts.js";
+import Catalog from "./components/catalog/Catalog.js";
+import Card from "./components/card/Card.js";
+import Line from "./components/line/Line.js";
 
 class App extends Component {
     render() {
