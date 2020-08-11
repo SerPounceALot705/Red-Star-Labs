@@ -45,3 +45,17 @@
         font-size: 15px;
     }
 }
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .contact-form__button {
+        width: 150px;
+        height: 37px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .contact-form__button {
+        width: 150px;
+        height: 37px;
+    }
+}

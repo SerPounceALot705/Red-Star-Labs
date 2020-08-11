@@ -6,6 +6,9 @@
     .footer__text-container {
        order: 2;
        align-items: center;
+       position: absolute;
+       bottom: 5%;
+
     }
 }
 
@@ -13,5 +16,8 @@
     .footer__text-container {
         order: 2;
         align-items: center;
+        position: absolute;
+        bottom: 5%;
+  
      }
 }

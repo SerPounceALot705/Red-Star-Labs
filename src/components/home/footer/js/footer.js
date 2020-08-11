@@ -31,6 +31,11 @@ class Footer extends Component {
                             alt={"figure"}
                             className={"footer__figure"}
                         />
+                         <Image
+                            src={require("../../../../images/tringle.png")}
+                            alt={"tringle"}
+                            className={"footer__tringle"}
+                        />
                         <Nav className="footer__nav-social footer__nav-social_theme-white"
                             links={
                                 [

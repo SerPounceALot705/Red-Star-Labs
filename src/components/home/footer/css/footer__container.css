@@ -28,18 +28,28 @@
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
     .footer__container {
-        width: 80%;
+        width: 100%;
         flex-wrap: wrap;
         flex-direction: row;
         margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    .footer__container a {
+        order: 2;
     }
 }
 
 @media screen and (max-width: 424px) and (min-width: 375px)  {
     .footer__container {
-        width: 80%;
+        width: 100%;
         flex-wrap: wrap;
         flex-direction: row;
         margin: 0 auto;
+        justify-content: space-evenly;
+    }
+    
+    .footer__container a {
+        order: 2;
     }
 }

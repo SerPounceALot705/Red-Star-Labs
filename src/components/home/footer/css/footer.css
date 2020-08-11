@@ -34,6 +34,7 @@
         height: 160px;
         padding-left: 0;
         padding-right: 0;
+
     }
 }
 
@@ -41,7 +42,9 @@
     .footer {
         padding-left: 0;
         padding-right: 0;
-        height: 450px;
+        height: 750px;
+        display: flex;
+        position: relative;
     }
 }
 
@@ -49,6 +52,8 @@
     .footer {
         padding-left: 0;
         padding-right: 0;
-        height: 500px;
+        height: 750px;
+        display: flex;
+        position: relative;
     }
 }
