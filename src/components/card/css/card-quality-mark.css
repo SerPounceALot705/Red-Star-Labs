@@ -1,0 +1,17 @@
+.card-quality-mark {
+    position: absolute;
+    right: 4%;
+    bottom: 5%;
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card-quality-mark {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card-quality-mark {
+        display: none;
+    }
+}

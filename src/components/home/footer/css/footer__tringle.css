@@ -1,0 +1,25 @@
+.footer__tringle {
+    display: none;
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .footer__tringle {
+        display: block;
+        z-index: 0;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .footer__tringle {
+        display: block;
+        z-index: 0;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+        object-fit: contain;
+    }
+}

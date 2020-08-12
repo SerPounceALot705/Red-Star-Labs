@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { slide as Menu } from 'react-burger-menu';
-import Nav from "../header/js/nav.js";
+import Nav from "../home/header/nav/nav.js";
 import BurgerProductLine from "./BurgerProductLine.js";
 import Image from "../image/image.js";
 

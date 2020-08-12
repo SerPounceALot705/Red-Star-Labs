@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import Image from "../../image/image.js";
 
-import "../css/header__dropdown-content-card.css"
-import "../css/header__dropdown-content-text.css";
-import "../css/header__dropdown-content-card-brand.css";
-import "../css/header__dropdown-content-scroll.css";
-import "../css/header__dropdown-content-pattern.css";
+import "../css/imports.css";
 
 
 class LineCard extends Component {

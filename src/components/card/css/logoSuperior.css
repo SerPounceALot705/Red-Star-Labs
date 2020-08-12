@@ -5,6 +5,14 @@
 }
 
 
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .logoSuperior {
+        width: 386px;
+        height: 578px;
+        max-width: 434px;
+    }
+}
+
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
     .logoSuperior {
         width: 369px;

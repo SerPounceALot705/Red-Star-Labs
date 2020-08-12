@@ -37,12 +37,24 @@
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
     .main-about {
-        
+        background-image: url("../images/back-obrende.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
+        max-width: 100%;
+
+        position: relative;  
     }
 }
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
     .main-about {
-
+        background-image: url("../images/back-obrende.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
+        max-width: 100%;
+ 
+        position: relative;
     }
 }

@@ -1,0 +1,92 @@
+.footer__text {
+    color: #292727;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    width: 452px;
+    
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 270px;
+}
+
+@media screen and (max-width: 1660px) and (min-width: 1441px) {
+    .footer__text {
+        margin-top: 25px;
+        margin-left: 220px;
+        width: 367px;
+    }
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .footer__text {
+        margin-top: 10px;
+        margin-left: 245px; 
+        width: 367px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .footer__text {
+        margin-left: 150px;
+        font-size: 10px;
+        margin-top: 0;
+        width: 335px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .footer__text {
+        margin-top: 0;
+        margin-left: 150px;
+        width: 265px;
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 650px) {
+    .footer__text {
+        margin: 0 auto;
+        margin-top: 75px;
+        align-items: center;
+        width: 28%;
+        text-align: justify;
+        margin-left: 39%;
+    }
+}
+
+@media screen and (max-width: 649px) and (min-width: 550px) {
+    .footer__text {
+        margin: 0 auto;
+        margin-top: 75px;
+        align-items: center;
+        width: 65%;
+        text-align: justify;
+    }
+}
+
+
+@media screen and (max-width: 549px) and (min-width: 425px) {
+    .footer__text {
+        margin: 0 auto;
+        margin-top: 75px;
+        align-items: center;
+        width: 75%;
+        text-align: justify;
+    }
+}
+
+
+
+
+@media screen and (max-width: 424px) and (min-width: 375px)  {
+    .footer__text {
+        margin: 0 auto;
+        margin-top: 75px;
+        align-items: center;
+        width: 80%;
+        text-align: justify;
+    }
+}

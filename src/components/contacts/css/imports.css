@@ -1,0 +1,27 @@
+@import "./contact-form__cheackbox-container.css";
+@import "./contact-form__input-container.css";
+@import "./contact-form__option.css";
+@import "./contact-form__select.css";
+@import "./contacts-form.css";
+@import "./contacts-form__button-container.css";
+@import "./contacts-form__container.css";
+@import "./contacts-form__input.css";
+@import "./contacts-form__label.css";
+@import "./contacts-form__select-button.css";
+@import "./contacts-form__select-container.css";
+@import "./contacts-form__select-input.css";
+@import "./contacts-form__select-main-container.css";
+@import "./contacts-form__title.css";
+
+@import "./contacts__adress-container.css";
+@import "./contacts__container.css";
+@import "./contacts__container.css";
+@import "./contacts__information-container.css";
+@import "./contacts__main.css";
+@import "./contacts__menu.css";
+@import "./contacts__menu-item.css";
+@import "./contacts__phone-number.css";
+@import "./contacts__subtitle.css";
+@import "./contacts__time.css";
+@import "./contacts__title.css";
+@import "./contacts-main-container.css";

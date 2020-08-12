@@ -2,23 +2,15 @@ import React, { Component } from "react";
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import Image from "../image/image.js";
-import LineCard from "../dropDownMenu/js/LineCard.js";
+
 import AnalyticsItem from "../analyticsItem/analyticsItem.js";
-import LineCardSelect from "../lineCardSelect/LineCardSelect.js";
+import LineCardSelect from "../line/lineCardSelect/LineCardSelect.js";
 
 import "react-awesome-slider/dist/styles.css";
-import "./css/product-card__container.css";
-import "./css/product-card__card.css";
-import "./css/product-card__description.css";
-import "./css/product-card__description-slide.css";
-import "./css/slide__photo.css";
-import "../about-desctiption/css/main-button.css";
-import "../about-desctiption/css/main-button-span.css";
-import "../about-desctiption/css/main-button-logo-basic.css";
-import "../about-desctiption/css/main-button-text.css";
-import "../about-desctiption/css/main-button-text-container.css";
-import "../about-desctiption/css/main-button-link.css";
-import "../about-desctiption/css/main-button-link.css";
+import "./css/imports.css";
+
+
+import "../home/about-desctiption/css/imports.css";
 
 class ProductCard extends Component {
     constructor(props) {

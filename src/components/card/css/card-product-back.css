@@ -1,0 +1,52 @@
+.card-product-back {
+    background-image: url("../../../images/card-product-fone.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1140px;
+    height: 1080px;
+    z-index: 0;
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1441px) {
+    .card-product-back {
+        width: 931px;
+        height: 1080px;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .card-product-back {
+        width: 776px;
+        height: 1080px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .card-product-back {
+        width: 688px;
+        height: 1080px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card-product-back {
+        width: 507px;
+        height: 1080px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .card-product-back {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .card-product-back {
+        display: none;
+    }
+}

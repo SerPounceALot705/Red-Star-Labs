@@ -1,0 +1,124 @@
+.footer__nav-social {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    margin-top: 103px;
+    width: 162px;
+    height: 15px;
+    margin-left: 195px;
+}
+
+.footer__nav-social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.footer__nav-social_theme-white ul li a {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1660px) and (min-width: 1441px) {
+    .footer__nav-social {
+        margin-left: 128px;
+        margin-top: 85px;
+    }
+
+    .footer__nav-social ul li a {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .footer__nav-social {
+        margin-top: 85px;
+        margin-left: 135px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .footer__nav-social {
+        margin-top: 55px;
+        margin-left: 125px;
+    }
+
+    .footer__nav-social ul li a {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .footer__nav-social {
+        margin-top: 55px;
+        margin-left: 25px;
+    }
+
+    .footer__nav-social ul li a {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 625px) {
+    .footer__nav-social {
+        order: 2;
+        margin: 0 auto;
+        margin-top: 150px;
+        position: absolute;
+        left: 39%;
+        top: 10%;
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 624px) and (min-width: 550px) {
+    .footer__nav-social {
+        order: 2;
+        margin: 0 auto;
+        margin-top: 150px;
+        position: absolute;
+        left: 36%;
+        top: 5%;
+        width: 180px;
+    }
+}
+
+
+@media screen and (max-width: 549px) and (min-width: 475px) {
+    .footer__nav-social {
+        order: 2;
+        margin: 0 auto;
+        margin-top: 150px;
+        position: absolute;
+        left: 32%;
+        top: 2%;
+        width: 194px;
+    }  
+}
+
+@media screen and (max-width: 474px) and (min-width: 425px) {
+    .footer__nav-social {
+        order: 2;
+        margin: 0 auto;
+        margin-top: 150px;
+        position: absolute;
+        left: 32%;
+        top: -2%;
+        width: 194px;
+    }  
+}
+
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .footer__nav-social {
+        order: 2;
+        margin: 0 auto;
+        margin-top: 150px;
+        position: absolute;
+        left: 26%;
+        top: -6%;
+        width: 194px;
+    }
+}

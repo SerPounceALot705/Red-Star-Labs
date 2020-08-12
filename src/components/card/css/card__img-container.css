@@ -1,3 +1,6 @@
+.card__img-container {
+    z-index: 1;
+}
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
     .card__img-container {
