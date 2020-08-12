@@ -181,9 +181,39 @@ class Card extends Component {
                                     className={"logoSuperior"}
                                 />
                             </div>
-
+                            <div className="card__pagination-container">
+                                <div className="pagination-container__card">
+                                    <p className="number">01</p>
+                                    <p className="pagination-description">карточка</p>
+                                </div>
+                                <div className="pagination-container__card">
+                                    <p className="number">02</p>
+                                    <p className="pagination-description">характеристики</p>
+                                </div>
+                                <div className="pagination-container__card">
+                                    <p className="number">03</p>
+                                    <p className="pagination-description">отзывы</p>
+                                </div>
+                                <div className="pagination-container__card">
+                                    <p className="number">04</p>
+                                    <p className="pagination-description">видео</p>
+                                </div>
+                                <div className="pagination-container__card">
+                                    <p className="number">05</p>
+                                    <p className="pagination-description">фото</p>
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
+                  
+                    <div className="card-product-back"></div>
+                    <Image
+                        src={require("../../images/_quality mark.png")}
+                        alt={"quality-mark"}
+                        className={"card-quality-mark"}
+                    />        
+                        
                 </section>
 
                 {

@@ -5,6 +5,7 @@
     width: 80%;
     max-width: 1920px;
     position: relative;
+    z-index: 1;
 }
 
 .header-theme-white {

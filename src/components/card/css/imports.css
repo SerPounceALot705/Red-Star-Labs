@@ -29,6 +29,12 @@
 @import "./calc__prices-buttons-container.css";
 @import "./calc__buttons-desc-container.css";
 @import "./card__description.css";
+@import "./card__pagination-container.css";
+@import "./pagination-container__card.css";
+@import "./number.css";
+@import "./pagination-description.css";
+@import "./card-product-back.css";
+@import "./card-quality-mark.css";
 
 
 @import "./card__detailed-description.css";

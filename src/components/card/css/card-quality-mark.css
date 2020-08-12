@@ -1,16 +1,17 @@
-.card__img-container {
-    z-index: 1;
+.card-quality-mark {
+    position: absolute;
+    right: 4%;
+    bottom: 5%;
 }
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
-    .card__img-container {
+    .card-quality-mark {
         display: none;
     }
-    
 }
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
-    .card__img-container {
+    .card-quality-mark {
         display: none;
-    }    
+    }
 }
