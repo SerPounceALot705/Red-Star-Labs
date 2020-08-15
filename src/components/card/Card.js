@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
 import ReactStars from 'react-stars';
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
@@ -47,9 +48,9 @@ class Card extends Component {
 
                     <div className="card__container">
                         <nav className="contacts__menu">
-                            <a href="/" className="contacts__menu-item">Главная страница &gt; </a>
-                            <a href="/catalog" className="contacts__menu-item">Протеины &gt; </a>
-                            <a href="/" className="contacts__menu-item contacts__menu-item_active">premium whey concentrate</a>
+                            <Link to="/" className="contacts__menu-item">Главная страница &gt; </Link>
+                            <Link to="/catalog" className="contacts__menu-item">Протеины &gt; </Link>
+                            <Link to="/" className="contacts__menu-item contacts__menu-item_active">premium whey concentrate</Link>
                         </nav>
                         <div className="card-description__main-container" id="card">
                             <div className="card__description">
@@ -411,13 +412,13 @@ class Card extends Component {
                 <section className="card__other-product-line">
                     <div className="other-product__title-container">
                         <h3 className="other-product-line__title" id="photo">Другие продукты линейки</h3>
-                        <a href="LineBasic">
+                        <Link to="LineBasic">
                             <Image
                                 src={require("../../images/logoSuperior.png")}
                                 alt={"logoSuperior"}
                                 className={"logoSuperior__photo"}
                             />
-                        </a>
+                        </Link>
                     </div>
                     <div className="other-product-line-products-container">
                         <div className="other-product-line-main-container">

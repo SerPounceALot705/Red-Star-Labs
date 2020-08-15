@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "../home/header/header.js";
 import Footer from "../home/footer/js/footer.js";
+import { Link } from 'react-router-dom'
 
 import "./css/imports.css";
 
@@ -13,8 +14,8 @@ class Contacts extends Component {
                     <Header />
                     <div className="contacts-main-container">
                         <nav className="contacts__menu">
-                            <a href="/" className="contacts__menu-item">Главная страница &gt; </a>
-                            <a href="/" className="contacts__menu-item contacts__menu-item_active">контакты</a>
+                            <Link to="/" className="contacts__menu-item">Главная страница &gt; </Link>
+                            <Link to="/" className="contacts__menu-item contacts__menu-item_active">контакты</Link>
                         </nav>
                         <div className="contacts__container">
                             <div className="contacts__information-container">

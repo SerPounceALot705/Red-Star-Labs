@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
 import InputRange from 'react-input-range';
 
 import Header from "../home/header/header.js";
@@ -219,8 +220,8 @@ class Catalog extends Component {
                     }
 
                     <nav className="catalog__menu">
-                        <a href="/" className="catalog__menu-item">Главная страница &gt; </a>
-                        <a href="/" className="caralog__menu-item catalog__menu-item_active">Каталог продукции</a>
+                        <Link to="/" className="catalog__menu-item">Главная страница &gt; </Link>
+                        <Link to="/" className="caralog__menu-item catalog__menu-item_active">Каталог продукции</Link>
                     </nav>
 
                     {this.state.isLineContainer ? <LineContainer value={this.state.selectBrand} /> : <PhotoContainer />}

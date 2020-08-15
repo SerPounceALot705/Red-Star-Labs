@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Image from "../../../image/image.js";
+import { Link } from 'react-router-dom';
 
 import Nav from "../../header/nav/nav.js";
 
@@ -10,13 +11,13 @@ class Footer extends Component {
         return (
             <section className="footer">
                 <div className="footer__container">
-                    <a href="/">
+                    <Link to="/">
                         <Image
                             src={require("../../../../images/logo.png")}
                             alt={"logo"}
                             className={"footer__logo"}
                         />
-                    </a>
+                    </Link>
                     <Nav className="footer__nav-links"
                         links={[
                             { url: "About", name: "о бренде" },

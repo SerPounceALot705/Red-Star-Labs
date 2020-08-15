@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
 import Image from "../../image/image.js";
 import { slide as Menu } from 'react-burger-menu';
 
@@ -67,13 +68,13 @@ class Header extends Component {
     render() {
         return (
             <section className={this.headerClass}>
-                <a href="/">
+                <Link to="/">
                 <Image
                     src={this.LogoUrl}
                     alt={"logo"}
                     className={"header__logo"}
                 />
-               </a>
+               </Link>
                 {this.state.innerWidth > 768 ? this.headerNav() : <div><Basket/> <Burger/> </div>}
                 
             </section>

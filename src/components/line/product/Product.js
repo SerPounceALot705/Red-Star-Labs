@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Image from "../../image/image.js"
+import { Link } from 'react-router-dom';
+import Image from "../../image/image.js";
 
 import "./css/imports.css";
 
@@ -24,7 +25,7 @@ class Product extends Component {
                     />
                 </div>
                 <div>
-                    <a href={this.props.product.url} className="product-description">{this.props.product.text}</a>
+                    <Link to={this.props.product.url} className="product-description">{this.props.product.text}</Link>
                     <div className="product__container">
                         <p className="product-price">{this.props.product.price}</p>
                         <div className="product-button">Купить &#43; </div>

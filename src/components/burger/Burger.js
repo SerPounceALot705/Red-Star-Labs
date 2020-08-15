@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
 import { slide as Menu } from 'react-burger-menu';
 import Nav from "../home/header/nav/nav.js";
 import BurgerProductLine from "./BurgerProductLine.js";
@@ -44,21 +45,21 @@ class Burger extends Component {
                 <ul>
                     <h2 className="header__dropdown-content-title">Продукция</h2>
                     <li>
-                        <a href={"/"} className={"header__dropdown-content-title-link"}>Протеины</a>
+                        <Link to={"/"} className={"header__dropdown-content-title-link"}>Протеины</Link>
                         <ul className="header__dropdown-content-list">
-                            <a href={"/"} className={"header__dropdown-content-link"}>Сывороточный</a>
-                            <a href={"/"} className={"header__dropdown-content-link"}>Изолят</a>
-                            <a href={"/"} className={"header__dropdown-content-link"}>Казеин</a>
-                            <a href={"/"} className={"header__dropdown-content-link"}>Говяжий</a>
+                            <Link to={"/"} className={"header__dropdown-content-link"}>Сывороточный</Link>
+                            <Link to={"/"} className={"header__dropdown-content-link"}>Изолят</Link>
+                            <Link to={"/"} className={"header__dropdown-content-link"}>Казеин</Link>
+                            <Link to={"/"} className={"header__dropdown-content-link"}>Говяжий</Link>
                         </ul>
                     </li>
-                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Витамины и минералы</a></li>
-                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Аминокислоты и ВСАА</a></li>
-                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Карнитин</a></li>
-                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Специальные препараты</a></li>
-                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Батончики</a></li>
-                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Предтренировочные комплексы</a></li>
-                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Препараты для связок и суставов</a></li>
+                    <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Витамины и минералы</Link></li>
+                    <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Аминокислоты и ВСАА</Link></li>
+                    <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Карнитин</Link></li>
+                    <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Специальные препараты</Link></li>
+                    <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Батончики</Link></li>
+                    <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Предтренировочные комплексы</Link></li>
+                    <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Препараты для связок и суставов</Link></li>
                 </ul>
             </div>
         );
@@ -92,7 +93,7 @@ class Burger extends Component {
                             alt={"fb-icon"}
                             className={"fb-icon"}
                         />
-                        <a href=""></a>
+                        <Link to=""></Link>
                     </div>
                     <div className="icon-container">
                         <Image
@@ -100,7 +101,7 @@ class Burger extends Component {
                             alt={"inst-icon"}
                             className={"inst-icon"}
                         />
-                        <a href=""></a>
+                        <Link to=""></Link>
                     </div>
                 </div>
             </Menu>)

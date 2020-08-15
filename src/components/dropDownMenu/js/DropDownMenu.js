@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
 
 import LineCard from "./LineCard.js";
 import Image from "../../image/image.js";
@@ -16,35 +17,35 @@ class DropDownMenu extends Component {
                             <h2 className="header__dropdown-content-title">Категории</h2>
                             <ul>
                                 <li>
-                                    <a href={"/"} className={"header__dropdown-content-title-link"}>Протеины</a>
+                                    <Link to={"/"} className={"header__dropdown-content-title-link"}>Протеины</Link>
                                     <ul className="header__dropdown-content-list">
-                                        <a href={"/"} className={"header__dropdown-content-link"}>Сывороточный</a>
-                                        <a href={"/"} className={"header__dropdown-content-link"}>Изолят</a>
-                                        <a href={"/"} className={"header__dropdown-content-link"}>Казеин</a>
-                                        <a href={"/"} className={"header__dropdown-content-link"}>Говяжий</a>
+                                        <Link to={"/"} className={"header__dropdown-content-link"}>Сывороточный</Link>
+                                        <Link to={"/"} className={"header__dropdown-content-link"}>Изолят</Link>
+                                        <Link to={"/"} className={"header__dropdown-content-link"}>Казеин</Link>
+                                        <Link to={"/"} className={"header__dropdown-content-link"}>Говяжий</Link>
                                     </ul>
                                 </li>
-                                <li><a href={"/"} className={"header__dropdown-content-title-link"}>Витамины и минералы</a></li>
-                                <li><a href={"/"} className={"header__dropdown-content-title-link"}>Аминокислоты и ВСАА</a></li>
-                                <li><a href={"/"} className={"header__dropdown-content-title-link"}>Карнитин</a></li>
-                                <li><a href={"/"} className={"header__dropdown-content-title-link"}>Специальные препараты</a></li>
-                                <li><a href={"/"} className={"header__dropdown-content-title-link"}>Батончики</a></li>
-                                <li><a href={"/"} className={"header__dropdown-content-title-link"}>Предтренировочные комплексы</a></li>
-                                <li><a href={"/"} className={"header__dropdown-content-title-link"}>Препараты для связок и суставов</a></li>
+                                <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Витамины и минералы</Link></li>
+                                <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Аминокислоты и ВСАА</Link></li>
+                                <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Карнитин</Link></li>
+                                <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Специальные препараты</Link></li>
+                                <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Батончики</Link></li>
+                                <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Предтренировочные комплексы</Link></li>
+                                <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Препараты для связок и суставов</Link></li>
                             </ul>
-                            <a href={"catalog"} className={"header__dropdown-content-catalog-link"}>Весь каталог</a>
+                            <Link to={"catalog"} className={"header__dropdown-content-catalog-link"}>Весь каталог</Link>
                         </div>
                         <div className="header__dropdown-content-product">
                             <h2 className="header__dropdown-content-title">Продукты по ценам</h2>
                             <div className="header__dropdown-ul">
                                 <ul>
-                                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Витамины и минералы</a></li>
-                                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Аминокислоты и ВСАА</a></li>
-                                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Карнитин</a></li>
-                                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Специальные препараты</a></li>
-                                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Батончики</a></li>
-                                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Предтренировочные комплексы</a></li>
-                                    <li><a href={"/"} className={"header__dropdown-content-title-link"}>Препараты для связок и суставов</a></li>
+                                    <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Витамины и минералы</Link></li>
+                                    <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Аминокислоты и ВСАА</Link></li>
+                                    <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Карнитин</Link></li>
+                                    <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Специальные препараты</Link></li>
+                                    <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Батончики</Link></li>
+                                    <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Предтренировочные комплексы</Link></li>
+                                    <li><Link to={"/"} className={"header__dropdown-content-title-link"}>Препараты для связок и суставов</Link></li>
                                 </ul>
                             </div>
                         </div>

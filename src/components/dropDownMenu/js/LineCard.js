@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
 import Image from "../../image/image.js";
 
 import "../css/imports.css";
@@ -21,7 +22,7 @@ class LineCard extends Component {
                             height={22}
                         />
 
-                        <a href={this.props.content.link.url} className={"header__dropdown-content-text"}>{this.props.content.link.text}</a>
+                        <Link to={this.props.content.link.url} className={"header__dropdown-content-text"}>{this.props.content.link.text}</Link>
                     </div>
                     <div className="header__dropdown-content-card-image">
                         <Image

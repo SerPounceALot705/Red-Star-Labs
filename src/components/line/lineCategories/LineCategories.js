@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Image from "../../image/image.js";
+import { Link } from 'react-router-dom'
 
 class LineCategories extends Component {
     constructor(props) {
@@ -68,13 +69,13 @@ class LineCategories extends Component {
         function ProteinList() {
             return (
                 <ul className="product-line__categories">
-                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Протеины</a></li>
+                    <li><Link to={"/"} className={"product-line__dropdown-content-title-link"}>Протеины</Link></li>
                     <li>
                         <ul>
-                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Сывороточный</a></li>
-                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Изолят</a></li>
-                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Казеин</a></li>
-                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Говяжий</a></li>
+                            <li><Link to={"/"} className={"product-line__dropdown-content-link"}>Сывороточный</Link></li>
+                            <li><Link to={"/"} className={"product-line__dropdown-content-link"}>Изолят</Link></li>
+                            <li><Link to={"/"} className={"product-line__dropdown-content-link"}>Казеин</Link></li>
+                            <li><Link to={"/"} className={"product-line__dropdown-content-link"}>Говяжий</Link></li>
                         </ul>
                     </li>
                 </ul>);
@@ -85,11 +86,11 @@ class LineCategories extends Component {
                 <ul className="product-line__targets">
                     <li>
                         <ul className="product-line__targets-list">
-                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Повышение выносливости</a></li>
-                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Похудение и снижение веса</a></li>
-                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Набор массы</a></li>
-                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Здоровье и долголетие</a></li>
-                            <li><a href={"/"} className={"product-line__dropdown-content-link"}>Здоровый сон и восстановление</a></li>
+                            <li><Link to={"/"} className={"product-line__dropdown-content-link"}>Повышение выносливости</Link></li>
+                            <li><Link to={"/"} className={"product-line__dropdown-content-link"}>Похудение и снижение веса</Link></li>
+                            <li><Link to={"/"} className={"product-line__dropdown-content-link"}>Набор массы</Link></li>
+                            <li><Link to={"/"} className={"product-line__dropdown-content-link"}>Здоровье и долголетие</Link></li>
+                            <li><Link to={"/"} className={"product-line__dropdown-content-link"}>Здоровый сон и восстановление</Link></li>
                         </ul>
                     </li>
                 </ul>);
@@ -117,13 +118,13 @@ class LineCategories extends Component {
                 {this.state.isProductList ? <ProteinList /> : null}
 
                 <ul className="product-line__categories">
-                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Витамины и минералы</a></li>
-                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Аминокислоты и ВСАА</a></li>
-                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Карнитин</a></li>
-                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Специальные препараты</a></li>
-                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Батончики</a></li>
-                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Предтренировочные комплексы</a></li>
-                    <li><a href={"/"} className={"product-line__dropdown-content-title-link"}>Препараты для связок и суставов</a></li>
+                    <li><Link to={"/"} className={"product-line__dropdown-content-title-link"}>Витамины и минералы</Link></li>
+                    <li><Link to={"/"} className={"product-line__dropdown-content-title-link"}>Аминокислоты и ВСАА</Link></li>
+                    <li><Link to={"/"} className={"product-line__dropdown-content-title-link"}>Карнитин</Link></li>
+                    <li><Link to={"/"} className={"product-line__dropdown-content-title-link"}>Специальные препараты</Link></li>
+                    <li><Link to={"/"} className={"product-line__dropdown-content-title-link"}>Батончики</Link></li>
+                    <li><Link to={"/"} className={"product-line__dropdown-content-title-link"}>Предтренировочные комплексы</Link></li>
+                    <li><Link to={"/"} className={"product-line__dropdown-content-title-link"}>Препараты для связок и суставов</Link></li>
                 </ul>
 
                 {this.props.isLineBlock ?
@@ -148,10 +149,10 @@ class LineCategories extends Component {
                     (<ul className="product-line__lines">
                         <li>
                             <ul>
-                                <li><a href="/LineBasic" className="basic-line"></a></li>
-                                <li><a href="/LineEss" className="ess-line"></a></li>
-                                <li><a href="/LineSuperior" className="superior-line"></a></li>
-                                <li><a href="/LineBeo" className="beo-line"></a></li>
+                                <li><Link to="/LineBasic" className="basic-line"></Link></li>
+                                <li><Link to="/LineEss" className="ess-line"></Link></li>
+                                <li><Link to="/LineSuperior" className="superior-line"></Link></li>
+                                <li><Link to="/LineBeo" className="beo-line"></Link></li>
                             </ul>
                         </li>
                     </ul>) : null

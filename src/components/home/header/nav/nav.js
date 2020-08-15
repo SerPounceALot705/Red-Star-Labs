@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import DropDownMenu from "../../../dropDownMenu/js/DropDownMenu.js";
+import { Link } from 'react-router-dom'
 
 import "./css/imports.css";
 import "./link/link.css";
@@ -18,7 +19,7 @@ class Nav extends Component {
                             </li>
                         } else {
                             return <li key={index}>
-                                <a href={`/${link.url}`} className={"link"}>{link.name}</a>
+                                <Link to={`/${link.url}`} className={"link"}>{link.name}</Link>
                             </li>
                         }
                     })}

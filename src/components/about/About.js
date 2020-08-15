@@ -1,10 +1,10 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
 
 import Header from "../home/header/header.js";
 import ContactForm from "../home/contact-form/js/contact-form.js";
 import Footer from "../home/footer/js/footer.js";
 import Image from "../image/image.js";
-
 
 import "../main-about.css";
 import "./imports.css";
@@ -17,8 +17,8 @@ class About extends Component {
                     <Header isDark={false} />
                     <section className="about-brand">
                         <nav className="about__menu">
-                            <a href="/" className="about__menu-item">Главная страница &gt; </a>
-                            <a href="/About" className="about__menu-item about__menu-item_active">о бренде</a>
+                            <Link to="/" className="about__menu-item">Главная страница &gt; </Link>
+                            <Link to="/About" className="about__menu-item about__menu-item_active">о бренде</Link>
                         </nav>
                         <div className="about__container">
                             <Image

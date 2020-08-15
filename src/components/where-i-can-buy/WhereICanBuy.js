@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { FiPhone } from "react-icons/fi";
 import { FiClock } from "react-icons/fi";
+import { Link } from 'react-router-dom'
 import 'react-tabs/style/react-tabs.css';
 
 import Header from "../home/header/header.js";
@@ -167,8 +168,8 @@ class WhereICanBuy extends Component {
                 <Header isDark={true} />
                 <section className="where-i-can-buy">
                     <nav className="where-i-can-buy__menu">
-                        <a href="/" className="where__menu-item">Главная страница &gt; </a>
-                        <a href="/" className="where__menu-item where__menu-item_active">где купить?</a>
+                        <Link to="/" className="where__menu-item">Главная страница &gt; </Link>
+                        <Link to="/" className="where__menu-item where__menu-item_active">где купить?</Link>
                     </nav>
 
                     <Tabs>

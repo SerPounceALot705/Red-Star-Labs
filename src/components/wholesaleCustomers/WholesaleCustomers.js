@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
 import Header from "../home/header/header.js";
 import Footer from "../home/footer/js/footer.js";
 import Image from "../image/image.js";
@@ -15,8 +16,8 @@ class WholesaleCustomers extends Component {
                     <Header />
                     <div className="wholesale-customers__main-container">
                         <nav className="contacts__menu">
-                            <a href="/" className="contacts__menu-item">Главная страница &gt; </a>
-                            <a href="/" className="contacts__menu-item contacts__menu-item_active">Оптовым клиентам</a>
+                            <Link to="/" className="contacts__menu-item">Главная страница &gt; </Link>
+                            <Link to="/" className="contacts__menu-item contacts__menu-item_active">Оптовым клиентам</Link>
                         </nav>
                         <div className="for-wholesale-customers">
                             <div className="for-wholesale-customers-form">
