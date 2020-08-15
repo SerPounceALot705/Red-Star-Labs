@@ -1,14 +1,20 @@
 .number {
     color: #ffffff;
     font-family: "TTFirsNeue-DemiBold";
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 400;
     line-height: 33.72px;
     text-transform: uppercase;
     letter-spacing: 0.71px;
     margin-bottom: 17px;
+    text-decoration: none;
+    transition: all ease-in-out 0.2s;
+}
+
+.number:hover {
+    font-size: 60px;
 }
 
 .number_actived {
-   font-size: 100px;     
+   font-size: 80px;     
 }

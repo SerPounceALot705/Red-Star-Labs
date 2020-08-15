@@ -8,6 +8,7 @@ import Footer from "../home/footer/js/footer.js";
 import Image from "../image/image.js";
 import Calculator from "../calculator/Calculator.js";
 import DetailedDescription from "../detailedDescription/DetailedDescription.js";
+import ScrolNumber from "./ScrolNumber.js";
 
 import "./css/imports.css";
 import "react-awesome-slider/dist/styles.css";
@@ -50,7 +51,7 @@ class Card extends Component {
                             <a href="/catalog" className="contacts__menu-item">Протеины &gt; </a>
                             <a href="/" className="contacts__menu-item contacts__menu-item_active">premium whey concentrate</a>
                         </nav>
-                        <div className="card-description__main-container">
+                        <div className="card-description__main-container" id="card">
                             <div className="card__description">
                                 <Image
                                     src={require("../../images/logoSuperior.png")}
@@ -158,7 +159,7 @@ class Card extends Component {
                                     />
                                 </div>
                                 <div onClick={() => this.handlerIsDetaield()} className="product-line__button">
-                                    <p>Все характеристики</p>
+                                    <p id="stats">Все характеристики</p>
 
                                     {this.state.isDetaield
                                         ? <Image
@@ -181,28 +182,7 @@ class Card extends Component {
                                     className={"logoSuperior"}
                                 />
                             </div>
-                            <div className="card__pagination-container">
-                                <div className="pagination-container__card">
-                                    <p className="number number_actived">01</p>
-                                    <p className="pagination-description">карточка</p>
-                                </div>
-                                <div className="pagination-container__card">
-                                    <p className="number">02</p>
-                                    <p className="pagination-description">характеристики</p>
-                                </div>
-                                <div className="pagination-container__card">
-                                    <p className="number">03</p>
-                                    <p className="pagination-description">отзывы</p>
-                                </div>
-                                <div className="pagination-container__card">
-                                    <p className="number">04</p>
-                                    <p className="pagination-description">видео</p>
-                                </div>
-                                <div className="pagination-container__card">
-                                    <p className="number">05</p>
-                                    <p className="pagination-description">фото</p>
-                                </div>
-                            </div>
+                            <ScrolNumber/>
                         </div>
                         
                     </div>
@@ -249,7 +229,7 @@ class Card extends Component {
                         <p>Оставить отзыв</p>
                     </div>
                     <div className="card__rewiew-form-container-main">
-                        <h2 className="card__rewiew-title">Оставить свой отзыв</h2>
+                        <h2 className="card__rewiew-title" id="rewiew">Оставить свой отзыв</h2>
                         <form className="card__rewiew-form-container">
                             <div className="card-rewiew-rating-container">
                                 <h4 className="card__rewiew-form-subtitle">Пожалуйста поставьте оценку</h4>
@@ -382,7 +362,7 @@ class Card extends Component {
                         </div>
                     </div>
                 </section>
-                <section className="card__video-rewiew">
+                <section className="card__video-rewiew" id="video">
                     <div className="video-rewiew__text-container">
                         <h2 className="video-rewiew__title">Видео обзор Clear Whey Isolate</h2>
                         <p className="video-rewiew__text">Это не просто еще один вид протеинового коктейля.
@@ -430,7 +410,7 @@ class Card extends Component {
                 </section>
                 <section className="card__other-product-line">
                     <div className="other-product__title-container">
-                        <h3 className="other-product-line__title">Другие продукты линейки</h3>
+                        <h3 className="other-product-line__title" id="photo">Другие продукты линейки</h3>
                         <a href="LineBasic">
                             <Image
                                 src={require("../../images/logoSuperior.png")}

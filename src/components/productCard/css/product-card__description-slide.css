@@ -66,3 +66,7 @@
     opacity: 0;
     top: auto;
 }
+
+.awssld__controls button {
+    z-index: 3;
+}
