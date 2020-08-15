@@ -183,7 +183,7 @@ class Card extends Component {
                             </div>
                             <div className="card__pagination-container">
                                 <div className="pagination-container__card">
-                                    <p className="number">01</p>
+                                    <p className="number number_actived">01</p>
                                     <p className="pagination-description">карточка</p>
                                 </div>
                                 <div className="pagination-container__card">
