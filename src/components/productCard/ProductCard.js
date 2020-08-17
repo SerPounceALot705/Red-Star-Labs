@@ -248,7 +248,7 @@ class ProductCard extends Component {
                             <AnalyticsItem items={this.state.selectOptions.lables} />
                         </div>
                         <div className="main-button">
-                            <a className="main-button-link" href="LineBasic">
+                            <a className="main-button-link" href="#/LineBasic">
                                 <div className="main-button-text-container">
                                     <span className="main-button-text">Все продукты линейки</span>
                                     <span className="main-button-span">Basic</span>

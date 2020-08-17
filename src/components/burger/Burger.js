@@ -78,10 +78,10 @@ class Burger extends Component {
                 <div>
                     <Nav className="header__nav-links"
                         links={[
-                            { href: "About", name: "о бренде" },
-                            { href: "WhereICanBuy", name: "где купить?" },
-                            { href: "WholesaleCustomers", name: "оптовым клиентам" },
-                            { href: "Contacts", name: "контакты" },
+                            { url: "About", name: "о бренде" },
+                            { url: "WhereICanBuy", name: "где купить?" },
+                            { url: "WholesaleCustomers", name: "оптовым клиентам" },
+                            { url: "Contacts", name: "контакты" },
                         ]}
                     />
                 </div>

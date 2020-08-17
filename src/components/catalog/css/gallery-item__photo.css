@@ -37,14 +37,14 @@
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
     .gallery-item__photo {
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 }
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
     .gallery-item__photo {
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 }

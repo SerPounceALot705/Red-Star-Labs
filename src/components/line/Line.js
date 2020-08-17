@@ -279,13 +279,13 @@ class Line extends Component {
 
                     <section className="catalog__gallery">
                         <div className="catalog__gallery-item-container">
-                            <Link to="LineBasic">
+                            <a href="LineBasic">
                                 <Image
                                     src={require("../../images/logobasic.png")}
                                     alt={"logoBasic"}
                                     className={"catalog__gallery-LinePhoto"}
                                 />
-                            </Link>
+                            </a>
                             <Image
                                 src={require("../../images/gallery-item1.png")}
                                 alt={"gallery-photo01"}
@@ -293,13 +293,13 @@ class Line extends Component {
                             />
                         </div>
                         <div className="catalog__gallery-item-container">
-                            <Link to="LineBasic">
+                            <a href="LineBasic">
                                 <Image
                                     src={require("../../images/logoBeo.png")}
                                     alt={"logoBeo"}
                                     className={"catalog__gallery-LinePhoto"}
                                 />
-                            </Link>
+                            </a>
                             <Image
                                 src={require("../../images/gallery-item2.png")}
                                 alt={"gallery-photo02"}
@@ -307,13 +307,13 @@ class Line extends Component {
                             />
                         </div>
                         <div className="catalog__gallery-item-container">
-                            <Link to="LineBasic">
+                            <a href="LineBasic">
                                 <Image
                                     src={require("../../images/logoEssential.png")}
                                     alt={"logoEssential"}
                                     className={"catalog__gallery-LinePhoto"}
                                 />
-                            </Link>
+                            </a>
                             <Image
                                 src={require("../../images/gallery-item3.png")}
                                 alt={"gallery-photo03"}

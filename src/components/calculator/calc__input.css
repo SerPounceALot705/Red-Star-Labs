@@ -13,3 +13,16 @@
     font-weight: bold;
     text-align: center;
 }
+
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .calc__input {
+        width: 76px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .calc__input {
+        width: 76px;
+    }
+}

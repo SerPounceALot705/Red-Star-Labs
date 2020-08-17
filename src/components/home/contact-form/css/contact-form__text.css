@@ -25,3 +25,19 @@
        
     }
 }
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .contact-form__text {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 375px) {
+    .contact-form__text {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

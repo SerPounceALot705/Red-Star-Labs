@@ -10,6 +10,10 @@
     padding-left: 0;
 }
 
+.bm-item ul li ul a {
+    color: #000000 !important;
+}
+
 .bm-item:hover {
     color: white;
 }
@@ -44,6 +48,7 @@
 /* General sidebar styles */
 
 .bm-menu {
+    height: auto !important;
     background: #ffffff;
     /*padding: 2.5em 1.5em 0;*/
     font-size: 1.15em;

@@ -1,3 +1,5 @@
 .catalog__gallery-item-container {
     position: relative;
+    margin: 0 auto;
+    width: 80%;
 }

@@ -34,11 +34,16 @@
         font-size: 25px;
         font-size: 25px;
         margin-bottom: 15px;
+        width: 90%;
+        margin: 25px auto 10px;
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 424px) and (min-width: 375px) {
     .contact-form__title {
-        margin-bottom: 10px;
+        width: 90%;
+        margin: 25px auto 10px;
+        text-align: center;
     }
 }

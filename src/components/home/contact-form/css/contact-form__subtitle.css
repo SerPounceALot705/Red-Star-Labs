@@ -28,6 +28,14 @@
     .contact-form__subtitle {
         margin-bottom: 10px;
         font-size: 10px;
+      
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    .contact-form__subtitle {
+        width: 100%;
+        margin: 25px auto 10px;
     }
 }
 
@@ -36,5 +44,7 @@
         max-width: 300px;
         font-size: 17px;
         text-align: center;
+        width: 100%;
+        margin: 25px auto 10px;
     }
 }

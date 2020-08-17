@@ -65,6 +65,7 @@
         font-family: "TTFirsNeue-Regular";
         font-weight: 400;
         letter-spacing: 0.38px;
+        border-bottom: 1px solid #ffffff;
     }
 
     .where-i-can-buy__shop-card::before {
@@ -90,7 +91,6 @@
     }
 
     .shop-map {
-        width: 100%;
         max-width: 100% !important;
         height: 60%;
     }

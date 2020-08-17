@@ -37,7 +37,7 @@
     
     .photo-gallery__slider .awssld__bullets {
         left: 0%;
-        bottom: 95%;
+        bottom: 100%;
     }
     
     .photo-gallery__slider .awssld__bullets--active {
