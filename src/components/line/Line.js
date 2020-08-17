@@ -279,7 +279,7 @@ class Line extends Component {
 
                     <section className="catalog__gallery">
                         <div className="catalog__gallery-item-container">
-                            <a href="LineBasic">
+                            <a href="#/LineBasic">
                                 <Image
                                     src={require("../../images/logobasic.png")}
                                     alt={"logoBasic"}
@@ -293,7 +293,7 @@ class Line extends Component {
                             />
                         </div>
                         <div className="catalog__gallery-item-container">
-                            <a href="LineBasic">
+                            <a href="#/LineBasic">
                                 <Image
                                     src={require("../../images/logoBeo.png")}
                                     alt={"logoBeo"}
@@ -307,7 +307,7 @@ class Line extends Component {
                             />
                         </div>
                         <div className="catalog__gallery-item-container">
-                            <a href="LineBasic">
+                            <a href="#/LineBasic">
                                 <Image
                                     src={require("../../images/logoEssential.png")}
                                     alt={"logoEssential"}
