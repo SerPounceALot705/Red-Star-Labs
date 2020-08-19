@@ -2,9 +2,10 @@
     margin-top: 38px;
     margin-bottom: 12px;
     width: 217px;
-    height: 102px;
+    height: 81px;
     cursor: pointer;
 }
+
 
 @media screen and (max-width: 1440px) and (min-width: 1200px) {
     .header__logo {

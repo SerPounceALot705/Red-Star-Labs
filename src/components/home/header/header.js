@@ -15,7 +15,7 @@ class Header extends Component {
     constructor(props) {
         super(props)
 
-        this.LogoUrl = require("../../../images/logo.png");
+        this.LogoUrl = require("../../../images/homelogo.png");
 
         this.headerClass = "header header-border";
         this.isDark = this.props.isDark;
