@@ -1,5 +1,8 @@
 .card__img-container {
     z-index: 1;
+    margin-left: 1000px;
+    opacity: 0;
+    transition: all ease-in-out 1s;
 }
 
 @media screen and (max-width: 767px) and (min-width: 425px) {

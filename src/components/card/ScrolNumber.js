@@ -23,8 +23,6 @@ class ScrolNumber extends Component {
         this.setState({
             pageYOffset: window.pageYOffset
         })
-
-        console.log(this.state.pageYOffset);
     }
 
     render() {

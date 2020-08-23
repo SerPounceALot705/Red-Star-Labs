@@ -50,6 +50,18 @@ class Card extends Component {
         })*/
     }
 
+  
+    componentDidMount() {
+        const img = document.getElementsByClassName("card__img-container")[0];
+        img.style.marginLeft = 1000;
+
+        setTimeout(() => {
+            document.getElementsByClassName("card__img-container")[0].style.marginLeft = 0;
+            document.getElementsByClassName("card__img-container")[0].style.opacity = "1";
+        }, 1)
+    }
+    
+
     render() {
 
         const AutoplaySlider = withAutoplay(AwesomeSlider);
