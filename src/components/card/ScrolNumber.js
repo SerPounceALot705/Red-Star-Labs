@@ -32,7 +32,7 @@ class ScrolNumber extends Component {
             <div className="card__pagination-container">
                 <div className="pagination-container__card">
 
-                    {this.state.pageYOffset >= 0 && this.state.pageYOffset < 799 ?
+                    {this.state.pageYOffset >= 0 && this.state.pageYOffset < 1119 ?
                         <a className="number number_actived">01</a> :
                         <a className="number">01</a>
                     }
@@ -41,7 +41,7 @@ class ScrolNumber extends Component {
                 </div>
                 <div className="pagination-container__card">
 
-                    {this.state.pageYOffset >= 800 && this.state.pageYOffset < 1559 ?
+                    {this.state.pageYOffset >= 800 && this.state.pageYOffset < 1500 ?
                         <a className="number number_actived">02</a> :
                         <a className="number">02</a>
                     }
@@ -59,7 +59,7 @@ class ScrolNumber extends Component {
                 </div>
                 <div className="pagination-container__card">
 
-                    {this.state.pageYOffset >= 2300 && this.state.pageYOffset < 2699 ?
+                    {this.state.pageYOffset >= 2291 && this.state.pageYOffset < 3500 ?
                         <a className="number number_actived">04</a> :
                         <a className="number">04</a>
                     }
@@ -68,7 +68,7 @@ class ScrolNumber extends Component {
                 </div>
                 <div className="pagination-container__card">
 
-                    {this.state.pageYOffset >= 2700 ?
+                    {this.state.pageYOffset >= 3500 ?
                         <a className="number number_actived">05</a> :
                         <a className="number">05</a>
                     }

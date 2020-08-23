@@ -95,3 +95,23 @@
 @import "./denomination-of-product.css";
 @import "./other-product-line-products-container.css";
 @import "./product-line-item__photo.css";
+
+.slide-2 {
+    height: 90% !important;
+}
+
+.slide-3 {
+    height: 90% !important;
+}
+
+.slide-4 {
+    height: 80% !important;
+}
+
+.slide-5 {
+    height: 60% !important;
+}
+
+.slide-6 {
+    height: 65% !important;
+}

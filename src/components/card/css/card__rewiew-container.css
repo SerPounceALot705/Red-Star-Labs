@@ -13,6 +13,6 @@
 }
 
 .card__rewiew-container::-webkit-scrollbar {
-    width: 2px;
+    width: 6px;
     background-color: #848484;
 }

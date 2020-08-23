@@ -104,8 +104,7 @@ class LineContainer extends Component {
         return (
             <div>
                 {this.state.isLineContainer ? this.applayContainer() : null}
-                <div className="product-line__button"
-                    onClick={() => this.handlerLine()}>
+                <div className="product-line__button" onClick={() => this.handlerLine()}>
                     <p>Все характеристики</p>
 
                     {
