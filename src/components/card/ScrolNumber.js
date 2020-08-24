@@ -30,7 +30,7 @@ class ScrolNumber extends Component {
             <div className="card__pagination-container">
                 <div className="pagination-container__card">
 
-                    {this.state.pageYOffset >= 0 && this.state.pageYOffset < 1119 ?
+                    {this.state.pageYOffset >= 0 && this.state.pageYOffset < 900 ?
                         <a className="number number_actived">01</a> :
                         <a className="number">01</a>
                     }
