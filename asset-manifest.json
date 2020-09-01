@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Red-Star-Labs/static/css/main.e507147f.chunk.css",
-    "main.js": "/Red-Star-Labs/static/js/main.c8dff940.chunk.js",
-    "main.js.map": "/Red-Star-Labs/static/js/main.c8dff940.chunk.js.map",
+    "main.css": "/Red-Star-Labs/static/css/main.ca2bd401.chunk.css",
+    "main.js": "/Red-Star-Labs/static/js/main.f9dc3f86.chunk.js",
+    "main.js.map": "/Red-Star-Labs/static/js/main.f9dc3f86.chunk.js.map",
     "runtime-main.js": "/Red-Star-Labs/static/js/runtime-main.83e5e080.js",
     "runtime-main.js.map": "/Red-Star-Labs/static/js/runtime-main.83e5e080.js.map",
     "static/css/2.e2f6717f.chunk.css": "/Red-Star-Labs/static/css/2.e2f6717f.chunk.css",
-    "static/js/2.b7563009.chunk.js": "/Red-Star-Labs/static/js/2.b7563009.chunk.js",
-    "static/js/2.b7563009.chunk.js.map": "/Red-Star-Labs/static/js/2.b7563009.chunk.js.map",
+    "static/js/2.b0356644.chunk.js": "/Red-Star-Labs/static/js/2.b0356644.chunk.js",
+    "static/js/2.b0356644.chunk.js.map": "/Red-Star-Labs/static/js/2.b0356644.chunk.js.map",
     "index.html": "/Red-Star-Labs/index.html",
-    "precache-manifest.f2b03d27b9cbe0491398367c44343e85.js": "/Red-Star-Labs/precache-manifest.f2b03d27b9cbe0491398367c44343e85.js",
+    "precache-manifest.f26a554cbe5f95b25b1855480a2ef139.js": "/Red-Star-Labs/precache-manifest.f26a554cbe5f95b25b1855480a2ef139.js",
     "service-worker.js": "/Red-Star-Labs/service-worker.js",
     "static/css/2.e2f6717f.chunk.css.map": "/Red-Star-Labs/static/css/2.e2f6717f.chunk.css.map",
-    "static/css/main.e507147f.chunk.css.map": "/Red-Star-Labs/static/css/main.e507147f.chunk.css.map",
-    "static/js/2.b7563009.chunk.js.LICENSE.txt": "/Red-Star-Labs/static/js/2.b7563009.chunk.js.LICENSE.txt",
+    "static/css/main.ca2bd401.chunk.css.map": "/Red-Star-Labs/static/css/main.ca2bd401.chunk.css.map",
+    "static/js/2.b0356644.chunk.js.LICENSE.txt": "/Red-Star-Labs/static/js/2.b0356644.chunk.js.LICENSE.txt",
     "static/media/Essentialbank.png": "/Red-Star-Labs/static/media/Essentialbank.c2d031e5.png",
     "static/media/fonts.css": "/Red-Star-Labs/static/media/TTFirsNeue-Regular.42e4e355.woff2",
     "static/media/main-about.css": "/Red-Star-Labs/static/media/back-obrende.7f5cf95a.png",
@@ -45,8 +45,8 @@
   "entrypoints": [
     "static/js/runtime-main.83e5e080.js",
     "static/css/2.e2f6717f.chunk.css",
-    "static/js/2.b7563009.chunk.js",
-    "static/css/main.e507147f.chunk.css",
-    "static/js/main.c8dff940.chunk.js"
+    "static/js/2.b0356644.chunk.js",
+    "static/css/main.ca2bd401.chunk.css",
+    "static/js/main.f9dc3f86.chunk.js"
   ]
 }

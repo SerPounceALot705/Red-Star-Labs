@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2916a76dce0dc866e0690d2b63f85a31",
+    "revision": "d3a1e8b8b91120250c17d2854512d41a",
     "url": "/Red-Star-Labs/index.html"
   },
   {
-    "revision": "1fd27aa70edb20ff409f",
+    "revision": "5ed9118b16993a09cca0",
     "url": "/Red-Star-Labs/static/css/2.e2f6717f.chunk.css"
   },
   {
-    "revision": "b01a994eaa7a06b2c146",
-    "url": "/Red-Star-Labs/static/css/main.e507147f.chunk.css"
+    "revision": "abd3652eb3efc197f3b9",
+    "url": "/Red-Star-Labs/static/css/main.ca2bd401.chunk.css"
   },
   {
-    "revision": "1fd27aa70edb20ff409f",
-    "url": "/Red-Star-Labs/static/js/2.b7563009.chunk.js"
+    "revision": "5ed9118b16993a09cca0",
+    "url": "/Red-Star-Labs/static/js/2.b0356644.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/Red-Star-Labs/static/js/2.b7563009.chunk.js.LICENSE.txt"
+    "url": "/Red-Star-Labs/static/js/2.b0356644.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b01a994eaa7a06b2c146",
-    "url": "/Red-Star-Labs/static/js/main.c8dff940.chunk.js"
+    "revision": "abd3652eb3efc197f3b9",
+    "url": "/Red-Star-Labs/static/js/main.f9dc3f86.chunk.js"
   },
   {
     "revision": "ea587d639d49c9eb405f",
