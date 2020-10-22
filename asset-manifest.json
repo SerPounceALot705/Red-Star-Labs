@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Red-Star-Labs/static/css/main.ceb82be1.chunk.css",
+    "main.css": "/Red-Star-Labs/static/css/main.a55b224f.chunk.css",
     "main.js": "/Red-Star-Labs/static/js/main.ace82cff.chunk.js",
     "main.js.map": "/Red-Star-Labs/static/js/main.ace82cff.chunk.js.map",
     "runtime-main.js": "/Red-Star-Labs/static/js/runtime-main.83e5e080.js",
@@ -9,10 +9,10 @@
     "static/js/2.b7563009.chunk.js": "/Red-Star-Labs/static/js/2.b7563009.chunk.js",
     "static/js/2.b7563009.chunk.js.map": "/Red-Star-Labs/static/js/2.b7563009.chunk.js.map",
     "index.html": "/Red-Star-Labs/index.html",
-    "precache-manifest.0e253fd68c35267626f82fe41fa78a14.js": "/Red-Star-Labs/precache-manifest.0e253fd68c35267626f82fe41fa78a14.js",
+    "precache-manifest.1d034b7ef4f9db7165d45df651a24c99.js": "/Red-Star-Labs/precache-manifest.1d034b7ef4f9db7165d45df651a24c99.js",
     "service-worker.js": "/Red-Star-Labs/service-worker.js",
     "static/css/2.e2f6717f.chunk.css.map": "/Red-Star-Labs/static/css/2.e2f6717f.chunk.css.map",
-    "static/css/main.ceb82be1.chunk.css.map": "/Red-Star-Labs/static/css/main.ceb82be1.chunk.css.map",
+    "static/css/main.a55b224f.chunk.css.map": "/Red-Star-Labs/static/css/main.a55b224f.chunk.css.map",
     "static/js/2.b7563009.chunk.js.LICENSE.txt": "/Red-Star-Labs/static/js/2.b7563009.chunk.js.LICENSE.txt",
     "static/media/Essentialbank.png": "/Red-Star-Labs/static/media/Essentialbank.c2d031e5.png",
     "static/media/fonts.css": "/Red-Star-Labs/static/media/TTFirsNeue-Regular.42e4e355.woff2",
@@ -46,7 +46,7 @@
     "static/js/runtime-main.83e5e080.js",
     "static/css/2.e2f6717f.chunk.css",
     "static/js/2.b7563009.chunk.js",
-    "static/css/main.ceb82be1.chunk.css",
+    "static/css/main.a55b224f.chunk.css",
     "static/js/main.ace82cff.chunk.js"
   ]
 }
